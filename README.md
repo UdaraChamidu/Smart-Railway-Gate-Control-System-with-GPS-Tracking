@@ -71,6 +71,7 @@ The mobile app features an intuitive and easy-to-use interface, including:
 
 ## Installation & Setup
 
+ 
 1. **Clone the Repository**:
    ```bash
    git clone https://github.com/UdaraChamidu/Smart-Railway-Gate-Control-System-with-GPS-Tracking.git
