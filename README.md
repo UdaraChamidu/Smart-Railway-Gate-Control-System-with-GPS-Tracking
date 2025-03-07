@@ -37,54 +37,145 @@ The **GPS-Based Railway Gate Control System** is an embedded system project desi
 ## 📂 Code Implementation
 ### 🚦 ESP32 Code (main.ino)
 ```cpp
-#include <WiFi.h>
-#include <Servo.h>
 
-#define SERVO_PIN 5
-#define BUZZER_PIN 4
-#define LED_PIN 2
+#include <TinyGPS++.h>
+#include <HardwareSerial.h>
+#include <ESP32Servo.h>
+#include <math.h>
 
-Servo gateServo;
+// Define GPS module serial connection
+HardwareSerial gpsSerial(1); // Using UART1 on ESP32 (TX=16, RX=17)
+TinyGPSPlus gps;
+Servo myServo1, myServo2;  // Two servos
+
+// Default manual target locations
+float manualLat1 = 9.332632;  // Target Latitude for first servo
+float manualLon1 = 80.414093; // Target Longitude for first servo
+
+float manualLat2 = 9.332632;  // Target Latitude for second servo
+float manualLon2 = 80.414093; // Target Longitude for second servo
+
+// Servo setup
+const int servoPin1 = 18;  // First servo connected to pin 18
+const int servoPin2 = 19;  // Second servo connected to pin 19
+int currentAngle1 = 0; // Tracks first servo position
+int currentAngle2 = 0; // Tracks second servo position
+
+// Buzzer setup
+const int buzzerPin = 21;  // Buzzer connected to pin 18 (same as first servo)
+
+// Function to calculate distance (Haversine formula)
+float haversineDistance(float lat1, float lon1, float lat2, float lon2) {
+    const float R = 6371000; // Earth radius in meters
+    float dLat = radians(lat2 - lat1);
+    float dLon = radians(lon2 - lon1);
+    float a = sin(dLat / 2) * sin(dLat / 2) +
+              cos(radians(lat1)) * cos(radians(lat2)) *
+              sin(dLon / 2) * sin(dLon / 2);
+    float c = 2 * atan2(sqrt(a), sqrt(1 - a));
+    return R * c; // Distance in meters
+}
+
+// Function to rotate the servo in 5° steps
+void rotateServo(Servo &servo, int &currentAngle, int targetAngle) {
+    while (currentAngle != targetAngle) {
+        if (currentAngle < targetAngle) currentAngle += 5;
+        else currentAngle -= 5;
+
+        servo.write(currentAngle);
+        delay(100); // Smooth transition
+    }
+}
 
 void setup() {
     Serial.begin(115200);
-    gateServo.attach(SERVO_PIN);
-    pinMode(BUZZER_PIN, OUTPUT);
-    pinMode(LED_PIN, OUTPUT);
+    gpsSerial.begin(9600, SERIAL_8N1, 16, 17); // GPS module
+    myServo1.attach(servoPin1); // Attach first servo
+    myServo2.attach(servoPin2); // Attach second servo
+    myServo1.write(0); // Start first servo at 0°
+    myServo2.write(0); // Start second servo at 0°
+
+    pinMode(buzzerPin, OUTPUT);  // Set buzzer pin as output
+    digitalWrite(buzzerPin, LOW); // Initially turn off the buzzer
+
+    Serial.println("Waiting for GPS signal...");
 }
 
 void loop() {
-    int trainDetected = detectTrain();
-    if (trainDetected) {
-        closeGate();
-        alertUsers();
-    } else {
-        openGate();
+    while (gpsSerial.available()) {
+        gps.encode(gpsSerial.read());
+
+        if (gps.location.isUpdated()) {
+            float sensorLat = gps.location.lat();
+            float sensorLon = gps.location.lng();
+
+            Serial.print("GPS Latitude: ");
+            Serial.println(sensorLat, 6);
+            Serial.print("GPS Longitude: ");
+            Serial.println(sensorLon, 6);
+
+            // Calculate distance to first target location
+            float distance1 = haversineDistance(manualLat1, manualLon1, sensorLat, sensorLon);
+            Serial.print("Distance to target 1: ");
+            Serial.print(distance1);
+            Serial.println(" meters");
+
+            // Calculate distance to second target location
+            float distance2 = haversineDistance(manualLat2, manualLon2, sensorLat, sensorLon);
+            Serial.print("Distance to target 2: ");
+            Serial.print(distance2);
+            Serial.println(" meters");
+
+            // For first servo: Rotate based on distance to first target
+            if (distance1 > 1000) {
+                int targetAngle1 = 90;  // Rotate to 90° if distance > 1000 meters
+                Serial.print("Rotating first servo to ");
+                Serial.print(targetAngle1);
+                Serial.println("°...");
+                rotateServo(myServo1, currentAngle1, targetAngle1);
+
+                // Turn off the buzzer if distance > 1000 meters
+                digitalWrite(buzzerPin, LOW);  // Turn off buzzer
+            } else {
+                int targetAngle1 = -90;  // Rotate to -90° if distance <= 1000 meters
+                Serial.print("Rotating first servo to ");
+                Serial.print(targetAngle1);
+                Serial.println("°...");
+                rotateServo(myServo1, currentAngle1, targetAngle1);
+
+                // Turn on the buzzer if distance < 1000 meters
+                digitalWrite(buzzerPin, HIGH);  // Turn on buzzer
+            }
+
+            // For second servo: Rotate based on distance to second target
+            if (distance2 > 1000) {
+                int targetAngle2 = 90;  // Rotate to 90° if distance > 1000 meters
+                Serial.print("Rotating second servo to ");
+                Serial.print(targetAngle2);
+                Serial.println("°...");
+                rotateServo(myServo2, currentAngle2, targetAngle2);
+
+                digitalWrite(buzzerPin, LOW);  // Turn off buzzer
+            } else {
+                int targetAngle2 = -90;  // Rotate to -90° if distance <= 1000 meters
+                Serial.print("Rotating second servo to ");
+                Serial.print(targetAngle2);
+                Serial.println("°...");
+                rotateServo(myServo2, currentAngle2, targetAngle2);
+
+                 digitalWrite(buzzerPin, HIGH); 
+            }
+
+            Serial.println("-----------------------");
+
+            delay(2000); // Avoid flooding the serial monitor
+        }
     }
-    delay(5000);
 }
 
-int detectTrain() {
-    // Simulate train detection with GPS data
-    return random(0, 2); // 0 = No Train, 1 = Train Approaching
-}
-
-void closeGate() {
-    gateServo.write(90);
-    digitalWrite(BUZZER_PIN, HIGH);
-    digitalWrite(LED_PIN, HIGH);
-}
-
-void openGate() {
-    gateServo.write(0);
-    digitalWrite(BUZZER_PIN, LOW);
-    digitalWrite(LED_PIN, LOW);
-}
-
-void alertUsers() {
-    Serial.println("🚨 Train Approaching! Gate Closing.");
-}
 ```
+
+
 
 ### 📱 Mobile App Code (app.js)
 ```javascript
