@@ -34,6 +34,89 @@ The **GPS-Based Railway Gate Control System** is an embedded system project desi
 [ Train Approaching ] → [ GPS Module Detects ] → [ ESP32 Processes ] → [ Gate Closes ] → [ Alert Sent to App ]
 ```
 
+## 📂 Code Implementation
+### 🚦 ESP32 Code (main.ino)
+```cpp
+#include <WiFi.h>
+#include <Servo.h>
+
+#define SERVO_PIN 5
+#define BUZZER_PIN 4
+#define LED_PIN 2
+
+Servo gateServo;
+
+void setup() {
+    Serial.begin(115200);
+    gateServo.attach(SERVO_PIN);
+    pinMode(BUZZER_PIN, OUTPUT);
+    pinMode(LED_PIN, OUTPUT);
+}
+
+void loop() {
+    int trainDetected = detectTrain();
+    if (trainDetected) {
+        closeGate();
+        alertUsers();
+    } else {
+        openGate();
+    }
+    delay(5000);
+}
+
+int detectTrain() {
+    // Simulate train detection with GPS data
+    return random(0, 2); // 0 = No Train, 1 = Train Approaching
+}
+
+void closeGate() {
+    gateServo.write(90);
+    digitalWrite(BUZZER_PIN, HIGH);
+    digitalWrite(LED_PIN, HIGH);
+}
+
+void openGate() {
+    gateServo.write(0);
+    digitalWrite(BUZZER_PIN, LOW);
+    digitalWrite(LED_PIN, LOW);
+}
+
+void alertUsers() {
+    Serial.println("🚨 Train Approaching! Gate Closing.");
+}
+```
+
+### 📱 Mobile App Code (app.js)
+```javascript
+import React, { useState, useEffect } from 'react';
+import { View, Text, Button } from 'react-native';
+import mqtt from 'mqtt';
+
+const App = () => {
+    const [trainStatus, setTrainStatus] = useState('No Train Detected');
+    
+    useEffect(() => {
+        const client = mqtt.connect('mqtt://broker.hivemq.com');
+        client.on('connect', () => {
+            client.subscribe('train/alert');
+        });
+        client.on('message', (topic, message) => {
+            setTrainStatus(message.toString());
+        });
+        return () => client.end();
+    }, []);
+
+    return (
+        <View>
+            <Text>Train Status: {trainStatus}</Text>
+            <Button title="Override Gate" onPress={() => alert('Manual Override Activated!')} />
+        </View>
+    );
+};
+
+export default App;
+```
+
 ## 👨‍💻 Group Members
 | Name | Registration Number |
 |---------------------------|----------------|
@@ -76,5 +159,3 @@ This project is licensed under the **MIT License**.
 ## 📝 Contact
 For queries or contributions, reach out to:
 - **Udara Chamidu** - [GitHub Profile](https://github.com/UdaraChamidu)
-
-
