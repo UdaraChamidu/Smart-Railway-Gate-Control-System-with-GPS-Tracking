@@ -5,10 +5,10 @@ The **GPS-Based Railway Gate Control System** is an embedded system project desi
 
 ## 🎯 Features
 - **Automated Gate Control**: Uses GPS data to detect train arrival and control gate operation via servo motors.
-- **Real-Time Alerts**: Sends notifications to users through a mobile app.
-- **User-Controlled Operation**: Allows manual gate control for emergency situations.
-- **Audio-Visual Alerts**: Buzzer and LED signals warn pedestrians and vehicles in advance.
-- **Low-Cost Implementation**: Designed to be affordable and scalable for both urban and rural areas.
+- **Real Time Alerts**: Sends notifications to users through a mobile app.
+- **User Controlled Operation**: Allows manual gate control for emergency situations.
+- **Audio Visual Alerts**: Buzzer and LED signals warn pedestrians and vehicles in advance.
+- **Low Cost Implementation**: Designed to be affordable and scalable for both urban and rural areas.
 
 ## 🛠️ Technologies & Components
 ### 🖥️ Hardware Components
@@ -18,7 +18,7 @@ The **GPS-Based Railway Gate Control System** is an embedded system project desi
 - **Buzzer & LED**: Provide audio-visual alerts.
 
 ### 💻 Software & Development Tools
-- **Arduino C/C++**: Programming the ESP32 microcontroller.
+- **Arduino C**: Programming the ESP32 microcontroller.
 - **Flutter & React**: Developing the mobile application.
 - **MQTT Protocol**: Enables real-time communication.
 - **APIs**: Used for GPS data parsing and processing.
@@ -243,9 +243,6 @@ export default App;
    - Navigate to the `Mobile-App` folder.
    - Install dependencies using `npm install`.
    - Run the app with `npm start`.
-
-## 📜 License
-This project is licensed under the **MIT License**.
 
 ## 📝 Contact
 For queries or contributions, reach out to:
