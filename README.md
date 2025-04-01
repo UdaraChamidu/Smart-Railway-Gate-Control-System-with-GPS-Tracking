@@ -1,7 +1,7 @@
 # 🚦 GPS-Based Railway Gate Control System
 
 ## 📌 Project Overview
-The **GPS-Based Railway Gate Control System** is an embedded system project designed to automate railway gate operations using GPS-based train tracking. The system provides real-time user alerts via a mobile application, ensuring enhanced safety and efficiency at railway crossings.
+The **GPS-Based Railway Gate Control System** is an embedded system project designed to automate railway gate operations using GPS based train tracking. The system provides real time user alerts via a mobile application, ensuring enhanced safety and efficiency at railway crossings.
 
 ## 🎯 Features
 - **Automated Gate Control**: Uses GPS data to detect train arrival and control gate operation via servo motors.
@@ -15,23 +15,24 @@ The **GPS-Based Railway Gate Control System** is an embedded system project desi
 - **ESP32 Microcontroller**: Handles GPS data processing and controls gate operation.
 - **Neo M6 GPS Module**: Tracks train location in real time.
 - **Servo Motors**: Operate railway gates based on GPS signals.
-- **Buzzer & LED**: Provide audio-visual alerts.
+- **Buzzer & LED**: Provide audio and visual alerts.
 
 ### 💻 Software & Development Tools
-- **Arduino C**: Programming the ESP32 microcontroller.
-- **Flutter & React**: Developing the mobile application.
-- **MQTT Protocol**: Enables real-time communication.
+- **C**: Programming the ESP32 microcontroller.
+- **Kotlin**: Developing the mobile application.
+- **FireBase**: Enables real time communication.
 - **APIs**: Used for GPS data parsing and processing.
+- **MQTT Protocol**: Enables real time communication.
 
 ## 🏗️ System Architecture
 1. **Train Detection**: GPS module continuously tracks train movement.
 2. **Gate Operation**: ESP32 processes GPS data and triggers gate control.
-3. **User Alerts**: Mobile app receives real-time updates.
+3. **User Alerts**: Mobile app receives real time updates.
 4. **Manual Control**: Users can override the automatic gate operation if necessary.
 
 ## 📸 System Workflow
 ```
-[ Train Approaching ] → [ GPS Module Detects ] → [ ESP32 Processes ] → [ Gate Closes ] → [ Alert Sent to App ]
+[ Train Approaching ] → [ GPS Module Detects ] → [ ESP32 Processes ] → [ Alert Sent to App ] → [ Gate Closes or Opens] 
 ```
 
 ## 📂 Code Implementation
@@ -235,11 +236,11 @@ export default App;
    git clone https://github.com/UdaraChamidu/Smart-Railway-Gate-Control-System.git
    ```
 2. **Upload the Code to ESP32**:
-   - Open `main.ino` in Arduino IDE.
+   - Open `main.ino` in ESP IDF.
    - Install required libraries (`WiFi.h`, `Servo.h`, etc.).
    - Compile and upload to ESP32.
 3. **Run the Mobile App**:
-   - Navigate to the `Mobile-App` folder.
+   - Navigate to the `SmartRail-main` folder.
    - Install dependencies using `npm install`.
    - Run the app with `npm start`.
 
