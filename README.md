@@ -176,8 +176,6 @@ void loop() {
 
 ```
 
-
-
 ### 📱 Mobile App Code (app.js)
 ```javascript
 import React, { useState, useEffect } from 'react';
