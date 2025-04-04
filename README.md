@@ -204,7 +204,7 @@ void loop() {
 ## 🚀 How to Use
 1. **Clone the Repository**:
    ```bash
-   git clone https://github.com/UdaraChamidu/Smart-Railway-Gate-Control-System.git
+   git clone https://github.com/UdaraChamidu/Smart-Railway-Gate-Control-System-with-GPS-Tracking.git
    ```
 2. **Upload the Code to ESP32**:
    - Open `main.ino` in ESP IDF.
