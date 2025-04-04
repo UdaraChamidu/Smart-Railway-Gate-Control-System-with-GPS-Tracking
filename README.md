@@ -177,34 +177,7 @@ void loop() {
 ```
 
 ### 📱 Mobile App Code (app.js)
-```javascript
-import React, { useState, useEffect } from 'react';
-import { View, Text, Button } from 'react-native';
-import mqtt from 'mqtt';
 
-const App = () => {
-    const [trainStatus, setTrainStatus] = useState('No Train Detected');
-    
-    useEffect(() => {
-        const client = mqtt.connect('mqtt://broker.hivemq.com');
-        client.on('connect', () => {
-            client.subscribe('train/alert');
-        });
-        client.on('message', (topic, message) => {
-            setTrainStatus(message.toString());
-        });
-        return () => client.end();
-    }, []);
-
-    return (
-        <View>
-            <Text>Train Status: {trainStatus}</Text>
-            <Button title="Override Gate" onPress={() => alert('Manual Override Activated!')} />
-        </View>
-    );
-};
-export default App;
-```
 
 ## 👨‍💻 Group Members
 | Name | Registration Number |
