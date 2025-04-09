@@ -39,10 +39,26 @@ The **GPS-Based Railway Gate Control System** is an embedded system project desi
 ### 🚦 ESP32 Code (main.ino)
 ```cpp
 
+````
+###  📱 Mobile App
 
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/4009b631-74f2-4b07-ab06-ad41bc95deaa" width="200" />
+  <img src="https://github.com/user-attachments/assets/389abb18-ecd8-462c-ad5a-d538e082ab3a" width="200" />
+  <img src="https://github.com/user-attachments/assets/0b6d6800-0d0b-4cae-98e4-29e78a267bcc" width="200" />
+</p>
 
 ```
 
+````
+###  💡 TinkerCad Design
+
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/9d5c4c34-8ea7-4c79-a931-f1b1efafdccf" width="300" />
+</p>
+
+````
+````
 
 
 ## 👨‍💻 Group Members
