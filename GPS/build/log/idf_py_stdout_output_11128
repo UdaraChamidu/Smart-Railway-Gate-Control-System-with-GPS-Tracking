@@ -1,0 +1,2607 @@
+ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7176
+load:0x40078000,len:15564
+ho 0 tail 12 room 4
+load:0x40080400,len:4
+load:0x40080404,len:3904
+entry 0x40080640
+[0;32mI (31) boot: ESP-IDF v5.3.1-dirty 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time Apr  7 2025 22:46:43[0m
+[0;32mI (31) boot: Multicore bootloader[0m
+[0;32mI (36) boot: chip revision: v3.1[0m
+[0;32mI (40) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (44) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (49) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (53) boot: Enabling RNG early entropy source...[0m
+[0;32mI (59) boot: Partition Table:[0m
+[0;32mI (62) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (70) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (77) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (85) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (92) boot: End of partition table[0m
+[0;32mI (96) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=26b4ch (158540) map[0m
+[0;32mI (159) esp_image: segment 1: paddr=00036b74 vaddr=3ffb0000 size=03f38h ( 16184) load[0m
+[0;32mI (165) esp_image: segment 2: paddr=0003aab4 vaddr=40080000 size=05564h ( 21860) load[0m
+[0;32mI (174) esp_image: segment 3: paddr=00040020 vaddr=400d0020 size=a4e40h (675392) map[0m
+[0;32mI (406) esp_image: segment 4: paddr=000e4e68 vaddr=40085564 size=12d20h ( 77088) load[0m
+[0;32mI (448) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (448) boot: Disabling RNG early entropy source...[0m
+[0;32mI (460) cpu_start: Multicore app[0m
+[0;32mI (469) cpu_start: Pro cpu start user code[0m
+[0;32mI (469) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (469) app_init: Application information:[0m
+[0;32mI (472) app_init: Project name:     i2c-simple[0m
+[0;32mI (477) app_init: App version:      1[0m
+[0;32mI (481) app_init: Compile time:     Apr  7 2025 22:45:41[0m
+[0;32mI (487) app_init: ELF file SHA256:  fadda2093...[0m
+[0;32mI (493) app_init: ESP-IDF:          v5.3.1-dirty[0m
+[0;32mI (498) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (503) efuse_init: Max chip rev:     v3.99 [0m
+[0;32mI (508) efuse_init: Chip rev:         v3.1[0m
+[0;32mI (513) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (520) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (526) heap_init: At 3FFB8B58 len 000274A8 (157 KiB): DRAM[0m
+[0;32mI (532) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (538) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (545) heap_init: At 40098284 len 00007D7C (31 KiB): IRAM[0m
+[0;32mI (553) spi_flash: detected chip: generic[0m
+[0;32mI (556) spi_flash: flash io: dio[0m
+[0;33mW (559) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (574) main_task: Started on CPU0[0m
+[0;32mI (584) main_task: Calling app_main()[0m
+[0;32mI (584) FIREBASE: Firebase initialization completed.[0m
+[0;32mI (584) GPS_MAIN: Starting Wi-Fi task...[0m
+[0;32mI (614) GPS_MAIN: Starting GPS + Firebase task...[0m
+[0;32mI (614) main_task: Returned from app_main()[0m
+[0;32mI (624) wifi:wifi driver task: 3ffc2b18, prio:23, stack:6656, core=0[0m
+[0;33mW (634) GPS_MAIN: Invalid GPS fix, waiting...[0m
+[0;32mI (634) wifi:wifi firmware version: ccaebfa[0m
+[0;32mI (634) wifi:wifi certification version: v7.0[0m
+[0;32mI (634) wifi:config NVS flash: enabled[0m
+[0;32mI (634) wifi:config nano formating: disabled[0m
+[0;32mI (644) wifi:Init data frame dynamic rx buffer num: 32[0m
+[0;32mI (644) wifi:Init static rx mgmt buffer num: 5[0m
+[0;32mI (654) wifi:Init management short buffer num: 32[0m
+[0;32mI (654) wifi:Init dynamic tx buffer num: 32[0m
+[0;32mI (654) wifi:Init static rx buffer size: 1600[0m
+[0;32mI (664) wifi:Init static rx buffer num: 10[0m
+[0;32mI (664) wifi:Init dynamic rx buffer num: 32[0m
+[0;32mI (674) wifi_init: rx ba win: 6[0m
+[0;32mI (674) wifi_init: accept mbox: 6[0m
+[0;32mI (674) wifi_init: tcpip mbox: 32[0m
+[0;32mI (684) wifi_init: udp mbox: 6[0m
+[0;32mI (684) wifi_init: tcp mbox: 6[0m
+[0;32mI (684) wifi_init: tcp tx win: 5760[0m
+[0;32mI (694) wifi_init: tcp rx win: 5760[0m
+[0;32mI (694) wifi_init: tcp mss: 1440[0m
+[0;32mI (704) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (704) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;33mW (714) wifi:Password length matches WPA2 standards, authmode threshold changes from OPEN to WPA2[0m
+[0;32mI (724) phy_init: phy_version 4830,54550f7,Jun 20 2024,14:22:08[0m
+[0;32mI (804) wifi:mode : sta (78:42:1c:6c:95:a0)[0m
+[0;32mI (804) wifi:enable tsf[0m
+[0;32mI (824) wifi:new:<1,0>, old:<1,0>, ap:<255,255>, sta:<1,0>, prof:1, snd_ch_cfg:0x0[0m
+[0;32mI (824) wifi:state: init -> auth (0xb0)[0m
+[0;32mI (824) wifi:state: auth -> assoc (0x0)[0m
+[0;32mI (834) wifi:state: assoc -> run (0x10)[0m
+[0;32mI (834) wifi:state: run -> init (0x2c0)[0m
+[0;32mI (854) wifi:new:<1,0>, old:<1,0>, ap:<255,255>, sta:<1,0>, prof:1, snd_ch_cfg:0x0[0m
+[0;33mW (854) GPS_MAIN: Disconnected from Wi-Fi. Reconnecting...[0m
+[0;33mW (3264) GPS_MAIN: Disconnected from Wi-Fi. Reconnecting...[0m
+[0;32mI (3274) wifi:new:<1,0>, old:<1,0>, ap:<255,255>, sta:<1,0>, prof:1, snd_ch_cfg:0x0[0m
+[0;32mI (3284) wifi:state: init -> auth (0xb0)[0m
+[0;32mI (3294) wifi:state: auth -> assoc (0x0)[0m
+[0;32mI (3304) wifi:state: assoc -> run (0x10)[0m
+[0;32mI (3324) wifi:connected with Galaxy A51 C187, aid = 1, channel 1, BW20, bssid = 42:05:fb:1b:45:2b[0m
+[0;32mI (3324) wifi:security: WPA2-PSK, phy: bgn, rssi: -46[0m
+[0;32mI (3324) wifi:pm start, type: 1[0m
+
+[0;32mI (3324) wifi:dp: 1, bi: 102400, li: 3, scale listen interval from 307200 us to 307200 us[0m
+[0;32mI (3334) wifi:<ba-add>idx:0 (ifx:0, 42:05:fb:1b:45:2b), tid:0, ssn:0, winSize:64[0m
+[0;32mI (3364) wifi:dp: 2, bi: 102400, li: 4, scale listen interval from 307200 us to 409600 us[0m
+[0;32mI (3364) wifi:AP's beacon interval = 102400 us, DTIM period = 2[0m
+[0;32mI (4344) esp_netif_handlers: sta ip: 192.168.99.119, mask: 255.255.255.0, gw: 192.168.99.13[0m
+[0;32mI (4344) GPS_MAIN: Wi-Fi connected, IP acquired[0m
+[0;32mI (10634) GPS: GPS Data: $GPRMC,174643.00,A,0919.95253,N,08024.84172,E,0.101,,070425,,,A*78[0m
+[0;32mI (10634) GPS: Invalid GPGLL format[0m
+[0;32mI (10634) GPS: GPS Data: $GPVTG,,T,,M,0.101,N,0.187,K,A*2D[0m
+[0;32mI (10634) GPS: Invalid GPGLL format[0m
+[0;32mI (10644) GPS: GPS Data: $GPGGA,174643.00,0919.95253,N,08024.84172,E,1,09,0.90,56.1,M,-95.1,M,,*42[0m
+[0;32mI (10654) GPS: Invalid GPGLL format[0m
+[0;32mI (10654) GPS: GPS Data: $GPGSA,A,3,32,23,10,28,27,02,25,31,26,,,,1.67,0.90,1.40*03[0m
+[0;32mI (10664) GPS: Invalid GPGLL format[0m
+[0;32mI (10674) GPS: GPS Data: $GPGSV,4,1,13,01,09,319,22,02,31,303,32,08,05,251,,10,50,065,30*73[0m
+[0;32mI (10674) GPS: Invalid GPGLL format[0m
+[0;32mI (10684) GPS: GPS Data: $GPGSV,4,2,13,16,12,192,12,18,04,152,22,23,23,111,29,25,16,067,22*70[0m
+[0;32mI (10694) GPS: Invalid GPGLL format[0m
+[0;32mI (10694) GPS: GPS Data: $GPGSV,4,3,13,26,32,174,29,27,15,218,22,28,69,005,29,31,74,248,23*7F[0m
+[0;32mI (10704) GPS: Invalid GPGLL format[0m
+[0;32mI (10714) GPS: GPS Data: $GPGSV,4,4,13,32,29,016,28*4C[0m
+[0;32mI (10714) GPS: Invalid GPGLL format[0m
+[0;32mI (10724) GPS: GPS Data: $GPGLL,0919.95253,N,08024.84172,E,174643.00,A,A*65[0m
+[0;32mI (10724) GPS: Latitude: 9.332542 N[0m
+[0;32mI (10734) GPS: Longitude: 80.414029 E[0m
+[0;32mI (10734) GPS: GPS Data: $GPRMC,174644.00,A,0919.95267,N,08024.84185,E,0.473,,070425,,,A*70[0m
+[0;32mI (10744) GPS: Invalid GPGLL format[0m
+[0;32mI (10744) GPS: GPS Data: $GPVTG,,T,,M,0.473,N,0.877,K,A*2B[0m
+[0;32mI (10754) GPS: Invalid GPGLL format[0m
+[0;32mI (10754) GPS: GPS Data: $GPGGA,174644.00,0919.95267,N,08024.84185,E,1,09,0.90,55.7,M,-95.1,M,,*4F[0m
+[0;32mI (10764) GPS: Invalid GPGLL format[0m
+[0;32mI (10774) GPS: GPS Data: $GPGSA,A,3,32,23,10,28,27,02,25,31,26,,,,1.67,0.90,1.40*03[0m
+[0;32mI (10784) GPS: Invalid GPGLL format[0m
+[0;32mI (10784) GPS: GPS Data: $GPGSV,4,1,13,01,09,319,21,02,31,303,31,08,05,251,,10,50,065,30*73[0m
+[0;32mI (10794) GPS: Invalid GPGLL format[0m
+[0;32mI (10794) GPS: GPS Data: $GPGSV,4,2,13,16,12,192,11,18,04,152,21,23,23,111,28,25,16,067,21*72[0m
+[0;32mI (10804) GPS: Invalid GPGLL format[0m
+[0;32mI (10814) GPS: GPS Data: $GPGSV,4,3,13,26,32,174,29,27,15,218,22,28,69,005,29,31,74,248,22*7E[0m
+[0;32mI (10824) GPS: Invalid GPGLL format[0m
+[0;32mI (10824) GPS: GPS Data: $GPGSV,4,4,13,32,29,016,28*4C[0m
+[0;32mI (10834) GPS: Invalid GPGLL format[0m
+[0;32mI (10834) GPS_MAIN: Latitude: 9.332542, Longitude: 80.414029[0m
+[0;32mI (12994) FIREBASE: ✅ Updated GPS data in existing 'gps' object.[0m
+[0;32mI (23004) GPS: GPS Data: $GPGLL,0919.95267,N,08024.84185,E,174644.00,A,A*6D[0m
+[0;32mI (23004) GPS: Latitude: 9.332545 N[0m
+[0;32mI (23004) GPS: Longitude: 80.414031 E[0m
+[0;32mI (23004) GPS: GPS Data: ,28,69,005,30,31,74,248,18*77[0m
+[0;32mI (23014) GPS: Invalid GPGLL format[0m
+[0;32mI (23014) GPS: GPS Data: $GPGSV,4,4,13,32,29,016,28*4C[0m
+[0;32mI (23024) GPS: Invalid GPGLL format[0m
+[0;32mI (23024) GPS: GPS Data: $GPGLL,0919.95267,N,08024.84219,E,174652.00,A,A*6C[0m
+[0;32mI (23034) GPS: Latitude: 9.332545 N[0m
+[0;32mI (23034) GPS: Longitude: 80.414037 E[0m
+[0;32mI (23044) GPS: GPS Data: $GPRMC,174653.00,A,0919.95264,N,08024.84226,E,0.227,,070425,,,A*78[0m
+[0;32mI (23054) GPS: Invalid GPGLL format[0m
+[0;32mI (23054) GPS: GPS Data: $GPVTG,,T,,M,0.227,N,0.420,K,A*22[0m
+[0;32mI (23064) GPS: Invalid GPGLL format[0m
+[0;32mI (23064) GPS: GPS Data: $GPGGA,174653.00,0919.95264,N,08024.84226,E,1,09,0.90,59.6,M,-95.1,M,,*4D[0m
+[0;32mI (23074) GPS: Invalid GPGLL format[0m
+[0;32mI (23074) GPS: GPS Data: $GPGSA,A,3,32,23,10,28,27,02,25,31,26,,,,1.67,0.90,1.40*03[0m
+[0;32mI (23084) GPS: Invalid GPGLL format[0m
+[0;32mI (23094) GPS: GPS Data: $GPGSV,4,1,13,01,09,319,20,02,32,303,33,08,05,251,09,10,50,065,33*79[0m
+[0;32mI (23104) GPS: Invalid GPGLL format[0m
+[0;32mI (23104) GPS: GPS Data: $GPGSV,4,2,13,16,12,192,10,18,04,152,25,23,23,111,30,25,16,067,21*7E[0m
+[0;32mI (23114) GPS: Invalid GPGLL format[0m
+[0;32mI (23114) GPS: GPS Data: $GPGSV,4,3,13,26,32,174,26,27,15,218,25,28,69,005,30,31,74,248,17*78[0m
+[0;32mI (23124) GPS: Invalid GPGLL format[0m
+[0;32mI (23134) GPS: GPS Data: $GPGSV,4,4,13,32,29,016,28*4C[0m
+[0;32mI (23134) GPS: Invalid GPGLL format[0m
+[0;32mI (23144) GPS: GPS Data: $GPGLL,0919.95264,N,08024.84226,E,174653.00,A,A*62[0m
+[0;32mI (23154) GPS: Latitude: 9.332544 N[0m
+[0;32mI (23154) GPS: Longitude: 80.414038 E[0m
+[0;32mI (23154) GPS: GPS Data: $GPRMC,174654.00,A,0919.95250,N,08024.84225,E,0.215,,070425,,,A*7A[0m
+[0;32mI (23164) GPS: Invalid GPGLL format[0m
+[0;32mI (23174) GPS: GPS Data: $GPVTG,,T,,M,0.215,N,0.398,K,A*27[0m
+[0;32mI (23174) GPS: Invalid GPGLL format[0m
+[0;32mI (23184) GPS: GPS Data: $GPGGA,174654.00,0919.95250,N,08024.84225,E,1,09,0.90,60.0,M,-95.1,M,,*42[0m
+[0;32mI (23194) GPS: Invalid GPGLL format[0m
+[0;32mI (23194) GPS: GPS Data: $GPGSA,A,3,32,23,10,28,27,02,25,31,26,,,,1.67,0.90,1.40*03[0m
+[0;32mI (23204) GPS: Invalid GPGLL format[0m
+[0;32mI (23204) GPS: GPS Data: $GPGSV,4,1,13,01,09,319,19,02,32,303,33,08,05,251,09,10,50,065,32*72[0m
+[0;32mI (23214) GPS: Invalid GPGLL format[0m
+[0;32mI (23224) GPS_MAIN: Latitude: 9.332544, Longitude: 80.414038[0m
+[0;32mI (25694) FIREBASE: ✅ Updated GPS data in existing 'gps' object.[0m
+[0;32mI (35694) GPS: GPS Data: $GPGSV,4,2,13,16,12,192,13,18,04,152,25,23,23,111,30[0m
+[0;32mI (35694) GPS: Invalid GPGLL format[0m
+[0;32mI (35694) GPS: GPS Data: $GPGGA,174705.00,0919.95257,N,08024.84248,E,1,09,0.90,59.0,M,-95.1,M,,*41[0m
+[0;32mI (35704) GPS: Invalid GPGLL format[0m
+[0;32mI (35704) GPS: GPS Data: $GPGSA,A,3,32,23,10,28,27,02,25,31,26,,,,1.67,0.90,1.40*03[0m
+[0;32mI (35714) GPS: Invalid GPGLL format[0m
+[0;32mI (35714) GPS: GPS Data: $GPGSV,4,1,13,01,09,319,20,02,32,303,33,08,05,251,,10,50,066,32*72[0m
+[0;32mI (35724) GPS: Invalid GPGLL format[0m
+[0;32mI (35734) GPS: GPS Data: $GPGSV,4,2,13,16,12,192,,18,04,152,23,23,23,111,28,25,16,067,19*7B[0m
+[0;32mI (35744) GPS: Invalid GPGLL format[0m
+[0;32mI (35744) GPS: GPS Data: $GPGSV,4,3,13,26,32,174,19,27,15,218,21,28,69,005,28,31,74,248,25*78[0m
+[0;32mI (35754) GPS: Invalid GPGLL format[0m
+[0;32mI (35754) GPS: GPS Data: $GPGSV,4,4,13,32,29,016,22*46[0m
+[0;32mI (35764) GPS: Invalid GPGLL format[0m
+[0;32mI (35764) GPS: GPS Data: $GPGLL,0919.95257,N,08024.84248,E,174705.00,A,A*68[0m
+[0;32mI (35774) GPS: Latitude: 9.332543 N[0m
+[0;32mI (35784) GPS: Longitude: 80.414041 E[0m
+[0;32mI (35784) GPS: GPS Data: $GPRMC,174706.00,A,0919.95288,N,08024.84258,E,0.980,,070425,,,A*74[0m
+[0;32mI (35794) GPS: Invalid GPGLL format[0m
+[0;32mI (35794) GPS: GPS Data: $GPVTG,,T,,M,0.980,N,1.814,K,A*2E[0m
+[0;32mI (35804) GPS: Invalid GPGLL format[0m
+[0;32mI (35804) GPS: GPS Data: $GPGGA,174706.00,0919.95288,N,08024.84258,E,1,09,0.90,58.6,M,-95.1,M,,*46[0m
+[0;32mI (35814) GPS: Invalid GPGLL format[0m
+[0;32mI (35824) GPS: GPS Data: $GPGSA,A,3,32,23,10,28,27,02,25,31,26,,,,1.67,0.90,1.40*03[0m
+[0;32mI (35834) GPS: Invalid GPGLL format[0m
+[0;32mI (35834) GPS: GPS Data: $GPGSV,4,1,13,01,09,319,21,02,32,303,34,08,05,251,,10,50,066,33*75[0m
+[0;32mI (35844) GPS: Invalid GPGLL format[0m
+[0;32mI (35844) GPS: GPS Data: $GPGSV,4,2,13,16,12,192,,18,04,152,23,23,23,111,29,25,16,067,19*7A[0m
+[0;32mI (35854) GPS: Invalid GPGLL format[0m
+[0;32mI (35864) GPS: GPS Data: $GPGSV,4,3,13,26,32,174,19,27,15,218,21,28,69,005,29,31,74,248,26*7A[0m
+[0;32mI (35864) GPS: Invalid GPGLL format[0m
+[0;32mI (35874) GPS: GPS Data: $GPGSV,4,4,13,32,29,016,21*45[0m
+[0;32mI (35874) GPS: Invalid GPGLL format[0m
+[0;32mI (35884) GPS: GPS Data: $GPGLL,0919.95288,N,08024.84258,E,174706.00,A,A*68[0m
+[0;32mI (35894) GPS: Latitude: 9.332548 N[0m
+[0;32mI (35894) GPS: Longitude: 80.414043 E[0m
+[0;32mI (35904) GPS_MAIN: Latitude: 9.332548, Longitude: 80.414043[0m
+[0;32mI (38194) FIREBASE: ✅ Updated GPS data in existing 'gps' object.[0m
+[0;32mI (48194) GPS: GPS Data: $GPRMC,174707.00,A,0919.95322,N,08024.84268,E,0.755,,070425,,,A*71[0m
+[0;32mI (48194) GPS: Invalid GPGLL format[0m
+[0;32mI (48194) GPS: GPS Data: $GPVTG,,T,,M,0.755,N,1.398,K,A*27[0m
+[0;32mI (48194) GPS: Invalid GPGLL format[0m
+[0;32mI (48204) GPS: GPS Data: $GPGGA,174707.00,5452,N,08024.84349,E,174717.00,A,A*68[0m
+[0;32mI (48214) GPS: Invalid GPGLL format[0m
+[0;32mI (48214) GPS: GPS Data: $GPRMC,174718.00,A,0919.95453,N,08024.84342,E,0.179,,070425,,,A*7F[0m
+[0;32mI (48224) GPS: Invalid GPGLL format[0m
+[0;32mI (48224) GPS: GPS Data: $GPVTG,,T,,M,0.179,N,0.331,K,A*2D[0m
+[0;32mI (48234) GPS: Invalid GPGLL format[0m
+[0;32mI (48234) GPS: GPS Data: $GPGGA,174718.00,0919.95453,N,08024.84342,E,1,10,0.90,48.6,M,-95.1,M,,*4A[0m
+[0;32mI (48244) GPS: Invalid GPGLL format[0m
+[0;32mI (48254) GPS: GPS Data: $GPGSA,A,3,32,23,10,28,27,02,25,31,26,08,,,1.67,0.90,1.40*0B[0m
+[0;32mI (48264) GPS: Invalid GPGLL format[0m
+[0;32mI (48264) GPS: GPS Data: $GPGSV,4,1,13,01,09,319,22,02,32,303,29,08,05,251,14,10,50,066,23*7E[0m
+[0;32mI (48274) GPS: Invalid GPGLL format[0m
+[0;32mI (48274) GPS: GPS Data: $GPGSV,4,2,13,16,12,192,15,18,03,152,20,23,22,112,25,25,16,066,20*7F[0m
+[0;32mI (48284) GPS: Invalid GPGLL format[0m
+[0;32mI (48294) GPS: GPS Data: $GPGSV,4,3,13,26,32,173,29,27,14,217,12,28,69,005,36,31,74,248,32*7B[0m
+[0;32mI (48304) GPS: Invalid GPGLL format[0m
+[0;32mI (48304) GPS: GPS Data: $GPGSV,4,4,13,32,29,016,33*46[0m
+[0;32mI (48314) GPS: Invalid GPGLL format[0m
+[0;32mI (48314) GPS: GPS Data: $GPGLL,0919.95453,N,08024.84342,E,174718.00,A,A*6D[0m
+[0;32mI (48324) GPS: Latitude: 9.332575 N[0m
+[0;32mI (48324) GPS: Longitude: 80.414057 E[0m
+[0;32mI (48334) GPS: GPS Data: $GPRMC,174719.00,A,0919.95435,N,08024.84328,E,0.320,,070425,,,A*7C[0m
+[0;32mI (48344) GPS: Invalid GPGLL format[0m
+[0;32mI (48344) GPS: GPS Data: $GPVTG,,T,,M,0.320,N,0.593,K,A*2D[0m
+[0;32mI (48354) GPS: Invalid GPGLL format[0m
+[0;32mI (48354) GPS: GPS Data: $GPGGA,174719.00,0919.95435,N,08024.84328,E,1,10,0.90,48.4,M,-95.1,M,,*45[0m
+[0;32mI (48364) GPS: Invalid GPGLL format[0m
+[0;32mI (48364) GPS: GPS Data: $GPGSA,A,3,32,23,10,28,27,02,25,31,26,08,,,1.67,0.90,1.40*0B[0m
+[0;32mI (48374) GPS: Invalid GPGLL format[0m
+[0;32mI (48384) GPS: GPS Data: $GPGSV,4,1,13,01,09,319,22,02,32,303,28,08,05,251,11,10,50,066,23*7A[0m
+[0;32mI (48394) GPS: Invalid GPGLL format[0m
+[0;32mI (48394) GPS: GPS Data: $GPGSV,4,2,13,16,12,192,13,18,03,152,20,23,22,112,25,25,16,066,21*78[0m
+[0;32mI (48404) GPS: Invalid GPGLL format[0m
+[0;32mI (48404) GPS_MAIN: Latitude: 9.332575, Longitude: 80.414057[0m
+[0;32mI (50684) FIREBASE: ✅ Updated GPS data in existing 'gps' object.[0m
+[0;32mI (60684) GPS: GPS Data: $GPGSV,4,3,13,26,32,173,29,27,14,217,11,28,69,005,35,31,74,248,32*7B[0m
+[0;32mI (60684) GPS: Invalid GPGLL format[0m
+[0;32mI (60684) GPS: GPS Data: $GPGSV,4,4,13,32,29,016,33*46,192,14,18,03,152,21,23,22,112,23,25,16,066,18*72[0m
+[0;32mI (60694) GPS: Invalid GPGLL format[0m
+[0;32mI (60694) GPS: GPS Data: $GPGSV,4,3,13,26,32,173,34,27,14,217,15,28,69,005,34,31,75,250,33*7B[0m
+[0;32mI (60704) GPS: Invalid GPGLL format[0m
+[0;32mI (60714) GPS: GPS Data: $GPGSV,4,4,13,32,29,017,34*40[0m
+[0;32mI (60714) GPS: Invalid GPGLL format[0m
+[0;32mI (60724) GPS: GPS Data: $GPGLL,0919.95371,N,08024.84265,E,174730.00,A,A*64[0m
+[0;32mI (60724) GPS: Latitude: 9.332562 N[0m
+[0;32mI (60734) GPS: Longitude: 80.414044 E[0m
+[0;32mI (60734) GPS: GPS Data: $GPRMC,174731.00,A,0919.95369,N,08024.84269,E,0.123,,070425,,,A*7D[0m
+[0;32mI (60744) GPS: Invalid GPGLL format[0m
+[0;32mI (60754) GPS: GPS Data: $GPVTG,,T,,M,0.123,N,0.228,K,A*2B[0m
+[0;32mI (60754) GPS: Invalid GPGLL format[0m
+[0;32mI (60764) GPS: GPS Data: $GPGGA,174731.00,0919.95369,N,08024.84269,E,1,09,1.06,52.4,M,-95.1,M,,*48[0m
+[0;32mI (60774) GPS: Invalid GPGLL format[0m
+[0;32mI (60774) GPS: GPS Data: $GPGSA,A,3,32,23,10,28,27,02,25,31,26,,,,2.00,1.06,1.70*0C[0m
+[0;32mI (60784) GPS: Invalid GPGLL format[0m
+[0;32mI (60784) GPS: GPS Data: $GPGSV,4,1,13,01,09,319,24,02,32,303,28,08,05,251,05,10,50,066,11*78[0m
+[0;32mI (60794) GPS: Invalid GPGLL format[0m
+[0;32mI (60804) GPS: GPS Data: $GPGSV,4,2,13,16,12,192,13,18,03,152,20,23,22,112,22,25,16,066,16*7B[0m
+[0;32mI (60804) GPS: Invalid GPGLL format[0m
+[0;32mI (60814) GPS: GPS Data: $GPGSV,4,3,13,26,32,173,33,27,14,217,10,28,69,005,33,31,75,250,32*7F[0m
+[0;32mI (60824) GPS: Invalid GPGLL format[0m
+[0;32mI (60824) GPS: GPS Data: $GPGSV,4,4,13,32,29,017,34*40[0m
+[0;32mI (60834) GPS: Invalid GPGLL format[0m
+[0;32mI (60834) GPS: GPS Data: $GPGLL,0919.95369,N,08024.84269,E,174731.00,A,A*60[0m
+[0;32mI (60844) GPS: Latitude: 9.332562 N[0m
+[0;32mI (60844) GPS: Longitude: 80.414045 E[0m
+[0;32mI (60854) GPS: GPS Data: $GPRMC,174732.00,A,0919.95367,N,08024.84278,E,0.168,,070425,,,A*7F[0m
+[0;32mI (60864) GPS: Invalid GPGLL format[0m
+[0;32mI (60864) GPS: GPS Data: $GPVTG,,T,,M,0.168,N,0.310,K,A*2E[0m
+[0;32mI (60874) GPS: Invalid GPGLL format[0m
+[0;32mI (60874) GPS: GPS Data: $GPGGA,174732.00,0919.95367,N,08024.84278,E,1,08,1.15,52.7,M,-95.1,M,,*45[0m
+[0;32mI (60884) GPS: Invalid GPGLL format[0m
+[0;32mI (60894) GPS_MAIN: Latitude: 9.332562, Longitude: 80.414045[0m
+[0;32mI (63174) FIREBASE: ✅ Updated GPS data in existing 'gps' object.[0m
+[0;32mI (73174) GPS: GPS Data: $GPGSA,A,3,32,23,28,02,25,31,26,08,,,,,2.23,1.15,1.91*0C[0m
+[0;32mI (73174) GPS: Invalid GPGLL format[0m
+[0;32mI (73174) GPS: GPS Data: $GPG9,005,33,31,75,250,31*7C[0m
+[0;32mI (73174) GPS: Invalid GPGLL format[0m
+[0;32mI (73184) GPS: GPS Data: $GPGSV,4,4,13,32,29,017,33*47[0m
+[0;32mI (73184) GPS: Invalid GPGLL format[0m
+[0;32mI (73194) GPS: GPS Data: $GPGLL,0919.95353,N,08024.84292,E,174742.00,A,A*69[0m
+[0;32mI (73204) GPS: Latitude: 9.332559 N[0m
+[0;32mI (73204) GPS: Longitude: 80.414049 E[0m
+[0;32mI (73204) GPS: GPS Data: $GPRMC,174743.00,A,0919.95350,N,08024.84304,E,0.122,,070425,,,A*79[0m
+[0;32mI (73214) GPS: Invalid GPGLL format[0m
+[0;32mI (73224) GPS: GPS Data: $GPVTG,,T,,M,0.122,N,0.226,K,A*24[0m
+[0;32mI (73224) GPS: Invalid GPGLL format[0m
+[0;32mI (73234) GPS: GPS Data: $GPGGA,174743.00,0919.95350,N,08024.84304,E,1,08,1.15,54.3,M,-95.1,M,,*4F[0m
+[0;32mI (73244) GPS: Invalid GPGLL format[0m
+[0;32mI (73244) GPS: GPS Data: $GPGSA,A,3,32,23,10,28,02,25,31,26,,,,,2.23,1.15,1.91*05[0m
+[0;32mI (73254) GPS: Invalid GPGLL format[0m
+[0;32mI (73254) GPS: GPS Data: $GPGSV,4,1,13,01,09,319,24,02,32,303,20,08,05,251,,10,50,066,22*75[0m
+[0;32mI (73264) GPS: Invalid GPGLL format[0m
+[0;32mI (73274) GPS: GPS Data: $GPGSV,4,2,13,16,12,192,12,18,03,152,19,23,22,112,19,25,16,066,17*79[0m
+[0;32mI (73284) GPS: Invalid GPGLL format[0m
+[0;32mI (73284) GPS: GPS Data: $GPGSV,4,3,13,26,32,173,32,27,14,217,,28,69,005,33,31,75,250,31*7C[0m
+[0;32mI (73294) GPS: Invalid GPGLL format[0m
+[0;32mI (73294) GPS: GPS Data: $GPGSV,4,4,13,32,29,017,33*47[0m
+[0;32mI (73304) GPS: Invalid GPGLL format[0m
+[0;32mI (73304) GPS: GPS Data: $GPGLL,0919.95350,N,08024.84304,E,174743.00,A,A*65[0m
+[0;32mI (73314) GPS: Latitude: 9.332558 N[0m
+[0;32mI (73314) GPS: Longitude: 80.414051 E[0m
+[0;32mI (73324) GPS: GPS Data: $GPRMC,174744.00,A,0919.95347,N,08024.84300,E,0.343,,070425,,,A*79[0m
+[0;32mI (73334) GPS: Invalid GPGLL format[0m
+[0;32mI (73334) GPS: GPS Data: $GPVTG,,T,,M,0.343,N,0.635,K,A*27[0m
+[0;32mI (73344) GPS: Invalid GPGLL format[0m
+[0;32mI (73344) GPS: GPS Data: $GPGGA,174744.00,0919.95347,N,08024.84300,E,1,09,1.15,54.3,M,-95.1,M,,*4B[0m
+[0;32mI (73354) GPS: Invalid GPGLL format[0m
+[0;32mI (73364) GPS: GPS Data: $GPGSA,A,3,32,23,10,28,02,25,31,26,08,,,,2.23,1.15,1.91*0D[0m
+[0;32mI (73364) GPS: Invalid GPGLL format[0m
+[0;32mI (73374) GPS: GPS Data: $GPGSV,4,1,13,01,09,319,24,02,32,303,19,08,05,251,15,10,50,066,20*79[0m
+[0;32mI (73384) GPS: Invalid GPGLL format[0m
+[0;32mI (73384) GPS_MAIN: Latitude: 9.332558, Longitude: 80.414051[0m
+[0;32mI (75664) FIREBASE: ✅ Updated GPS data in existing 'gps' object.[0m
+[0;32mI (85674) GPS: GPS Data: $GPGSV,4,2,13,16,12,192,14,18,03,152,19,23,22,112,20SV,4,2,13,16,12,192,20,18,03,152,20,23,22,112,23,25,16,066,17*7B[0m
+[0;32mI (85674) GPS: Invalid GPGLL format[0m
+[0;32mI (85674) GPS: GPS Data: $GPGSV,4,3,13,26,32,173,31,27,14,217,15,28,69,005,28,31,75,250,33*73[0m
+[0;32mI (85684) GPS: Invalid GPGLL format[0m
+[0;32mI (85694) GPS: GPS Data: $GPGSV,4,4,13,32,29,017,33*47[0m
+[0;32mI (85694) GPS: Invalid GPGLL format[0m
+[0;32mI (85704) GPS: GPS Data: $GPGLL,0919.95295,N,08024.84305,E,174755.00,A,A*6B[0m
+[0;32mI (85704) GPS: Latitude: 9.332549 N[0m
+[0;32mI (85714) GPS: Longitude: 80.414051 E[0m
+[0;32mI (85714) GPS: GPS Data: $GPRMC,174756.00,A,0919.95290,N,08024.84307,E,0.165,,070425,,,A*70[0m
+[0;32mI (85724) GPS: Invalid GPGLL format[0m
+[0;32mI (85734) GPS: GPS Data: $GPVTG,,T,,M,0.165,N,0.306,K,A*24[0m
+[0;32mI (85734) GPS: Invalid GPGLL format[0m
+[0;32mI (85744) GPS: GPS Data: $GPGGA,174756.00,0919.95290,N,08024.84307,E,1,10,0.84,54.8,M,-95.1,M,,*4E[0m
+[0;32mI (85754) GPS: Invalid GPGLL format[0m
+[0;32mI (85754) GPS: GPS Data: $GPGSA,A,3,32,23,10,28,27,02,25,31,26,08,,,1.46,0.84,1.20*0B[0m
+[0;32mI (85764) GPS: Invalid GPGLL format[0m
+[0;32mI (85764) GPS: GPS Data: $GPGSV,4,1,13,01,09,319,22,02,32,303,26,08,05,251,16,10,50,066,25*75[0m
+[0;32mI (85774) GPS: Invalid GPGLL format[0m
+[0;32mI (85784) GPS: GPS Data: $GPGSV,4,2,13,16,12,192,20,18,03,152,20,23,22,112,24,25,16,066,17*7C[0m
+[0;32mI (85794) GPS: Invalid GPGLL format[0m
+[0;32mI (85794) GPS: GPS Data: $GPGSV,4,3,13,26,32,173,31,27,14,217,17,28,69,005,28,31,75,250,34*76[0m
+[0;32mI (85804) GPS: Invalid GPGLL format[0m
+[0;32mI (85804) GPS: GPS Data: $GPGSV,4,4,13,32,29,017,33*47[0m
+[0;32mI (85814) GPS: Invalid GPGLL format[0m
+[0;32mI (85814) GPS: GPS Data: $GPGLL,0919.95290,N,08024.84307,E,174756.00,A,A*6F[0m
+[0;32mI (85824) GPS: Latitude: 9.332548 N[0m
+[0;32mI (85824) GPS: Longitude: 80.414051 E[0m
+[0;32mI (85834) GPS: GPS Data: $GPRMC,174757.00,A,0919.95284,N,08024.84297,E,0.278,,070425,,,A*73[0m
+[0;32mI (85844) GPS: Invalid GPGLL format[0m
+[0;32mI (85844) GPS: GPS Data: $GPVTG,,T,,M,0.278,N,0.515,K,A*2F[0m
+[0;32mI (85854) GPS: Invalid GPGLL format[0m
+[0;32mI (85854) GPS: GPS Data: $GPGGA,174757.00,0919.95284,N,08024.84297,E,1,10,0.84,54.4,M,-95.1,M,,*4E[0m
+[0;32mI (85864) GPS: Invalid GPGLL format[0m
+[0;32mI (85874) GPS: GPS Data: $GPGSA,A,3,32,23,10,28,27,02,25,31,26,08,,,1.46,0.84,1.20*0B[0m
+[0;32mI (85874) GPS: Invalid GPGLL format[0m
+[0;32mI (85884) GPS_MAIN: Latitude: 9.332548, Longitude: 80.414051[0m
+[0;32mI (88154) FIREBASE: ✅ Updated GPS data in existing 'gps' object.[0m
+[0;32mI (98164) GPS: GPS Data: $GPGSV,4,1,13,01,09,319,22,02,32,303,27,08,05,251,16,10,50,066,26*77[0m
+[0;32mI (98164) GPS: Invalid GPGLL format[0m
+[0;32mI (98164) GPS: GPS Data: $GPGSV,4,2,13,16,12,192,20,18,03,152,19,23,22,112,[0m
+[0;32mI (98174) GPS: Invalid GPGLL format[0m
+[0;32mI (98174) GPS: GPS Data: $GPGSV,4,4,13,32,29,017,30*44[0m
+[0;32mI (98184) GPS: Invalid GPGLL format[0m
+[0;32mI (98184) GPS: GPS Data: $GPGLL,0919.95250,N,08024.84399,E,174807.00,A,A*6F[0m
+[0;32mI (98194) GPS: Latitude: 9.332542 N[0m
+[0;32mI (98194) GPS: Longitude: 80.414067 E[0m
+[0;32mI (98204) GPS: GPS Data: $GPRMC,174808.00,A,0919.95250,N,08024.84406,E,0.088,,070425,,,A*7C[0m
+[0;32mI (98214) GPS: Invalid GPGLL format[0m
+[0;32mI (98214) GPS: GPS Data: $GPVTG,,T,,M,0.088,N,0.164,K,A*20[0m
+[0;32mI (98224) GPS: Invalid GPGLL format[0m
+[0;32mI (98224) GPS: GPS Data: $GPGGA,174808.00,0919.95250,N,08024.84406,E,1,10,0.84,52.6,M,-95.1,M,,*48[0m
+[0;32mI (98234) GPS: Invalid GPGLL format[0m
+[0;32mI (98234) GPS: GPS Data: $GPGSA,A,3,32,23,10,28,27,02,25,31,26,08,,,1.46,0.84,1.20*0B[0m
+[0;32mI (98244) GPS: Invalid GPGLL format[0m
+[0;32mI (98254) GPS: GPS Data: $GPGSV,4,1,13,01,10,319,19,02,32,302,33,08,05,251,18,10,50,066,29*72[0m
+[0;32mI (98264) GPS: Invalid GPGLL format[0m
+[0;32mI (98264) GPS: GPS Data: $GPGSV,4,2,13,16,12,192,15,18,03,152,20,23,22,112,25,25,16,066,22*7D[0m
+[0;32mI (98274) GPS: Invalid GPGLL format[0m
+[0;32mI (98274) GPS: GPS Data: $GPGSV,4,3,13,26,32,173,31,27,14,217,22,28,69,005,27,31,75,250,35*7E[0m
+[0;32mI (98284) GPS: Invalid GPGLL format[0m
+[0;32mI (98294) GPS: GPS Data: $GPGSV,4,4,13,32,29,017,30*44[0m
+[0;32mI (98294) GPS: Invalid GPGLL format[0m
+[0;32mI (98304) GPS: GPS Data: $GPGLL,0919.95250,N,08024.84406,E,174808.00,A,A*61[0m
+[0;32mI (98304) GPS: Latitude: 9.332542 N[0m
+[0;32mI (98314) GPS: Longitude: 80.414068 E[0m
+[0;32mI (98314) GPS: GPS Data: $GPRMC,174809.00,A,0919.95252,N,08024.84411,E,0.069,,070425,,,A*76[0m
+[0;32mI (98324) GPS: Invalid GPGLL format[0m
+[0;32mI (98334) GPS: GPS Data: $GPVTG,,T,,M,0.069,N,0.129,K,A*26[0m
+[0;32mI (98334) GPS: Invalid GPGLL format[0m
+[0;32mI (98344) GPS: GPS Data: $GPGGA,174809.00,0919.95252,N,08024.84411,E,1,10,0.84,52.5,M,-95.1,M,,*4E[0m
+[0;32mI (98354) GPS: Invalid GPGLL format[0m
+[0;32mI (98354) GPS: GPS Data: $GPGSA,A,3,32,23,10,28,27,02,25,31,26,08,,,1.46,0.84,1.20*0B[0m
+[0;32mI (98364) GPS: Invalid GPGLL format[0m
+[0;32mI (98364) GPS_MAIN: Latitude: 9.332542, Longitude: 80.414068[0m
+[0;32mI (100854) FIREBASE: ✅ Updated GPS data in existing 'gps' object.[0m
+[0;32mI (110864) GPS: GPS Data: $GPGSV,4,1,13,01,10,319,18,02,32,302,32,08,05,251,18,10,50,066,29*72[0m
+[0;32mI (110864) GPS: Invalid GPGLL format[0m
+[0;32mI (110864) GPS: GPS Data: $GPGSV,4,2,13,16,12,192,15,18,03,152,19,23,22,112,,30*74[0m
+[0;32mI (110874) GPS: Invalid GPGLL format[0m
+[0;32mI (110874) GPS: GPS Data: $GPGSV,4,2,13,16,13,191,16,18,03,152,19,23,22,112,27,25,16,066,19*7C[0m
+[0;32mI (110884) GPS: Invalid GPGLL format[0m
+[0;32mI (110884) GPS: GPS Data: $GPGSV,4,3,13,26,32,173,31,27,14,217,25,28,69,005,26,31,75,250,32*7F[0m
+[0;32mI (110894) GPS: Invalid GPGLL format[0m
+[0;32mI (110904) GPS: GPS Data: $GPGSV,4,4,13,32,29,017,29*4C[0m
+[0;32mI (110904) GPS: Invalid GPGLL format[0m
+[0;32mI (110914) GPS: GPS Data: $GPGLL,0919.95239,N,08024.84340,E,174820.00,A,A*61[0m
+[0;32mI (110924) GPS: Latitude: 9.332540 N[0m
+[0;32mI (110924) GPS: Longitude: 80.414057 E[0m
+[0;32mI (110924) GPS: GPS Data: $GPRMC,174821.00,A,0919.95235,N,08024.84333,E,0.096,,070425,,,A*7A[0m
+[0;32mI (110934) GPS: Invalid GPGLL format[0m
+[0;32mI (110944) GPS: GPS Data: $GPVTG,,T,,M,0.096,N,0.179,K,A*23[0m
+[0;32mI (110944) GPS: Invalid GPGLL format[0m
+[0;32mI (110954) GPS: GPS Data: $GPGGA,174821.00,0919.95235,N,08024.84333,E,1,10,0.90,52.8,M,-95.1,M,,*4A[0m
+[0;32mI (110964) GPS: Invalid GPGLL format[0m
+[0;32mI (110964) GPS: GPS Data: $GPGSA,A,3,32,23,10,28,27,02,25,31,26,08,,,1.67,0.90,1.40*0B[0m
+[0;32mI (110974) GPS: Invalid GPGLL format[0m
+[0;32mI (110984) GPS: GPS Data: $GPGSV,4,1,13,01,10,319,19,02,32,302,35,08,05,250,21,10,50,067,30*76[0m
+[0;32mI (110984) GPS: Invalid GPGLL format[0m
+[0;32mI (110994) GPS: GPS Data: $GPGSV,4,2,13,16,13,191,15,18,03,152,19,23,22,112,27,25,16,066,19*7F[0m
+[0;32mI (111004) GPS: Invalid GPGLL format[0m
+[0;32mI (111004) GPS: GPS Data: $GPGSV,4,3,13,26,32,173,31,27,14,217,25,28,69,005,26,31,75,250,32*7F[0m
+[0;32mI (111014) GPS: Invalid GPGLL format[0m
+[0;32mI (111024) GPS: GPS Data: $GPGSV,4,4,13,32,29,017,29*4C[0m
+[0;32mI (111024) GPS: Invalid GPGLL format[0m
+[0;32mI (111034) GPS: GPS Data: $GPGLL,0919.95235,N,08024.84333,E,174821.00,A,A*68[0m
+[0;32mI (111034) GPS: Latitude: 9.332539 N[0m
+[0;32mI (111044) GPS: Longitude: 80.414055 E[0m
+[0;32mI (111044) GPS: GPS Data: $GPRMC,174822.00,A,0919.95231,N,08024.84329,E,0.173,,070425,,,A*7C[0m
+[0;32mI (111054) GPS: Invalid GPGLL format[0m
+[0;32mI (111064) GPS: GPS Data: $GPVTG,,T,,M,0.173,N,0.320,K,A*27[0m
+[0;32mI (111064) GPS: Invalid GPGLL format[0m
+[0;32mI (111074) GPS: GPS Data: $GPGGA,174822.00,0919.95231,N,08024.84329,E,1,10,0.90,52.9,M,-95.1,M,,*47[0m
+[0;32mI (111084) GPS: Invalid GPGLL format[0m
+[0;32mI (111084) GPS_MAIN: Latitude: 9.332539, Longitude: 80.414055[0m
+[0;32mI (113344) FIREBASE: ✅ Updated GPS data in existing 'gps' object.[0m
+[0;32mI (123354) GPS: GPS Data: $GPGSA,A,3,32,23,10,28,27,02,25,31,26,08,,,1.67,0.90,1.40*0B[0m
+[0;32mI (123354) GPS: Invalid GPGLL format[0m
+[0;32mI (123354) GPS: GPS Data: 4,4,13,32,29,017,30*44[0m
+[0;32mI (123354) GPS: Invalid GPGLL format[0m
+[0;32mI (123364) GPS: GPS Data: $GPGLL,0919.95219,N,08024.84258,E,174832.00,A,A*68[0m
+[0;32mI (123374) GPS: Latitude: 9.332536 N[0m
+[0;32mI (123374) GPS: Longitude: 80.414043 E[0m
+[0;32mI (123374) GPS: GPS Data: $GPRMC,174833.00,A,0919.95217,N,08024.84252,E,0.098,,070425,,,A*71[0m
+[0;32mI (123384) GPS: Invalid GPGLL format[0m
+[0;32mI (123394) GPS: GPS Data: $GPVTG,,T,,M,0.098,N,0.182,K,A*29[0m
+[0;32mI (123394) GPS: Invalid GPGLL format[0m
+[0;32mI (123404) GPS: GPS Data: $GPGGA,174833.00,0919.95217,N,08024.84252,E,1,10,0.97,53.7,M,-95.1,M,,*46[0m
+[0;32mI (123414) GPS: Invalid GPGLL format[0m
+[0;32mI (123414) GPS: GPS Data: $GPGSA,A,3,32,23,10,28,27,02,25,31,26,08,,,1.86,0.97,1.58*0A[0m
+[0;32mI (123424) GPS: Invalid GPGLL format[0m
+[0;32mI (123424) GPS: GPS Data: $GPGSV,4,1,13,01,10,319,22,02,32,302,31,08,05,250,21,10,50,067,30*7A[0m
+[0;32mI (123434) GPS: Invalid GPGLL format[0m
+[0;32mI (123444) GPS: GPS Data: $GPGSV,4,2,13,16,13,191,17,18,03,152,15,23,22,112,23,25,16,066,15*79[0m
+[0;32mI (123454) GPS: Invalid GPGLL format[0m
+[0;32mI (123454) GPS: GPS Data: $GPGSV,4,3,13,26,33,173,30,27,14,217,27,28,68,005,25,31,75,253,32*7C[0m
+[0;32mI (123464) GPS: Invalid GPGLL format[0m
+[0;32mI (123474) GPS: GPS Data: $GPGSV,4,4,13,32,29,017,30*44[0m
+[0;32mI (123474) GPS: Invalid GPGLL format[0m
+[0;32mI (123484) GPS: GPS Data: $GPGLL,0919.95217,N,08024.84252,E,174833.00,A,A*6D[0m
+[0;32mI (123484) GPS: Latitude: 9.332536 N[0m
+[0;32mI (123494) GPS: Longitude: 80.414042 E[0m
+[0;32mI (123494) GPS: GPS Data: $GPRMC,174834.00,A,0919.95219,N,08024.84251,E,0.104,,070425,,,A*7F[0m
+[0;32mI (123504) GPS: Invalid GPGLL format[0m
+[0;32mI (123514) GPS: GPS Data: $GPVTG,,T,,M,0.104,N,0.193,K,A*2D[0m
+[0;32mI (123514) GPS: Invalid GPGLL format[0m
+[0;32mI (123524) GPS: GPS Data: $GPGGA,174834.00,0919.95219,N,08024.84251,E,1,10,0.90,53.7,M,-95.1,M,,*4B[0m
+[0;32mI (123534) GPS: Invalid GPGLL format[0m
+[0;32mI (123534) GPS: GPS Data: $GPGSA,A,3,32,23,10,28,27,02,25,31,26,08,,,1.67,0.90,1.40*0B[0m
+[0;32mI (123544) GPS: Invalid GPGLL format[0m
+[0;32mI (123544) GPS: GPS Data: $GPGSV,4,1,13,01,10,319,22,02,32,302,30,08,05,250,21,10,50,067,30*7B[0m
+[0;32mI (123554) GPS: Invalid GPGLL format[0m
+[0;32mI (123564) GPS: GPS Data: $GPGSV,4,2,13,16,13,191,17,18,03,152,13,23,22,112,24,25,16,066,17*7A[0m
+[0;32mI (123574) GPS: Invalid GPGLL format[0m
+[0;32mI (123574) GPS_MAIN: Latitude: 9.332536, Longitude: 80.414042[0m
+[0;32mI (125844) FIREBASE: ✅ Updated GPS data in existing 'gps' object.[0m
+[0;32mI (135844) GPS: GPS Data: $GPGSV,4,3,13,26,33,173,30,27,14,217,27,28,68,005,25,31,75,253,31*7F[0m
+[0;32mI (135844) GPS: Invalid GPGLL format[0m
+[0;32mI (135844) GPS: GPS Data: $GPGSV,4,4,13,32,29,017,30*44,68,005,29,31,75,253,32*7F[0m
+[0;32mI (135854) GPS: Invalid GPGLL format[0m
+[0;32mI (135854) GPS: GPS Data: $GPGSV,4,4,13,32,29,017,30*44[0m
+[0;32mI (135864) GPS: Invalid GPGLL format[0m
+[0;32mI (135864) GPS: GPS Data: $GPGLL,0919.95222,N,08024.84235,E,174845.00,A,A*6B[0m
+[0;32mI (135874) GPS: Latitude: 9.332537 N[0m
+[0;32mI (135874) GPS: Longitude: 80.414039 E[0m
+[0;32mI (135884) GPS: GPS Data: $GPRMC,174846.00,A,0919.95225,N,08024.84238,E,0.245,,070425,,,A*7C[0m
+[0;32mI (135894) GPS: Invalid GPGLL format[0m
+[0;32mI (135894) GPS: GPS Data: $GPVTG,,T,,M,0.245,N,0.454,K,A*25[0m
+[0;32mI (135904) GPS: Invalid GPGLL format[0m
+[0;32mI (135904) GPS: GPS Data: $GPGGA,174846.00,0919.95225,N,08024.84238,E,1,10,0.90,53.2,M,-95.1,M,,*4B[0m
+[0;32mI (135914) GPS: Invalid GPGLL format[0m
+[0;32mI (135924) GPS: GPS Data: $GPGSA,A,3,32,23,10,28,27,02,25,31,26,08,,,1.67,0.90,1.40*0B[0m
+[0;32mI (135924) GPS: Invalid GPGLL format[0m
+[0;32mI (135934) GPS: GPS Data: $GPGSV,4,1,13,01,10,319,20,02,32,302,33,08,05,250,19,10,50,067,20*70[0m
+[0;32mI (135944) GPS: Invalid GPGLL format[0m
+[0;32mI (135944) GPS: GPS Data: $GPGSV,4,2,13,16,13,191,13,18,03,152,12,23,22,112,23,25,16,066,25*79[0m
+[0;32mI (135954) GPS: Invalid GPGLL format[0m
+[0;32mI (135964) GPS: GPS Data: $GPGSV,4,3,13,26,33,173,29,27,14,217,19,28,68,005,29,31,75,253,32*75[0m
+[0;32mI (135964) GPS: Invalid GPGLL format[0m
+[0;32mI (135974) GPS: GPS Data: $GPGSV,4,4,13,32,29,017,29*4C[0m
+[0;32mI (135984) GPS: Invalid GPGLL format[0m
+[0;32mI (135984) GPS: GPS Data: $GPGLL,0919.95225,N,08024.84238,E,174846.00,A,A*62[0m
+[0;32mI (135994) GPS: Latitude: 9.332538 N[0m
+[0;32mI (135994) GPS: Longitude: 80.414040 E[0m
+[0;32mI (136004) GPS: GPS Data: $GPRMC,174847.00,A,0919.95222,N,08024.84236,E,0.255,,070425,,,A*75[0m
+[0;32mI (136004) GPS: Invalid GPGLL format[0m
+[0;32mI (136014) GPS: GPS Data: $GPVTG,,T,,M,0.255,N,0.473,K,A*21[0m
+[0;32mI (136024) GPS: Invalid GPGLL format[0m
+[0;32mI (136024) GPS: GPS Data: $GPGGA,174847.00,0919.95222,N,08024.84236,E,1,10,0.90,53.0,M,-95.1,M,,*41[0m
+[0;32mI (136034) GPS: Invalid GPGLL format[0m
+[0;32mI (136034) GPS: GPS Data: $GPGSA,A,3,32,23,10,28,27,02,25,31,26,08,,,1.67,0.90,1.40*0B[0m
+[0;32mI (136044) GPS: Invalid GPGLL format[0m
+[0;32mI (136054) GPS_MAIN: Latitude: 9.332538, Longitude: 80.414040[0m
+[0;32mI (138544) FIREBASE: ✅ Updated GPS data in existing 'gps' object.[0m
+[0;32mI (148544) GPS: GPS Data: $GPGSV,4,1,13,01,10,319,20,02,32,302,32,08,05,250,19,10,50,067,19*7B[0m
+[0;32mI (148544) GPS: Invalid GPGLL format[0m
+[0;32mI (148544) GPS: GPS Data: $GPGSV,4,2,13,16,13,191,12,18,03,152,09,23,22,112,,08024.84270,E,0.282,,070425,,,A*73[0m
+[0;32mI (148554) GPS: Invalid GPGLL format[0m
+[0;32mI (148554) GPS: GPS Data: $GPVTG,,T,,M,0.282,N,0.523,K,A*2F[0m
+[0;32mI (148564) GPS: Invalid GPGLL format[0m
+[0;32mI (148564) GPS: GPS Data: $GPGGA,174858.00,0919.95233,N,08024.84270,E,1,10,0.90,53.1,M,-95.1,M,,*4C[0m
+[0;32mI (148574) GPS: Invalid GPGLL format[0m
+[0;32mI (148584) GPS: GPS Data: $GPGSA,A,3,32,23,10,28,27,02,25,31,26,08,,,1.67,0.90,1.40*0B[0m
+[0;32mI (148594) GPS: Invalid GPGLL format[0m
+[0;32mI (148594) GPS: GPS Data: $GPGSV,4,1,14,01,10,319,25,02,32,302,31,08,05,250,19,10,50,067,24*74[0m
+[0;32mI (148604) GPS: Invalid GPGLL format[0m
+[0;32mI (148604) GPS: GPS Data: $GPGSV,4,2,14,16,13,191,12,18,03,152,12,23,22,112,18,25,16,066,28*7A[0m
+[0;32mI (148614) GPS: Invalid GPGLL format[0m
+[0;32mI (148624) GPS: GPS Data: $GPGSV,4,3,14,26,33,173,27,27,14,217,22,28,68,005,31,31,75,253,29*77[0m
+[0;32mI (148634) GPS: Invalid GPGLL format[0m
+[0;32mI (148634) GPS: GPS Data: $GPGSV,4,4,14,32,29,017,25,42,22,095,32*7C[0m
+[0;32mI (148644) GPS: Invalid GPGLL format[0m
+[0;32mI (148644) GPS: GPS Data: $GPGLL,0919.95233,N,08024.84270,E,174858.00,A,A*66[0m
+[0;32mI (148654) GPS: Latitude: 9.332539 N[0m
+[0;32mI (148654) GPS: Longitude: 80.414045 E[0m
+[0;32mI (148664) GPS: GPS Data: $GPRMC,174859.00,A,0919.95231,N,08024.84271,E,0.255,,070425,,,A*7B[0m
+[0;32mI (148674) GPS: Invalid GPGLL format[0m
+[0;32mI (148674) GPS: GPS Data: $GPVTG,,T,,M,0.255,N,0.473,K,A*21[0m
+[0;32mI (148684) GPS: Invalid GPGLL format[0m
+[0;32mI (148684) GPS: GPS Data: $GPGGA,174859.00,0919.95231,N,08024.84271,E,1,10,0.90,53.2,M,-95.1,M,,*4D[0m
+[0;32mI (148694) GPS: Invalid GPGLL format[0m
+[0;32mI (148704) GPS: GPS Data: $GPGSA,A,3,32,23,10,28,27,02,25,31,26,08,,,1.67,0.90,1.40*0B[0m
+[0;32mI (148714) GPS: Invalid GPGLL format[0m
+[0;32mI (148714) GPS: GPS Data: $GPGSV,4,1,14,01,10,319,25,02,32,302,30,08,05,250,19,10,50,067,25*74[0m
+[0;32mI (148724) GPS: Invalid GPGLL format[0m
+[0;32mI (148724) GPS: GPS Data: $GPGSV,4,2,14,16,13,191,12,18,03,152,13,23,22,112,17,25,16,066,27*7B[0m
+[0;32mI (148734) GPS: Invalid GPGLL format[0m
+[0;32mI (148744) GPS_MAIN: Latitude: 9.332539, Longitude: 80.414045[0m
+[0;32mI (151444) FIREBASE: ✅ Updated GPS data in existing 'gps' object.[0m
+[0;32mI (161444) GPS: GPS Data: $GPGSV,4,3,14,26,33,173,27,27,14,217,23,28,68,005,31,31,75,253,29*76[0m
+[0;32mI (161444) GPS: Invalid GPGLL format[0m
+[0;32mI (161444) GPS: GPS Data: $GPGSV,4,4,14,32,29,017,25,42,,A*62[0m
+[0;32mI (161454) GPS: Invalid GPGLL format[0m
+[0;32mI (161454) GPS: GPS Data: $GPRMC,174911.00,A,0919.95324,N,08024.84176,E,0.164,,070425,,,A*76[0m
+[0;32mI (161464) GPS: Invalid GPGLL format[0m
+[0;32mI (161464) GPS: GPS Data: $GPVTG,,T,,M,0.164,N,0.304,K,A*27[0m
+[0;32mI (161474) GPS: Invalid GPGLL format[0m
+[0;32mI (161474) GPS: GPS Data: $GPGGA,174911.00,0919.95324,N,08024.84176,E,1,10,0.90,50.7,M,-95.1,M,,*47[0m
+[0;32mI (161484) GPS: Invalid GPGLL format[0m
+[0;32mI (161494) GPS: GPS Data: $GPGSA,A,3,32,23,10,28,27,02,25,31,26,08,,,1.67,0.90,1.40*0B[0m
+[0;32mI (161504) GPS: Invalid GPGLL format[0m
+[0;32mI (161504) GPS: GPS Data: $GPGSV,4,1,14,01,10,319,25,02,32,302,30,08,05,250,14,10,50,067,28*74[0m
+[0;32mI (161514) GPS: Invalid GPGLL format[0m
+[0;32mI (161514) GPS: GPS Data: $GPGSV,4,2,14,16,13,191,15,18,03,152,11,23,22,112,22,25,16,066,27*78[0m
+[0;32mI (161524) GPS: Invalid GPGLL format[0m
+[0;32mI (161534) GPS: GPS Data: $GPGSV,4,3,14,26,33,173,28,27,14,217,22,28,68,005,30,31,75,253,34*75[0m
+[0;32mI (161544) GPS: Invalid GPGLL format[0m
+[0;32mI (161544) GPS: GPS Data: $GPGSV,4,4,14,32,29,017,22,42,22,095,32*7B[0m
+[0;32mI (161554) GPS: Invalid GPGLL format[0m
+[0;32mI (161554) GPS: GPS Data: $GPGLL,0919.95324,N,08024.84176,E,174911.00,A,A*68[0m
+[0;32mI (161564) GPS: Latitude: 9.332554 N[0m
+[0;32mI (161564) GPS: Longitude: 80.414029 E[0m
+[0;32mI (161574) GPS: GPS Data: $GPRMC,174912.00,A,0919.95336,N,08024.84168,E,0.125,,070425,,,A*7C[0m
+[0;32mI (161584) GPS: Invalid GPGLL format[0m
+[0;32mI (161584) GPS: GPS Data: $GPVTG,,T,,M,0.125,N,0.231,K,A*25[0m
+[0;32mI (161594) GPS: Invalid GPGLL format[0m
+[0;32mI (161594) GPS: GPS Data: $GPGGA,174912.00,0919.95336,N,08024.84168,E,1,10,0.90,50.6,M,-95.1,M,,*49[0m
+[0;32mI (161604) GPS: Invalid GPGLL format[0m
+[0;32mI (161614) GPS: GPS Data: $GPGSA,A,3,32,23,10,28,27,02,25,31,26,08,,,1.67,0.90,1.40*0B[0m
+[0;32mI (161614) GPS: Invalid GPGLL format[0m
+[0;32mI (161624) GPS: GPS Data: $GPGSV,4,1,14,01,10,319,24,02,32,302,30,08,05,250,16,10,50,067,28*77[0m
+[0;32mI (161634) GPS: Invalid GPGLL format[0m
+[0;32mI (161634) GPS: GPS Data: $GPGSV,4,2,14,16,13,191,15,18,03,152,12,23,22,112,23,25,16,066,27*7A[0m
+[0;32mI (161644) GPS: Invalid GPGLL format[0m
+[0;32mI (161654) GPS_MAIN: Latitude: 9.332554, Longitude: 80.414029[0m
+[0;31mE (166674) esp-tls: [sock=54] select() timeout[0m
+[0;31mE (166674) esp-tls: Failed to open new connection[0m
+[0;31mE (166674) transport_base: Failed to open a new connection[0m
+[0;31mE (166674) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;31mE (166684) FIREBASE: ❌ Firebase update failed: ESP_ERR_HTTP_CONNECT[0m
+[0;32mI (176694) GPS: GPS Data: $GPGSV,4,3,14,26,33,173,29,27,14,217,23,28,68,005,30,31,75,253,34*75[0m
+[0;32mI (176694) GPS: Invalid GPGLL format[0m
+[0;32mI (176694) GPS: GPS Data: $GPGSV,4,4,14,32,29,017,22,42,,A,A*6A[0m
+[0;32mI (176704) GPS: Invalid GPGLL format[0m
+[0;32mI (176704) GPS: GPS Data: $GPRMC,174924.00,A,0919.95471,N,08024.84140,E,0.379,,070425,,,A*7C[0m
+[0;32mI (176714) GPS: Invalid GPGLL format[0m
+[0;32mI (176714) GPS: GPS Data: $GPVTG,,T,,M,0.379,N,0.701,K,A*28[0m
+[0;32mI (176724) GPS: Invalid GPGLL format[0m
+[0;32mI (176724) GPS: GPS Data: $GPGGA,174924.00,0919.95471,N,08024.84140,E,1,10,0.90,51.9,M,-95.1,M,,*4C[0m
+[0;32mI (176734) GPS: Invalid GPGLL format[0m
+[0;32mI (176744) GPS: GPS Data: $GPGSA,A,3,32,23,10,28,27,02,25,31,26,08,,,1.67,0.90,1.40*0B[0m
+[0;32mI (176754) GPS: Invalid GPGLL format[0m
+[0;32mI (176754) GPS: GPS Data: $GPGSV,4,1,14,01,10,319,19,02,32,302,31,08,05,250,19,10,50,068,23*73[0m
+[0;32mI (176764) GPS: Invalid GPGLL format[0m
+[0;32mI (176764) GPS: GPS Data: $GPGSV,4,2,14,16,13,191,15,18,03,152,16,23,22,112,26,25,16,066,25*79[0m
+[0;32mI (176774) GPS: Invalid GPGLL format[0m
+[0;32mI (176784) GPS: GPS Data: $GPGSV,4,3,14,26,33,173,29,27,14,217,23,28,68,005,30,31,75,253,33*72[0m
+[0;32mI (176794) GPS: Invalid GPGLL format[0m
+[0;32mI (176794) GPS: GPS Data: $GPGSV,4,4,14,32,29,017,25,42,22,095,31*7F[0m
+[0;32mI (176804) GPS: Invalid GPGLL format[0m
+[0;32mI (176804) GPS: GPS Data: $GPGLL,0919.95471,N,08024.84140,E,174924.00,A,A*6C[0m
+[0;32mI (176814) GPS: Latitude: 9.332579 N[0m
+[0;32mI (176814) GPS: Longitude: 80.414023 E[0m
+[0;32mI (176824) GPS: GPS Data: $GPRMC,174925.00,A,0919.95475,N,08024.84144,E,0.256,,070425,,,A*71[0m
+[0;32mI (176834) GPS: Invalid GPGLL format[0m
+[0;32mI (176834) GPS: GPS Data: $GPVTG,,T,,M,0.256,N,0.473,K,A*22[0m
+[0;32mI (176844) GPS: Invalid GPGLL format[0m
+[0;32mI (176844) GPS: GPS Data: $GPGGA,174925.00,0919.95475,N,08024.84144,E,1,10,0.90,52.1,M,-95.1,M,,*46[0m
+[0;32mI (176854) GPS: Invalid GPGLL format[0m
+[0;32mI (176864) GPS: GPS Data: $GPGSA,A,3,32,23,10,28,27,02,25,31,26,08,,,1.67,0.90,1.40*0B[0m
+[0;32mI (176874) GPS: Invalid GPGLL format[0m
+[0;32mI (176874) GPS: GPS Data: $GPGSV,4,1,14,01,10,319,18,02,32,302,31,08,05,250,19,10,50,068,22*73[0m
+[0;32mI (176884) GPS: Invalid GPGLL format[0m
+[0;32mI (176884) GPS: GPS Data: $GPGSV,4,2,14,16,13,191,15,18,03,152,15,23,22,112,26,25,16,066,25*7A[0m
+[0;32mI (176894) GPS: Invalid GPGLL format[0m
+[0;32mI (176904) GPS_MAIN: Latitude: 9.332579, Longitude: 80.414023[0m
+[0;32mI (180724) FIREBASE: ✅ Updated GPS data in existing 'gps' object.[0m
+[0;32mI (190734) GPS: GPS Data: $GPGSV,4,3,14,26,33,173,30,27,14,217,23,28,68,005,30,31,75,253,34*7D[0m
+[0;32mI (190734) GPS: Invalid GPGLL format[0m
+[0;32mI (190734) GPS: GPS Data: $GPGSV,4,4,14,32,29,017,26,42,*7A[0m
+[0;32mI (190744) GPS: Invalid GPGLL format[0m
+[0;32mI (190744) GPS: GPS Data: $GPGLL,0919.95412,N,08024.84030,E,174938.00,A,A*62[0m
+[0;32mI (190754) GPS: Latitude: 9.332569 N[0m
+[0;32mI (190754) GPS: Longitude: 80.414005 E[0m
+[0;32mI (190764) GPS: GPS Data: $GPRMC,174939.00,A,0919.95405,N,08024.84028,E,0.132,,070425,,,A*71[0m
+[0;32mI (190764) GPS: Invalid GPGLL format[0m
+[0;32mI (190774) GPS: GPS Data: $GPVTG,,T,,M,0.132,N,0.245,K,A*20[0m
+[0;32mI (190784) GPS: Invalid GPGLL format[0m
+[0;32mI (190784) GPS: GPS Data: $GPGGA,174939.00,0919.95405,N,08024.84028,E,1,10,0.90,53.0,M,-95.1,M,,*47[0m
+[0;32mI (190794) GPS: Invalid GPGLL format[0m
+[0;32mI (190794) GPS: GPS Data: $GPGSA,A,3,32,23,10,28,27,02,25,31,26,08,,,1.67,0.90,1.40*0B[0m
+[0;32mI (190804) GPS: Invalid GPGLL format[0m
+[0;32mI (190814) GPS: GPS Data: $GPGSV,4,1,14,01,10,319,21,02,32,302,32,08,05,250,21,10,50,068,24*77[0m
+[0;32mI (190824) GPS: Invalid GPGLL format[0m
+[0;32mI (190824) GPS: GPS Data: $GPGSV,4,2,14,16,13,191,18,18,03,152,,23,22,113,22,25,16,065,22*72[0m
+[0;32mI (190834) GPS: Invalid GPGLL format[0m
+[0;32mI (190834) GPS: GPS Data: $GPGSV,4,3,14,26,33,173,32,27,14,217,18,28,68,005,16,31,75,253,38*7F[0m
+[0;32mI (190844) GPS: Invalid GPGLL format[0m
+[0;32mI (190854) GPS: GPS Data: $GPGSV,4,4,14,32,29,017,32,42,22,095,31*79[0m
+[0;32mI (190854) GPS: Invalid GPGLL format[0m
+[0;32mI (190864) GPS: GPS Data: $GPGLL,0919.95405,N,08024.84028,E,174939.00,A,A*6C[0m
+[0;32mI (190874) GPS: Latitude: 9.332568 N[0m
+[0;32mI (190874) GPS: Longitude: 80.414005 E[0m
+[0;32mI (190874) GPS: GPS Data: $GPRMC,174940.00,A,0919.95395,N,08024.84021,E,0.139,,070425,,,A*73[0m
+[0;32mI (190884) GPS: Invalid GPGLL format[0m
+[0;32mI (190894) GPS: GPS Data: $GPVTG,,T,,M,0.139,N,0.257,K,A*28[0m
+[0;32mI (190894) GPS: Invalid GPGLL format[0m
+[0;32mI (190904) GPS: GPS Data: $GPGGA,174940.00,0919.95395,N,08024.84021,E,1,10,0.90,52.7,M,-95.1,M,,*48[0m
+[0;32mI (190914) GPS: Invalid GPGLL format[0m
+[0;32mI (190914) GPS: GPS Data: $GPGSA,A,3,32,23,10,28,27,02,25,31,26,08,,,1.67,0.90,1.40*0B[0m
+[0;32mI (190924) GPS: Invalid GPGLL format[0m
+[0;32mI (190934) GPS: GPS Data: $GPGSV,4,1,14,01,10,319,21,02,32,302,29,08,05,250,20,10,50,068,24*7C[0m
+[0;32mI (190934) GPS: Invalid GPGLL format[0m
+[0;32mI (190944) GPS_MAIN: Latitude: 9.332568, Longitude: 80.414005[0m
+[0;32mI (193424) FIREBASE: ✅ Updated GPS data in existing 'gps' object.[0m
+[0;32mI (203434) GPS: GPS Data: $GPGSV,4,2,14,16,13,191,18,18,03,152,,23,22,113,2067,005,,31,75,255,37*76[0m
+[0;32mI (203434) GPS: Invalid GPGLL format[0m
+[0;32mI (203434) GPS: GPS Data: $GPGSV,4,4,14,32,29,018,28,42,22,095,30*7C[0m
+[0;32mI (203444) GPS: Invalid GPGLL format[0m
+[0;32mI (203444) GPS: GPS Data: $GPGLL,0919.95328,N,08024.83991,E,174952.00,A,A*65[0m
+[0;32mI (203454) GPS: Latitude: 9.332555 N[0m
+[0;32mI (203454) GPS: Longitude: 80.413998 E[0m
+[0;32mI (203464) GPS: GPS Data: $GPRMC,174953.00,A,0919.95322,N,08024.83988,E,0.246,,070425,,,A*7B[0m
+[0;32mI (203474) GPS: Invalid GPGLL format[0m
+[0;32mI (203474) GPS: GPS Data: $GPVTG,,T,,M,0.246,N,0.456,K,A*24[0m
+[0;32mI (203484) GPS: Invalid GPGLL format[0m
+[0;32mI (203484) GPS: GPS Data: $GPGGA,174953.00,0919.95322,N,08024.83988,E,1,09,1.01,49.6,M,-95.1,M,,*41[0m
+[0;32mI (203494) GPS: Invalid GPGLL format[0m
+[0;32mI (203494) GPS: GPS Data: $GPGSA,A,3,32,23,10,27,02,25,31,26,08,,,,1.89,1.01,1.60*0A[0m
+[0;32mI (203504) GPS: Invalid GPGLL format[0m
+[0;32mI (203514) GPS: GPS Data: $GPGSV,4,1,14,01,10,319,26,02,32,302,23,08,05,250,20,10,50,068,19*7F[0m
+[0;32mI (203524) GPS: Invalid GPGLL format[0m
+[0;32mI (203524) GPS: GPS Data: $GPGSV,4,2,14,16,13,191,18,18,03,152,17,23,22,113,10,25,16,065,23*74[0m
+[0;32mI (203534) GPS: Invalid GPGLL format[0m
+[0;32mI (203534) GPS: GPS Data: $GPGSV,4,3,14,26,33,173,30,27,14,216,20,28,67,005,,31,75,255,36*77[0m
+[0;32mI (203544) GPS: Invalid GPGLL format[0m
+[0;32mI (203554) GPS: GPS Data: $GPGSV,4,4,14,32,29,018,28,42,22,095,30*7C[0m
+[0;32mI (203554) GPS: Invalid GPGLL format[0m
+[0;32mI (203564) GPS: GPS Data: $GPGLL,0919.95322,N,08024.83988,E,174953.00,A,A*66[0m
+[0;32mI (203574) GPS: Latitude: 9.332554 N[0m
+[0;32mI (203574) GPS: Longitude: 80.413998 E[0m
+[0;32mI (203584) GPS: GPS Data: $GPRMC,174954.00,A,0919.95321,N,08024.84015,E,0.702,,070425,,,A*70[0m
+[0;32mI (203584) GPS: Invalid GPGLL format[0m
+[0;32mI (203594) GPS: GPS Data: $GPVTG,,T,,M,0.702,N,1.301,K,A*25[0m
+[0;32mI (203604) GPS: Invalid GPGLL format[0m
+[0;32mI (203604) GPS: GPS Data: $GPGGA,174954.00,0919.95321,N,08024.84015,E,1,10,1.01,49.9,M,-95.1,M,,*48[0m
+[0;32mI (203614) GPS: Invalid GPGLL format[0m
+[0;32mI (203614) GPS: GPS Data: $GPGSA,A,3,32,23,10,28,27,02,25,31,26,08,,,1.89,1.01,1.60*00[0m
+[0;32mI (203624) GPS: Invalid GPGLL format[0m
+[0;32mI (203634) GPS: GPS Data: $GPGSV,4,1,14,01,10,319,26,02,32,302,22,08,05,250,19,10,50,068,18*75[0m
+[0;32mI (203644) GPS: Invalid GPGLL format[0m
+[0;32mI (203644) GPS_MAIN: Latitude: 9.332554, Longitude: 80.413998[0m
+[0;32mI (205864) FIREBASE: ✅ Updated GPS data in existing 'gps' object.[0m
+[0;32mI (215864) GPS: GPS Data: $GPGSV,4,2,14,16,13,191,17,18,03,152,16,23,22,113,5,39*7B[0m
+[0;32mI (215864) GPS: Invalid GPGLL format[0m
+[0;32mI (215864) GPS: GPS Data: $GPGSV,4,4,14,32,29,018,31,42,22,095,31*75[0m
+[0;32mI (215864) GPS: Invalid GPGLL format[0m
+[0;32mI (215874) GPS: GPS Data: $GPGLL,0919.95381,N,08024.83891,E,175005.00,A,A*6D[0m
+[0;32mI (215884) GPS: Latitude: 9.332563 N[0m
+[0;32mI (215884) GPS: Longitude: 80.413982 E[0m
+[0;32mI (215894) GPS: GPS Data: $GPRMC,175006.00,A,0919.95386,N,08024.83884,E,0.115,,070425,,,A*75[0m
+[0;32mI (215894) GPS: Invalid GPGLL format[0m
+[0;32mI (215904) GPS: GPS Data: $GPVTG,,T,,M,0.115,N,0.213,K,A*26[0m
+[0;32mI (215914) GPS: Invalid GPGLL format[0m
+[0;32mI (215914) GPS: GPS Data: $GPGGA,175006.00,0919.95386,N,08024.83884,E,1,09,1.01,47.9,M,-95.1,M,,*4B[0m
+[0;32mI (215924) GPS: Invalid GPGLL format[0m
+[0;32mI (215924) GPS: GPS Data: $GPGSA,A,3,32,10,28,27,02,25,31,26,08,,,,1.89,1.01,1.60*01[0m
+[0;32mI (215934) GPS: Invalid GPGLL format[0m
+[0;32mI (215944) GPS: GPS Data: $GPGSV,4,1,14,01,10,319,24,02,32,302,27,08,05,250,18,10,50,068,13*78[0m
+[0;32mI (215954) GPS: Invalid GPGLL format[0m
+[0;32mI (215954) GPS: GPS Data: $GPGSV,4,2,14,16,13,191,19,18,03,152,16,23,22,113,08,25,16,065,27*79[0m
+[0;32mI (215964) GPS: Invalid GPGLL format[0m
+[0;32mI (215964) GPS: GPS Data: $GPGSV,4,3,14,26,33,173,33,27,14,216,25,28,67,005,27,31,75,255,37*75[0m
+[0;32mI (215974) GPS: Invalid GPGLL format[0m
+[0;32mI (215984) GPS: GPS Data: $GPGSV,4,4,14,32,29,018,31,42,22,095,31*75[0m
+[0;32mI (215984) GPS: Invalid GPGLL format[0m
+[0;32mI (215994) GPS: GPS Data: $GPGLL,0919.95386,N,08024.83884,E,175006.00,A,A*6D[0m
+[0;32mI (216004) GPS: Latitude: 9.332564 N[0m
+[0;32mI (216004) GPS: Longitude: 80.413981 E[0m
+[0;32mI (216004) GPS: GPS Data: $GPRMC,175007.00,A,0919.95393,N,08024.83880,E,0.102,,070425,,,A*72[0m
+[0;32mI (216014) GPS: Invalid GPGLL format[0m
+[0;32mI (216024) GPS: GPS Data: $GPVTG,,T,,M,0.102,N,0.189,K,A*20[0m
+[0;32mI (216024) GPS: Invalid GPGLL format[0m
+[0;32mI (216034) GPS: GPS Data: $GPGGA,175007.00,0919.95393,N,08024.83880,E,1,09,1.01,48.2,M,-95.1,M,,*4E[0m
+[0;32mI (216044) GPS: Invalid GPGLL format[0m
+[0;32mI (216044) GPS: GPS Data: $GPGSA,A,3,32,10,28,27,02,25,31,26,08,,,,1.89,1.01,1.60*01[0m
+[0;32mI (216054) GPS: Invalid GPGLL format[0m
+[0;32mI (216054) GPS: GPS Data: $GPGSV,4,1,14,01,10,319,23,02,32,302,27,08,05,250,17,10,50,068,13*70[0m
+[0;32mI (216064) GPS: Invalid GPGLL format[0m
+[0;32mI (216074) GPS_MAIN: Latitude: 9.332564, Longitude: 80.413981[0m
+[0;32mI (218414) FIREBASE: ✅ Updated GPS data in existing 'gps' object.[0m
+[0;32mI (228414) GPS: GPS Data: $GPGSV,4,2,14,16,13,191,19,18,03,152,14,23,22,113,,25,16,065,27*73[0m
+[0;32mI (228414) GPS: Invalid GPGLL format[0m
+[0;32mI (228414) GPS: GPS Data: $GPGSV,4,3,14,26,33,173,33,27,14,216,25,28,67,005,27,31,75,255,39*7B[0m
+[0;32mI (228424) GPS: Invalid GPGLL format[0m
+[0;32mI (228424) GPS: GPS Data: $GPGSV,4,4,14,32,29,018,31,42,22,0,N,08024.83886,E,1.065,,070425,,,A*75[0m
+[0;32mI (228434) GPS: Invalid GPGLL format[0m
+[0;32mI (228444) GPS: GPS Data: $GPVTG,,T,,M,1.065,N,1.972,K,A*2C[0m
+[0;32mI (228444) GPS: Invalid GPGLL format[0m
+[0;32mI (228454) GPS: GPS Data: $GPGGA,175018.00,0919.95430,N,08024.83886,E,1,10,0.90,47.6,M,-95.1,M,,*42[0m
+[0;32mI (228464) GPS: Invalid GPGLL format[0m
+[0;32mI (228464) GPS: GPS Data: $GPGSA,A,3,32,23,10,28,27,02,25,31,26,08,,,1.67,0.90,1.40*0B[0m
+[0;32mI (228474) GPS: Invalid GPGLL format[0m
+[0;32mI (228474) GPS: GPS Data: $GPGSV,4,1,14,01,10,319,22,02,32,302,24,08,05,250,16,10,50,068,26*75[0m
+[0;32mI (228484) GPS: Invalid GPGLL format[0m
+[0;32mI (228494) GPS: GPS Data: $GPGSV,4,2,14,16,13,191,16,18,03,152,13,23,22,113,13,25,16,065,23*7D[0m
+[0;32mI (228504) GPS: Invalid GPGLL format[0m
+[0;32mI (228504) GPS: GPS Data: $GPGSV,4,3,14,26,33,173,30,27,14,216,23,28,67,005,27,31,75,255,39*7E[0m
+[0;32mI (228514) GPS: Invalid GPGLL format[0m
+[0;32mI (228514) GPS: GPS Data: $GPGSV,4,4,14,32,29,018,32,42,22,095,30*77[0m
+[0;32mI (228524) GPS: Invalid GPGLL format[0m
+[0;32mI (228534) GPS: GPS Data: $GPGLL,0919.95430,N,08024.83886,E,175018.00,A,A*6A[0m
+[0;32mI (228534) GPS: Latitude: 9.332572 N[0m
+[0;32mI (228544) GPS: Longitude: 80.413981 E[0m
+[0;32mI (228544) GPS: GPS Data: $GPRMC,175019.00,A,0919.95429,N,08024.83886,E,0.299,,070425,,,A*7C[0m
+[0;32mI (228554) GPS: Invalid GPGLL format[0m
+[0;32mI (228554) GPS: GPS Data: $GPVTG,,T,,M,0.299,N,0.553,K,A*22[0m
+[0;32mI (228564) GPS: Invalid GPGLL format[0m
+[0;32mI (228574) GPS: GPS Data: $GPGGA,175019.00,0919.95429,N,08024.83886,E,1,10,0.90,47.6,M,-95.1,M,,*4B[0m
+[0;32mI (228584) GPS: Invalid GPGLL format[0m
+[0;32mI (228584) GPS: GPS Data: $GPGSA,A,3,32,23,10,28,27,02,25,31,26,08,,,1.67,0.90,1.40*0B[0m
+[0;32mI (228594) GPS: Invalid GPGLL format[0m
+[0;32mI (228594) GPS: GPS Data: $GPGSV,4,1,14,01,10,319,22,02,32,302,22,08,05,250,16,10,50,068,26*73[0m
+[0;32mI (228604) GPS: Invalid GPGLL format[0m
+[0;32mI (228614) GPS: GPS Data: $GPGSV,4,2,14,16,13,191,15,18,03,152,11,23,22,113,13,25,16,065,22*7D[0m
+[0;32mI (228624) GPS: Invalid GPGLL format[0m
+[0;32mI (228624) GPS_MAIN: Latitude: 9.332572, Longitude: 80.413981[0m
+[0;32mI (231314) FIREBASE: ✅ Updated GPS data in existing 'gps' object.[0m
+[0;32mI (241324) GPS: GPS Data: $GPGSV,4,3,14,26,33,173,29,27,14,216,23,28,67,005,26,31,75,255,38*76[0m
+[0;32mI (241324) GPS: Invalid GPGLL format[0m
+[0;32mI (241324) GPS: GPS Data: $GPGSV,4,4,14,32,29,018,31,42,5,27,31,75,255,36*7B[0m
+[0;32mI (241334) GPS: Invalid GPGLL format[0m
+[0;32mI (241334) GPS: GPS Data: $GPGSV,4,4,14,32,29,018,31,42,22,095,29*7C[0m
+[0;32mI (241344) GPS: Invalid GPGLL format[0m
+[0;32mI (241344) GPS: GPS Data: $GPGLL,0919.95435,N,08024.83824,E,175030.00,A,A*6D[0m
+[0;32mI (241354) GPS: Latitude: 9.332572 N[0m
+[0;32mI (241354) GPS: Longitude: 80.413971 E[0m
+[0;32mI (241364) GPS: GPS Data: $GPRMC,175031.00,A,0919.95433,N,08024.83822,E,0.120,,070425,,,A*72[0m
+[0;32mI (241374) GPS: Invalid GPGLL format[0m
+[0;32mI (241374) GPS: GPS Data: $GPVTG,,T,,M,0.120,N,0.223,K,A*23[0m
+[0;32mI (241384) GPS: Invalid GPGLL format[0m
+[0;32mI (241384) GPS: GPS Data: $GPGGA,175031.00,0919.95433,N,08024.83822,E,1,10,0.90,49.4,M,-95.1,M,,*48[0m
+[0;32mI (241394) GPS: Invalid GPGLL format[0m
+[0;32mI (241404) GPS: GPS Data: $GPGSA,A,3,32,23,10,28,27,02,25,31,26,08,,,1.67,0.90,1.40*0B[0m
+[0;32mI (241404) GPS: Invalid GPGLL format[0m
+[0;32mI (241414) GPS: GPS Data: $GPGSV,4,1,14,01,11,318,24,02,33,301,26,08,05,250,15,10,50,068,27*71[0m
+[0;32mI (241424) GPS: Invalid GPGLL format[0m
+[0;32mI (241424) GPS: GPS Data: $GPGSV,4,2,14,16,13,191,18,18,03,152,,23,22,113,14,25,16,065,21*74[0m
+[0;32mI (241434) GPS: Invalid GPGLL format[0m
+[0;32mI (241444) GPS: GPS Data: $GPGSV,4,3,14,26,33,173,28,27,14,216,19,28,67,005,26,31,75,255,36*70[0m
+[0;32mI (241454) GPS: Invalid GPGLL format[0m
+[0;32mI (241454) GPS: GPS Data: $GPGSV,4,4,14,32,29,018,31,42,22,095,29*7C[0m
+[0;32mI (241464) GPS: Invalid GPGLL format[0m
+[0;32mI (241464) GPS: GPS Data: $GPGLL,0919.95433,N,08024.83822,E,175031.00,A,A*6C[0m
+[0;32mI (241474) GPS: Latitude: 9.332572 N[0m
+[0;32mI (241474) GPS: Longitude: 80.413970 E[0m
+[0;32mI (241484) GPS: GPS Data: $GPRMC,175032.00,A,0919.95424,N,08024.83820,E,0.176,,070425,,,A*76[0m
+[0;32mI (241494) GPS: Invalid GPGLL format[0m
+[0;32mI (241494) GPS: GPS Data: $GPVTG,,T,,M,0.176,N,0.326,K,A*24[0m
+[0;32mI (241504) GPS: Invalid GPGLL format[0m
+[0;32mI (241504) GPS: GPS Data: $GPGGA,175032.00,0919.95424,N,08024.83820,E,1,10,0.90,49.2,M,-95.1,M,,*49[0m
+[0;32mI (241514) GPS: Invalid GPGLL format[0m
+[0;32mI (241524) GPS: GPS Data: $GPGSA,A,3,32,23,10,28,27,02,25,31,26,08,,,1.67,0.90,1.40*0B[0m
+[0;32mI (241524) GPS: Invalid GPGLL format[0m
+[0;32mI (241534) GPS_MAIN: Latitude: 9.332572, Longitude: 80.413970[0m
+[0;32mI (244054) FIREBASE: ✅ Updated GPS data in existing 'gps' object.[0m
+[0;32mI (254054) GPS: GPS Data: $GPGSV,4,1,14,01,11,318,24,02,33,301,26,08,05,249,15,10,50,068,28*76[0m
+[0;32mI (254054) GPS: Invalid GPGLL format[0m
+[0;32mI (254054) GPS: GPS Data: $GPGSV,4,2,14,16,13,191,18,18,03,152,,23,22,113,165,255,38*72[0m
+[0;32mI (254064) GPS: Invalid GPGLL format[0m
+[0;32mI (254064) GPS: GPS Data: $GPGSV,4,4,14,32,29,018,31,42,22,095,32*76[0m
+[0;32mI (254074) GPS: Invalid GPGLL format[0m
+[0;32mI (254074) GPS: GPS Data: $GPGLL,0919.95419,N,08024.83778,E,175043.00,A,A*61[0m
+[0;32mI (254084) GPS: Latitude: 9.332570 N[0m
+[0;32mI (254084) GPS: Longitude: 80.413963 E[0m
+[0;32mI (254094) GPS: GPS Data: $GPRMC,175044.00,A,0919.95413,N,08024.83781,E,0.163,,070425,,,A*73[0m
+[0;32mI (254104) GPS: Invalid GPGLL format[0m
+[0;32mI (254104) GPS: GPS Data: $GPVTG,,T,,M,0.163,N,0.301,K,A*25[0m
+[0;32mI (254114) GPS: Invalid GPGLL format[0m
+[0;32mI (254114) GPS: GPS Data: $GPGGA,175044.00,0919.95413,N,08024.83781,E,1,10,0.90,44.9,M,-95.1,M,,*4E[0m
+[0;32mI (254124) GPS: Invalid GPGLL format[0m
+[0;32mI (254134) GPS: GPS Data: $GPGSA,A,3,32,23,10,28,27,02,25,31,26,08,,,1.67,0.90,1.40*0B[0m
+[0;32mI (254144) GPS: Invalid GPGLL format[0m
+[0;32mI (254144) GPS: GPS Data: $GPGSV,4,1,14,01,11,318,24,02,33,301,31,08,05,249,17,10,50,069,27*7C[0m
+[0;32mI (254154) GPS: Invalid GPGLL format[0m
+[0;32mI (254154) GPS: GPS Data: $GPGSV,4,2,14,16,13,191,15,18,02,152,14,23,22,113,26,25,16,065,21*7C[0m
+[0;32mI (254164) GPS: Invalid GPGLL format[0m
+[0;32mI (254174) GPS: GPS Data: $GPGSV,4,3,14,26,33,173,28,27,14,216,15,28,67,005,30,31,75,255,38*75[0m
+[0;32mI (254184) GPS: Invalid GPGLL format[0m
+[0;32mI (254184) GPS: GPS Data: $GPGSV,4,4,14,32,29,018,30,42,22,095,32*77[0m
+[0;32mI (254194) GPS: Invalid GPGLL format[0m
+[0;32mI (254194) GPS: GPS Data: $GPGLL,0919.95413,N,08024.83781,E,175044.00,A,A*6A[0m
+[0;32mI (254204) GPS: Latitude: 9.332569 N[0m
+[0;32mI (254204) GPS: Longitude: 80.413963 E[0m
+[0;32mI (254214) GPS: GPS Data: $GPRMC,175045.00,A,0919.95405,N,08024.83788,E,0.103,,070425,,,A*7A[0m
+[0;32mI (254224) GPS: Invalid GPGLL format[0m
+[0;32mI (254224) GPS: GPS Data: $GPVTG,,T,,M,0.103,N,0.190,K,A*29[0m
+[0;32mI (254234) GPS: Invalid GPGLL format[0m
+[0;32mI (254234) GPS: GPS Data: $GPGGA,175045.00,0919.95405,N,08024.83788,E,1,10,0.90,44.3,M,-95.1,M,,*4B[0m
+[0;32mI (254244) GPS: Invalid GPGLL format[0m
+[0;32mI (254254) GPS: GPS Data: $GPGSA,A,3,32,23,10,28,27,02,25,31,26,08,,,1.67,0.90,1.40*0B[0m
+[0;32mI (254254) GPS: Invalid GPGLL format[0m
+[0;32mI (254264) GPS_MAIN: Latitude: 9.332569, Longitude: 80.413963[0m
+[0;32mI (256914) FIREBASE: ✅ Updated GPS data in existing 'gps' object.[0m
+[0;32mI (266924) GPS: GPS Data: $GPGSV,4,1,14,01,11,318,23,02,33,301,31,08,05,249,16,10,50,069,26*7B[0m
+[0;32mI (266924) GPS: Invalid GPGLL format[0m
+[0;32mI (266924) GPS: GPS Data: $GPGSV,4,2,14,16,13,191,12,18,02,152,13,23,22,113,8,27,02,25,31,26,,,,1.67,0.90,1.40*03[0m
+[0;32mI (266934) GPS: Invalid GPGLL format[0m
+[0;32mI (266934) GPS: GPS Data: $GPGSV,4,1,14,01,11,318,17,02,33,301,27,08,05,249,,10,50,069,24*7E[0m
+[0;32mI (266944) GPS: Invalid GPGLL format[0m
+[0;32mI (266954) GPS: GPS Data: $GPGSV,4,2,14,16,13,191,12,18,02,152,14,23,22,113,25,25,15,065,19*70[0m
+[0;32mI (266964) GPS: Invalid GPGLL format[0m
+[0;32mI (266964) GPS: GPS Data: $GPGSV,4,3,14,26,34,172,24,27,14,216,17,28,67,005,26,31,75,257,38*78[0m
+[0;32mI (266974) GPS: Invalid GPGLL format[0m
+[0;32mI (266974) GPS: GPS Data: $GPGSV,4,4,14,32,29,018,31,42,22,095,28*7D[0m
+[0;32mI (266984) GPS: Invalid GPGLL format[0m
+[0;32mI (266994) GPS: GPS Data: $GPGLL,0919.95349,N,08024.83868,E,175056.00,A,A*69[0m
+[0;32mI (266994) GPS: Latitude: 9.332558 N[0m
+[0;32mI (267004) GPS: Longitude: 80.413978 E[0m
+[0;32mI (267004) GPS: GPS Data: $GPRMC,175057.00,A,0919.95345,N,08024.83886,E,0.493,,070425,,,A*77[0m
+[0;32mI (267014) GPS: Invalid GPGLL format[0m
+[0;32mI (267024) GPS: GPS Data: $GPVTG,,T,,M,0.493,N,0.912,K,A*27[0m
+[0;32mI (267024) GPS: Invalid GPGLL format[0m
+[0;32mI (267034) GPS: GPS Data: $GPGGA,175057.00,0919.95345,N,08024.83886,E,1,09,0.90,40.4,M,-95.1,M,,*41[0m
+[0;32mI (267044) GPS: Invalid GPGLL format[0m
+[0;32mI (267044) GPS: GPS Data: $GPGSA,A,3,32,23,10,28,27,02,25,31,26,,,,1.67,0.90,1.40*03[0m
+[0;32mI (267054) GPS: Invalid GPGLL format[0m
+[0;32mI (267054) GPS: GPS Data: $GPGSV,4,1,14,01,11,318,16,02,33,301,28,08,05,249,,10,50,069,24*70[0m
+[0;32mI (267064) GPS: Invalid GPGLL format[0m
+[0;32mI (267074) GPS: GPS Data: $GPGSV,4,2,14,16,13,191,12,18,02,152,12,23,22,113,23,25,15,065,18*71[0m
+[0;32mI (267084) GPS: Invalid GPGLL format[0m
+[0;32mI (267084) GPS: GPS Data: $GPGSV,4,3,14,26,34,172,24,27,14,216,17,28,67,005,26,31,75,257,37*77[0m
+[0;32mI (267094) GPS: Invalid GPGLL format[0m
+[0;32mI (267094) GPS: GPS Data: $GPGSV,4,4,14,32,29,018,30,42,22,095,29*7D[0m
+[0;32mI (267104) GPS: Invalid GPGLL format[0m
+[0;32mI (267104) GPS: GPS Data: $GPGLL,0919.95345,N,08024.83886,E,175057.00,A,A*64[0m
+[0;32mI (267114) GPS: Latitude: 9.332558 N[0m
+[0;32mI (267124) GPS: Longitude: 80.413981 E[0m
+[0;32mI (267124) GPS_MAIN: Latitude: 9.332558, Longitude: 80.413981[0m
+[0;32mI (270224) FIREBASE: ✅ Updated GPS data in existing 'gps' object.[0m
+[0;32mI (280234) GPS: GPS Data: $GPRMC,175058.00,A,0919.95340,N,08024.83884,E,0.175,,070425,,,A*72[0m
+[0;32mI (280234) GPS: Invalid GPGLL format[0m
+[0;32mI (280234) GPS: GPS Data: $GPVTG,,T,,M,0.175,N,0.323,K,A*22[0m
+[0;32mI (280234) GPS: Invalid GPGLL format[0m
+[0;32mI (280244) GPS: GPS Data: $GPGGA,175058.00,8.00,A,A*65[0m
+[0;32mI (280244) GPS: Invalid GPGLL format[0m
+[0;32mI (280254) GPS: GPS Data: $GPRMC,175109.00,A,0919.95340,N,08024.84053,E,0.485,,070425,,,A*78[0m
+[0;32mI (280264) GPS: Invalid GPGLL format[0m
+[0;32mI (280264) GPS: GPS Data: $GPVTG,,T,,M,0.485,N,0.898,K,A*23[0m
+[0;32mI (280274) GPS: Invalid GPGLL format[0m
+[0;32mI (280274) GPS: GPS Data: $GPGGA,175109.00,0919.95340,N,08024.84053,E,1,09,0.90,43.8,M,-95.1,M,,*46[0m
+[0;32mI (280284) GPS: Invalid GPGLL format[0m
+[0;32mI (280294) GPS: GPS Data: $GPGSA,A,3,32,23,10,28,27,02,25,31,26,,,,1.67,0.90,1.40*03[0m
+[0;32mI (280304) GPS: Invalid GPGLL format[0m
+[0;32mI (280304) GPS: GPS Data: $GPGSV,4,1,14,01,11,318,,02,33,301,33,08,05,249,,10,50,069,25*7C[0m
+[0;32mI (280314) GPS: Invalid GPGLL format[0m
+[0;32mI (280314) GPS: GPS Data: $GPGSV,4,2,14,16,13,191,,18,02,152,06,23,22,113,25,25,15,065,17*7E[0m
+[0;32mI (280324) GPS: Invalid GPGLL format[0m
+[0;32mI (280334) GPS: GPS Data: $GPGSV,4,3,14,26,34,172,24,27,14,216,18,28,67,005,29,31,75,257,37*77[0m
+[0;32mI (280344) GPS: Invalid GPGLL format[0m
+[0;32mI (280344) GPS: GPS Data: $GPGSV,4,4,14,32,29,018,30,42,22,095,29*7D[0m
+[0;32mI (280354) GPS: Invalid GPGLL format[0m
+[0;32mI (280354) GPS: GPS Data: $GPGLL,0919.95340,N,08024.84053,E,175109.00,A,A*6C[0m
+[0;32mI (280364) GPS: Latitude: 9.332557 N[0m
+[0;32mI (280364) GPS: Longitude: 80.414009 E[0m
+[0;32mI (280374) GPS: GPS Data: $GPRMC,175110.00,A,0919.95332,N,08024.84069,E,0.457,,070425,,,A*73[0m
+[0;32mI (280384) GPS: Invalid GPGLL format[0m
+[0;32mI (280384) GPS: GPS Data: $GPVTG,,T,,M,0.457,N,0.846,K,A*2F[0m
+[0;32mI (280394) GPS: Invalid GPGLL format[0m
+[0;32mI (280394) GPS: GPS Data: $GPGGA,175110.00,0919.95332,N,08024.84069,E,1,09,0.90,43.7,M,-95.1,M,,*4D[0m
+[0;32mI (280404) GPS: Invalid GPGLL format[0m
+[0;32mI (280414) GPS: GPS Data: $GPGSA,A,3,32,23,10,28,27,02,25,31,26,,,,1.67,0.90,1.40*03[0m
+[0;32mI (280414) GPS: Invalid GPGLL format[0m
+[0;32mI (280424) GPS: GPS Data: $GPGSV,4,1,14,01,11,318,,02,33,301,32,08,05,249,,10,50,069,25*7D[0m
+[0;32mI (280434) GPS: Invalid GPGLL format[0m
+[0;32mI (280434) GPS: GPS Data: $GPGSV,4,2,14,16,13,191,,18,02,152,,23,22,113,25,25,15,065,16*79[0m
+[0;32mI (280444) GPS: Invalid GPGLL format[0m
+[0;32mI (280444) GPS_MAIN: Latitude: 9.332557, Longitude: 80.414009[0m
+[0;32mI (282924) FIREBASE: ✅ Updated GPS data in existing 'gps' object.[0m
+[0;32mI (292934) GPS: GPS Data: $GPGSV,4,3,14,26,34,172,23,27,14,216,20,28,67,005,28,31,75,257,38*75[0m
+[0;32mI (292934) GPS: Invalid GPGLL format[0m
+[0;32mI (292934) GPS: GPS Data: $GPGSV,4,4,14,32,29,018,29,42,22,095,29*5,065,19*7B[0m
+[0;32mI (292944) GPS: Invalid GPGLL format[0m
+[0;32mI (292944) GPS: GPS Data: $GPGSV,4,3,14,26,34,172,24,27,14,216,21,28,67,005,25,31,75,257,39*7F[0m
+[0;32mI (292954) GPS: Invalid GPGLL format[0m
+[0;32mI (292954) GPS: GPS Data: $GPGSV,4,4,14,32,29,018,30,42,22,095,31*74[0m
+[0;32mI (292964) GPS: Invalid GPGLL format[0m
+[0;32mI (292974) GPS: GPS Data: $GPGLL,0919.95264,N,08024.84106,E,175122.00,A,A*63[0m
+[0;32mI (292974) GPS: Latitude: 9.332544 N[0m
+[0;32mI (292984) GPS: Longitude: 80.414018 E[0m
+[0;32mI (292984) GPS: GPS Data: $GPRMC,175123.00,A,0919.95256,N,08024.84105,E,0.052,,070425,,,A*7A[0m
+[0;32mI (292994) GPS: Invalid GPGLL format[0m
+[0;32mI (293004) GPS: GPS Data: $GPVTG,,T,,M,0.052,N,0.097,K,A*2A[0m
+[0;32mI (293004) GPS: Invalid GPGLL format[0m
+[0;32mI (293014) GPS: GPS Data: $GPGGA,175123.00,0919.95256,N,08024.84105,E,1,10,0.90,43.0,M,-95.1,M,,*4A[0m
+[0;32mI (293024) GPS: Invalid GPGLL format[0m
+[0;32mI (293024) GPS: GPS Data: $GPGSA,A,3,32,23,10,28,27,02,25,31,26,08,,,1.67,0.90,1.40*0B[0m
+[0;32mI (293034) GPS: Invalid GPGLL format[0m
+[0;32mI (293034) GPS: GPS Data: $GPGSV,4,1,14,01,11,318,21,02,33,301,30,08,05,249,17,10,50,069,22*7D[0m
+[0;32mI (293044) GPS: Invalid GPGLL format[0m
+[0;32mI (293054) GPS: GPS Data: $GPGSV,4,2,14,16,13,191,,18,02,152,,23,22,113,28,25,15,065,18*7A[0m
+[0;32mI (293064) GPS: Invalid GPGLL format[0m
+[0;32mI (293064) GPS: GPS Data: $GPGSV,4,3,14,26,34,172,25,27,14,216,21,28,67,005,24,31,75,257,38*7E[0m
+[0;32mI (293074) GPS: Invalid GPGLL format[0m
+[0;32mI (293074) GPS: GPS Data: $GPGSV,4,4,14,32,29,018,30,42,22,095,31*74[0m
+[0;32mI (293084) GPS: Invalid GPGLL format[0m
+[0;32mI (293084) GPS: GPS Data: $GPGLL,0919.95256,N,08024.84105,E,175123.00,A,A*60[0m
+[0;32mI (293094) GPS: Latitude: 9.332543 N[0m
+[0;32mI (293104) GPS: Longitude: 80.414017 E[0m
+[0;32mI (293104) GPS: GPS Data: $GPRMC,175124.00,A,0919.95243,N,08024.84109,E,0.208,,070425,,,A*78[0m
+[0;32mI (293114) GPS: Invalid GPGLL format[0m
+[0;32mI (293114) GPS: GPS Data: $GPVTG,,T,,M,0.208,N,0.385,K,A*27[0m
+[0;32mI (293124) GPS: Invalid GPGLL format[0m
+[0;32mI (293124) GPS: GPS Data: $GPGGA,175124.00,0919.95243,N,08024.84109,E,1,09,0.90,42.7,M,-95.1,M,,*4B[0m
+[0;32mI (293134) GPS: Invalid GPGLL format[0m
+[0;32mI (293144) GPS: GPS Data: $GPGSA,A,3,32,23,10,28,27,02,25,31,26,,,,1.67,0.90,1.40*03[0m
+[0;32mI (293154) GPS: Invalid GPGLL format[0m
+[0;32mI (293154) GPS_MAIN: Latitude: 9.332543, Longitude: 80.414017[0m
+[0;32mI (295414) FIREBASE: ✅ Updated GPS data in existing 'gps' object.[0m
+[0;32mI (305424) GPS: GPS Data: $GPGSV,4,1,14,01,11,318,20,02,33,301,29,08,05,249,,10,50,069,21*71[0m
+[0;32mI (305424) GPS: Invalid GPGLL format[0m
+[0;32mI (305424) GPS: GPS Data: $GPGSV,4,2,14,16,13,191,,18,02,152,,23,22,113,28,25,15[0m
+[0;32mI (305434) GPS: Invalid GPGLL format[0m
+[0;32mI (305434) GPS: GPS Data: $GPRMC,175135.00,A,0919.95263,N,08024.84102,E,0.069,,070425,,,A*74[0m
+[0;32mI (305444) GPS: Invalid GPGLL format[0m
+[0;32mI (305444) GPS: GPS Data: $GPVTG,,T,,M,0.069,N,0.127,K,A*28[0m
+[0;32mI (305454) GPS: Invalid GPGLL format[0m
+[0;32mI (305464) GPS: GPS Data: $GPGGA,175135.00,0919.95263,N,08024.84102,E,1,09,0.98,41.7,M,-95.1,M,,*49[0m
+[0;32mI (305464) GPS: Invalid GPGLL format[0m
+[0;32mI (305474) GPS: GPS Data: $GPGSA,A,3,32,23,10,28,27,02,25,31,26,,,,1.86,0.98,1.59*0C[0m
+[0;32mI (305484) GPS: Invalid GPGLL format[0m
+[0;32mI (305484) GPS: GPS Data: $GPGSV,4,1,14,01,11,318,23,02,33,301,27,08,05,249,,10,50,069,24*79[0m
+[0;32mI (305494) GPS: Invalid GPGLL format[0m
+[0;32mI (305504) GPS: GPS Data: $GPGSV,4,2,14,16,13,191,,18,02,152,12,23,22,113,29,25,15,065,18*78[0m
+[0;32mI (305504) GPS: Invalid GPGLL format[0m
+[0;32mI (305514) GPS: GPS Data: $GPGSV,4,3,14,26,34,172,32,27,14,216,26,28,67,005,26,31,75,257,39*7C[0m
+[0;32mI (305524) GPS: Invalid GPGLL format[0m
+[0;32mI (305524) GPS: GPS Data: $GPGSV,4,4,14,32,29,018,26,42,22,095,31*73[0m
+[0;32mI (305534) GPS: Invalid GPGLL format[0m
+[0;32mI (305534) GPS: GPS Data: $GPGLL,0919.95263,N,08024.84102,E,175135.00,A,A*66[0m
+[0;32mI (305544) GPS: Latitude: 9.332544 N[0m
+[0;32mI (305554) GPS: Longitude: 80.414017 E[0m
+[0;32mI (305554) GPS: GPS Data: $GPRMC,175136.00,A,0919.95279,N,08024.84110,E,0.130,,070425,,,A*72[0m
+[0;32mI (305564) GPS: Invalid GPGLL format[0m
+[0;32mI (305564) GPS: GPS Data: $GPVTG,,T,,M,0.130,N,0.240,K,A*27[0m
+[0;32mI (305574) GPS: Invalid GPGLL format[0m
+[0;32mI (305574) GPS: GPS Data: $GPGGA,175136.00,0919.95279,N,08024.84110,E,1,09,0.98,41.6,M,-95.1,M,,*43[0m
+[0;32mI (305584) GPS: Invalid GPGLL format[0m
+[0;32mI (305594) GPS: GPS Data: $GPGSA,A,3,32,23,10,28,27,02,25,31,26,,,,1.86,0.98,1.59*0C[0m
+[0;32mI (305604) GPS: Invalid GPGLL format[0m
+[0;32mI (305604) GPS: GPS Data: $GPGSV,4,1,14,01,11,318,23,02,33,301,26,08,05,249,,10,50,069,25*79[0m
+[0;32mI (305614) GPS: Invalid GPGLL format[0m
+[0;32mI (305614) GPS_MAIN: Latitude: 9.332544, Longitude: 80.414017[0m
+[0;32mI (307704) FIREBASE: ✅ Updated GPS data in existing 'gps' object.[0m
+[0;32mI (317714) GPS: GPS Data: $GPGSV,4,2,14,16,13,191,,18,02,152,09,23,22,113,29,25,15,065,19*73[0m
+[0;32mI (317714) GPS: Invalid GPGLL format[0m
+[0;32mI (317714) GPS: GPS Data: $GPGSV,4,3,14,26,34,172,31,27,14,216,25,28,67,005,26,31,75,257,37*72[0m
+[0;32mI (317724) GPS: Invalid GPGLL format[0m
+[0;32mI (317724) GPS: GPS Data: $GPGSV,4,4,14,32,29,018,25,42,22,095919.95371,N,08024.84179,E,175147.00,A,A*6D[0m
+[0;32mI (317734) GPS: Invalid GPGLL format[0m
+[0;32mI (317744) GPS: GPS Data: $GPRMC,175148.00,A,0919.95381,N,08024.84188,E,0.048,,070425,,,A*72[0m
+[0;32mI (317754) GPS: Invalid GPGLL format[0m
+[0;32mI (317754) GPS: GPS Data: $GPVTG,,T,,M,0.048,N,0.089,K,A*2E[0m
+[0;32mI (317764) GPS: Invalid GPGLL format[0m
+[0;32mI (317764) GPS: GPS Data: $GPGGA,175148.00,0919.95381,N,08024.84188,E,1,09,0.98,42.4,M,-95.1,M,,*4C[0m
+[0;32mI (317774) GPS: Invalid GPGLL format[0m
+[0;32mI (317774) GPS: GPS Data: $GPGSA,A,3,32,23,10,28,27,02,25,31,26,,,,1.86,0.98,1.59*0C[0m
+[0;32mI (317784) GPS: Invalid GPGLL format[0m
+[0;32mI (317794) GPS: GPS Data: $GPGSV,4,1,14,01,11,318,19,02,33,301,26,08,05,249,,10,50,070,26*7B[0m
+[0;32mI (317804) GPS: Invalid GPGLL format[0m
+[0;32mI (317804) GPS: GPS Data: $GPGSV,4,2,14,16,13,191,,18,02,152,,23,22,113,29,25,15,065,22*72[0m
+[0;32mI (317814) GPS: Invalid GPGLL format[0m
+[0;32mI (317814) GPS: GPS Data: $GPGSV,4,3,14,26,34,172,33,27,14,216,23,28,67,005,20,31,75,257,37*70[0m
+[0;32mI (317824) GPS: Invalid GPGLL format[0m
+[0;32mI (317834) GPS: GPS Data: $GPGSV,4,4,14,32,29,018,17,42,22,095,30*70[0m
+[0;32mI (317834) GPS: Invalid GPGLL format[0m
+[0;32mI (317844) GPS: GPS Data: $GPGLL,0919.95381,N,08024.84188,E,175148.00,A,A*63[0m
+[0;32mI (317854) GPS: Latitude: 9.332563 N[0m
+[0;32mI (317854) GPS: Longitude: 80.414031 E[0m
+[0;32mI (317854) GPS: GPS Data: $GPRMC,175149.00,A,0919.95393,N,08024.84197,E,0.060,,070425,,,A*74[0m
+[0;32mI (317864) GPS: Invalid GPGLL format[0m
+[0;32mI (317874) GPS: GPS Data: $GPVTG,,T,,M,0.060,N,0.111,K,A*24[0m
+[0;32mI (317874) GPS: Invalid GPGLL format[0m
+[0;32mI (317884) GPS: GPS Data: $GPGGA,175149.00,0919.95393,N,08024.84197,E,1,09,0.98,42.3,M,-95.1,M,,*47[0m
+[0;32mI (317894) GPS: Invalid GPGLL format[0m
+[0;32mI (317894) GPS: GPS Data: $GPGSA,A,3,32,23,10,28,27,02,25,31,26,,,,1.86,0.98,1.59*0C[0m
+[0;32mI (317904) GPS: Invalid GPGLL format[0m
+[0;32mI (317914) GPS: GPS Data: $GPGSV,4,1,14,01,11,318,17,02,33,301,26,08,05,249,,10,50,070,27*74[0m
+[0;32mI (317914) GPS: Invalid GPGLL format[0m
+[0;32mI (317924) GPS_MAIN: Latitude: 9.332563, Longitude: 80.414031[0m
+[0;32mI (319994) FIREBASE: ✅ Updated GPS data in existing 'gps' object.[0m
+[0;32mI (330004) GPS: GPS Data: $GPGSV,4,2,14,16,13,191,,18,02,152,17,23,22,113,28,25,,N,08024.84238,E,175159.00,A,A*69[0m
+[0;32mI (330004) GPS: Invalid GPGLL format[0m
+[0;32mI (330004) GPS: GPS Data: $GPRMC,175200.00,A,0919.95542,N,08024.84231,E,0.029,,070425,,,A*72[0m
+[0;32mI (330014) GPS: Invalid GPGLL format[0m
+[0;32mI (330014) GPS: GPS Data: $GPVTG,,T,,M,0.029,N,0.053,K,A*2E[0m
+[0;32mI (330024) GPS: Invalid GPGLL format[0m
+[0;32mI (330024) GPS: GPS Data: $GPGGA,175200.00,0919.95542,N,08024.84231,E,1,09,0.98,41.4,M,-95.1,M,,*48[0m
+[0;32mI (330034) GPS: Invalid GPGLL format[0m
+[0;32mI (330044) GPS: GPS Data: $GPGSA,A,3,32,23,10,28,27,02,25,31,26,,,,1.86,0.98,1.59*0C[0m
+[0;32mI (330054) GPS: Invalid GPGLL format[0m
+[0;32mI (330054) GPS: GPS Data: $GPGSV,4,1,14,01,11,318,14,02,33,301,25,08,05,249,,10,50,070,25*76[0m
+[0;32mI (330064) GPS: Invalid GPGLL format[0m
+[0;32mI (330064) GPS: GPS Data: $GPGSV,4,2,14,16,14,190,,18,02,152,,23,21,114,28,25,15,064,26*74[0m
+[0;32mI (330074) GPS: Invalid GPGLL format[0m
+[0;32mI (330084) GPS: GPS Data: $GPGSV,4,3,14,26,34,172,35,27,14,216,24,28,67,005,23,31,75,257,39*7C[0m
+[0;32mI (330094) GPS: Invalid GPGLL format[0m
+[0;32mI (330094) GPS: GPS Data: $GPGSV,4,4,14,32,29,018,24,42,22,095,31*71[0m
+[0;32mI (330104) GPS: Invalid GPGLL format[0m
+[0;32mI (330104) GPS: GPS Data: $GPGLL,0919.95542,N,08024.84231,E,175200.00,A,A*64[0m
+[0;32mI (330114) GPS: Latitude: 9.332590 N[0m
+[0;32mI (330114) GPS: Longitude: 80.414039 E[0m
+[0;32mI (330124) GPS: GPS Data: $GPRMC,175201.00,A,0919.95543,N,08024.84227,E,0.117,,070425,,,A*79[0m
+[0;32mI (330134) GPS: Invalid GPGLL format[0m
+[0;32mI (330134) GPS: GPS Data: $GPVTG,,T,,M,0.117,N,0.217,K,A*20[0m
+[0;32mI (330144) GPS: Invalid GPGLL format[0m
+[0;32mI (330144) GPS: GPS Data: $GPGGA,175201.00,0919.95543,N,08024.84227,E,1,09,0.98,41.7,M,-95.1,M,,*4C[0m
+[0;32mI (330154) GPS: Invalid GPGLL format[0m
+[0;32mI (330164) GPS: GPS Data: $GPGSA,A,3,32,23,10,28,27,02,25,31,26,,,,1.86,0.98,1.59*0C[0m
+[0;32mI (330174) GPS: Invalid GPGLL format[0m
+[0;32mI (330174) GPS: GPS Data: $GPGSV,4,1,14,01,11,318,14,02,33,301,25,08,05,249,,10,50,070,24*77[0m
+[0;32mI (330184) GPS: Invalid GPGLL format[0m
+[0;32mI (330184) GPS: GPS Data: $GPGSV,4,2,14,16,14,190,,18,02,152,,23,21,114,28,25,15,064,26*74[0m
+[0;32mI (330194) GPS: Invalid GPGLL format[0m
+[0;32mI (330204) GPS_MAIN: Latitude: 9.332590, Longitude: 80.414039[0m
+[0;32mI (332694) FIREBASE: ✅ Updated GPS data in existing 'gps' object.[0m
+[0;32mI (342694) GPS: GPS Data: $GPGSV,4,3,14,26,34,172,35,27,14,216,24,28,67,005,24,31,75,257,38*7A[0m
+[0;32mI (342694) GPS: Invalid GPGLL format[0m
+[0;32mI (342694) GPS: GPS Data: $GPGSV,4,4,14,32,29,018,25,42,22,095,3A*2E[0m
+[0;32mI (342704) GPS: Invalid GPGLL format[0m
+[0;32mI (342704) GPS: GPS Data: $GPGGA,175212.00,0919.95462,N,08024.84139,E,1,10,0.90,45.3,M,-95.1,M,,*40[0m
+[0;32mI (342714) GPS: Invalid GPGLL format[0m
+[0;32mI (342714) GPS: GPS Data: $GPGSA,A,3,32,23,10,28,27,02,25,31,26,08,,,1.67,0.90,1.40*0B[0m
+[0;32mI (342724) GPS: Invalid GPGLL format[0m
+[0;32mI (342734) GPS: GPS Data: $GPGSV,4,1,14,01,11,318,20,02,33,301,24,08,05,249,16,10,50,070,21*73[0m
+[0;32mI (342744) GPS: Invalid GPGLL format[0m
+[0;32mI (342744) GPS: GPS Data: $GPGSV,4,2,14,16,14,190,16,18,02,152,,23,21,114,28,25,15,064,25*70[0m
+[0;32mI (342754) GPS: Invalid GPGLL format[0m
+[0;32mI (342754) GPS: GPS Data: $GPGSV,4,3,14,26,34,172,33,27,14,215,27,28,66,006,22,31,76,260,39*7E[0m
+[0;32mI (342764) GPS: Invalid GPGLL format[0m
+[0;32mI (342774) GPS: GPS Data: $GPGSV,4,4,14,32,28,019,29,42,22,095,29*75[0m
+[0;32mI (342774) GPS: Invalid GPGLL format[0m
+[0;32mI (342784) GPS: GPS Data: $GPGLL,0919.95462,N,08024.84139,E,175212.00,A,A*6F[0m
+[0;32mI (342794) GPS: Latitude: 9.332577 N[0m
+[0;32mI (342794) GPS: Longitude: 80.414023 E[0m
+[0;32mI (342804) GPS: GPS Data: $GPRMC,175213.00,A,0919.95453,N,08024.84142,E,0.036,,070425,,,A*78[0m
+[0;32mI (342804) GPS: Invalid GPGLL format[0m
+[0;32mI (342814) GPS: GPS Data: $GPVTG,,T,,M,0.036,N,0.067,K,A*27[0m
+[0;32mI (342814) GPS: Invalid GPGLL format[0m
+[0;32mI (342824) GPS: GPS Data: $GPGGA,175213.00,0919.95453,N,08024.84142,E,1,10,0.90,45.6,M,-95.1,M,,*4A[0m
+[0;32mI (342834) GPS: Invalid GPGLL format[0m
+[0;32mI (342834) GPS: GPS Data: $GPGSA,A,3,32,23,10,28,27,02,25,31,26,08,,,1.67,0.90,1.40*0B[0m
+[0;32mI (342844) GPS: Invalid GPGLL format[0m
+[0;32mI (342854) GPS: GPS Data: $GPGSV,4,1,14,01,11,318,21,02,33,301,23,08,05,249,16,10,50,070,20*74[0m
+[0;32mI (342854) GPS: Invalid GPGLL format[0m
+[0;32mI (342864) GPS: GPS Data: $GPGSV,4,2,14,16,14,190,14,18,02,152,,23,21,114,28,25,15,064,25*72[0m
+[0;32mI (342874) GPS: Invalid GPGLL format[0m
+[0;32mI (342874) GPS: GPS Data: $GPGSV,4,3,14,26,34,172,33,27,14,215,27,28,66,006,23,31,76,260,39*7F[0m
+[0;32mI (342884) GPS: Invalid GPGLL format[0m
+[0;32mI (342894) GPS: GPS Data: $GPGSV,4,4,14,32,28,019,29,42,22,095,29*75[0m
+[0;32mI (342894) GPS: Invalid GPGLL format[0m
+[0;32mI (342904) GPS_MAIN: Latitude: 9.332577, Longitude: 80.414023[0m
+[0;32mI (346414) FIREBASE: ✅ Updated GPS data in existing 'gps' object.[0m
+[0;32mI (356424) GPS: GPS Data: $GPGLL,0919.95453,N,08024.84142,E,175213.00,A,A*60[0m
+[0;32mI (356424) GPS: Latitude: 9.332575 N[0m
+[0;32mI (356424) GPS: Longitude: 80.414024 E[0m
+[0;32mI (356424) GPS: GPS Data: 175224.00,A,A*6F[0m
+[0;32mI (356434) GPS: Invalid GPGLL format[0m
+[0;32mI (356434) GPS: GPS Data: $GPRMC,175225.00,A,0919.95387,N,08024.84252,E,0.350,,070425,,,A*72[0m
+[0;32mI (356444) GPS: Invalid GPGLL format[0m
+[0;32mI (356444) GPS: GPS Data: $GPVTG,,T,,M,0.350,N,0.649,K,A*2E[0m
+[0;32mI (356454) GPS: Invalid GPGLL format[0m
+[0;32mI (356454) GPS: GPS Data: $GPGGA,175225.00,0919.95387,N,08024.84252,E,1,10,0.91,49.9,M,-95.1,M,,*41[0m
+[0;32mI (356464) GPS: Invalid GPGLL format[0m
+[0;32mI (356474) GPS: GPS Data: $GPGSA,A,3,32,23,10,28,27,02,25,31,26,08,,,1.66,0.91,1.40*0B[0m
+[0;32mI (356484) GPS: Invalid GPGLL format[0m
+[0;32mI (356484) GPS: GPS Data: $GPGSV,4,1,14,01,11,318,27,02,33,301,17,08,05,249,18,10,50,070,25*7E[0m
+[0;32mI (356494) GPS: Invalid GPGLL format[0m
+[0;32mI (356504) GPS: GPS Data: $GPGSV,4,2,14,16,14,190,16,18,02,152,,23,21,114,28,25,15,064,27*72[0m
+[0;32mI (356504) GPS: Invalid GPGLL format[0m
+[0;32mI (356514) GPS: GPS Data: $GPGSV,4,3,14,26,34,172,33,27,14,215,28,28,66,006,23,31,76,260,41*7F[0m
+[0;32mI (356524) GPS: Invalid GPGLL format[0m
+[0;32mI (356524) GPS: GPS Data: $GPGSV,4,4,14,32,28,019,28,42,22,095,30*7C[0m
+[0;32mI (356534) GPS: Invalid GPGLL format[0m
+[0;32mI (356534) GPS: GPS Data: $GPGLL,0919.95387,N,08024.84252,E,175225.00,A,A*69[0m
+[0;32mI (356544) GPS: Latitude: 9.332565 N[0m
+[0;32mI (356554) GPS: Longitude: 80.414042 E[0m
+[0;32mI (356554) GPS: GPS Data: $GPRMC,175226.00,A,0919.95383,N,08024.84276,E,0.386,,070425,,,A*78[0m
+[0;32mI (356564) GPS: Invalid GPGLL format[0m
+[0;32mI (356564) GPS: GPS Data: $GPVTG,,T,,M,0.386,N,0.714,K,A*2C[0m
+[0;32mI (356574) GPS: Invalid GPGLL format[0m
+[0;32mI (356574) GPS: GPS Data: $GPGGA,175226.00,0919.95383,N,08024.84276,E,1,10,0.91,50.4,M,-95.1,M,,*45[0m
+[0;32mI (356584) GPS: Invalid GPGLL format[0m
+[0;32mI (356594) GPS: GPS Data: $GPGSA,A,3,32,23,10,28,27,02,25,31,26,08,,,1.66,0.91,1.40*0B[0m
+[0;32mI (356604) GPS: Invalid GPGLL format[0m
+[0;32mI (356604) GPS: GPS Data: $GPGSV,4,1,14,01,11,318,27,02,33,301,14,08,05,249,17,10,50,070,27*70[0m
+[0;32mI (356614) GPS: Invalid GPGLL format[0m
+[0;32mI (356614) GPS: GPS Data: $GPGSV,4,2,14,16,14,190,17,18,02,152,,23,21,114,28,25,15,064,28*7C[0m
+[0;32mI (356624) GPS: Invalid GPGLL format[0m
+[0;32mI (356634) GPS_MAIN: Latitude: 9.332565, Longitude: 80.414042[0m
+[0;32mI (359114) FIREBASE: ✅ Updated GPS data in existing 'gps' object.[0m
+[0;32mI (369114) GPS: GPS Data: $GPGSV,4,3,14,26,34,172,34,27,14,215,29,28,66,006,23,31,76,260,42*7A[0m
+[0;32mI (369114) GPS: Invalid GPGLL format[0m
+[0;32mI (369114) GPS: GPS Data: $GPGSV,4,4,14,32,28,019,28,42,22,A,A*68[0m
+[0;32mI (369124) GPS: Invalid GPGLL format[0m
+[0;32mI (369124) GPS: GPS Data: $GPRMC,175239.00,A,0919.95386,N,08024.84406,E,0.072,,070425,,,A*7A[0m
+[0;32mI (369134) GPS: Invalid GPGLL format[0m
+[0;32mI (369134) GPS: GPS Data: $GPVTG,,T,,M,0.072,N,0.134,K,A*20[0m
+[0;32mI (369144) GPS: Invalid GPGLL format[0m
+[0;32mI (369144) GPS: GPS Data: $GPGGA,175239.00,0919.95386,N,08024.84406,E,1,10,0.91,51.4,M,-95.1,M,,*4E[0m
+[0;32mI (369154) GPS: Invalid GPGLL format[0m
+[0;32mI (369164) GPS: GPS Data: $GPGSA,A,3,32,23,10,28,27,02,25,31,26,08,,,1.66,0.91,1.40*0B[0m
+[0;32mI (369174) GPS: Invalid GPGLL format[0m
+[0;32mI (369174) GPS: GPS Data: $GPGSV,4,1,14,01,11,318,25,02,33,301,29,08,05,249,21,10,50,070,27*79[0m
+[0;32mI (369184) GPS: Invalid GPGLL format[0m
+[0;32mI (369184) GPS: GPS Data: $GPGSV,4,2,14,16,14,190,17,18,02,152,,23,21,114,26,25,15,064,27*7D[0m
+[0;32mI (369194) GPS: Invalid GPGLL format[0m
+[0;32mI (369204) GPS: GPS Data: $GPGSV,4,3,14,26,34,172,32,27,14,215,29,28,66,006,27,31,76,260,39*74[0m
+[0;32mI (369214) GPS: Invalid GPGLL format[0m
+[0;32mI (369214) GPS: GPS Data: $GPGSV,4,4,14,32,28,019,27,42,22,095,31*72[0m
+[0;32mI (369224) GPS: Invalid GPGLL format[0m
+[0;32mI (369224) GPS: GPS Data: $GPGLL,0919.95386,N,08024.84406,E,175239.00,A,A*62[0m
+[0;32mI (369234) GPS: Latitude: 9.332564 N[0m
+[0;32mI (369234) GPS: Longitude: 80.414068 E[0m
+[0;32mI (369244) GPS: GPS Data: $GPRMC,175240.00,A,0919.95388,N,08024.84419,E,0.051,,070425,,,A*75[0m
+[0;32mI (369254) GPS: Invalid GPGLL format[0m
+[0;32mI (369254) GPS: GPS Data: $GPVTG,,T,,M,0.051,N,0.095,K,A*2B[0m
+[0;32mI (369264) GPS: Invalid GPGLL format[0m
+[0;32mI (369264) GPS: GPS Data: $GPGGA,175240.00,0919.95388,N,08024.84419,E,1,10,0.91,51.5,M,-95.1,M,,*41[0m
+[0;32mI (369274) GPS: Invalid GPGLL format[0m
+[0;32mI (369284) GPS: GPS Data: $GPGSA,A,3,32,23,10,28,27,02,25,31,26,08,,,1.66,0.91,1.40*0B[0m
+[0;32mI (369294) GPS: Invalid GPGLL format[0m
+[0;32mI (369294) GPS: GPS Data: $GPGSV,4,1,14,01,11,318,25,02,33,301,29,08,05,249,21,10,50,070,27*79[0m
+[0;32mI (369304) GPS: Invalid GPGLL format[0m
+[0;32mI (369304) GPS: GPS Data: $GPGSV,4,2,14,16,14,190,18,18,02,152,,23,21,114,26,25,15,064,26*73[0m
+[0;32mI (369314) GPS: Invalid GPGLL format[0m
+[0;32mI (369324) GPS_MAIN: Latitude: 9.332564, Longitude: 80.414068[0m
+[0;32mI (371404) FIREBASE: ✅ Updated GPS data in existing 'gps' object.[0m
+[0;32mI (381404) GPS: GPS Data: $GPGSV,4,3,14,26,34,172,32,27,14,215,30,28,66,006,27,31,76,260,41*73[0m
+[0;32mI (381404) GPS: Invalid GPGLL format[0m
+[0;32mI (381404) GPS: GPS Data: $GPGSV,4,4,14,32,28,019,27,42,22,*46[0m
+[0;32mI (381414) GPS: Invalid GPGLL format[0m
+[0;32mI (381414) GPS: GPS Data: $GPGSA,A,3,32,23,10,28,27,02,25,31,26,08,,,1.66,0.91,1.40*0B[0m
+[0;32mI (381424) GPS: Invalid GPGLL format[0m
+[0;32mI (381424) GPS: GPS Data: $GPGSV,4,1,14,01,11,318,21,02,33,300,25,08,05,249,19,10,50,070,29*75[0m
+[0;32mI (381434) GPS: Invalid GPGLL format[0m
+[0;32mI (381444) GPS: GPS Data: $GPGSV,4,2,14,16,14,190,13,18,02,152,,23,21,114,23,25,15,064,26*7D[0m
+[0;32mI (381454) GPS: Invalid GPGLL format[0m
+[0;32mI (381454) GPS: GPS Data: $GPGSV,4,3,14,26,34,172,28,27,14,215,28,28,66,006,28,31,76,260,39*71[0m
+[0;32mI (381464) GPS: Invalid GPGLL format[0m
+[0;32mI (381464) GPS: GPS Data: $GPGSV,4,4,14,32,28,019,28,42,22,095,30*7C[0m
+[0;32mI (381474) GPS: Invalid GPGLL format[0m
+[0;32mI (381474) GPS: GPS Data: $GPGLL,0919.95403,N,08024.84406,E,175251.00,A,A*66[0m
+[0;32mI (381484) GPS: Latitude: 9.332567 N[0m
+[0;32mI (381494) GPS: Longitude: 80.414068 E[0m
+[0;32mI (381494) GPS: GPS Data: $GPRMC,175252.00,A,0919.95402,N,08024.84404,E,0.261,,070425,,,A*7E[0m
+[0;32mI (381504) GPS: Invalid GPGLL format[0m
+[0;32mI (381504) GPS: GPS Data: $GPVTG,,T,,M,0.261,N,0.484,K,A*2E[0m
+[0;32mI (381514) GPS: Invalid GPGLL format[0m
+[0;32mI (381514) GPS: GPS Data: $GPGGA,175252.00,0919.95402,N,08024.84404,E,1,10,0.91,50.8,M,-95.1,M,,*47[0m
+[0;32mI (381524) GPS: Invalid GPGLL format[0m
+[0;32mI (381534) GPS: GPS Data: $GPGSA,A,3,32,23,10,28,27,02,25,31,26,08,,,1.66,0.91,1.40*0B[0m
+[0;32mI (381544) GPS: Invalid GPGLL format[0m
+[0;32mI (381544) GPS: GPS Data: $GPGSV,4,1,14,01,11,318,21,02,33,300,23,08,05,249,19,10,50,070,29*73[0m
+[0;32mI (381554) GPS: Invalid GPGLL format[0m
+[0;32mI (381554) GPS: GPS Data: $GPGSV,4,2,14,16,14,190,12,18,02,152,,23,21,114,24,25,15,064,25*78[0m
+[0;32mI (381564) GPS: Invalid GPGLL format[0m
+[0;32mI (381574) GPS: GPS Data: $GPGSV,4,3,14,26,34,172,28,27,14,215,27,28,66,006,28,31,76,260,38*7F[0m
+[0;32mI (381584) GPS: Invalid GPGLL format[0m
+[0;32mI (381584) GPS: GPS Data: $GPGSV,4,4,14,32,28,019,28,42,22,095,30*7C[0m
+[0;32mI (381594) GPS: Invalid GPGLL format[0m
+[0;32mI (381594) GPS: GPS Data: $GPGLL,0919.95402,N,08024.84404,E,175252.00,A,A*66[0m
+[0;32mI (381604) GPS: Latitude: 9.332567 N[0m
+[0;32mI (381604) GPS: Longitude: 80.414067 E[0m
+[0;32mI (381614) GPS_MAIN: Latitude: 9.332567, Longitude: 80.414067[0m
+[0;32mI (383894) FIREBASE: ✅ Updated GPS data in existing 'gps' object.[0m
+[0;32mI (393894) GPS: GPS Data: $GPRMC,175253.00,A,0919.95403,N,08024.84395,E,0.336,,070425,,,A*72[0m
+[0;32mI (393894) GPS: Invalid GPGLL format[0m
+[0;32mI (393894) GPS: GPS Data: $GPVTG,,T,,M,0.336,N,0.622,K,A*23[0m
+[0;32mI (393894) GPS: Invalid GPGLL format[0m
+[0;32mI (393904) GPS: GPS Data: $GPGGA,175253.00,30*7D[0m
+[0;32mI (393904) GPS: Invalid GPGLL format[0m
+[0;32mI (393914) GPS: GPS Data: $GPGLL,0919.95432,N,08024.84356,E,175303.00,A,A*60[0m
+[0;32mI (393924) GPS: Latitude: 9.332572 N[0m
+[0;32mI (393924) GPS: Longitude: 80.414059 E[0m
+[0;32mI (393934) GPS: GPS Data: $GPRMC,175304.00,A,0919.95439,N,08024.84348,E,0.056,,070425,,,A*7D[0m
+[0;32mI (393934) GPS: Invalid GPGLL format[0m
+[0;32mI (393944) GPS: GPS Data: $GPVTG,,T,,M,0.056,N,0.103,K,A*22[0m
+[0;32mI (393944) GPS: Invalid GPGLL format[0m
+[0;32mI (393954) GPS: GPS Data: $GPGGA,175304.00,0919.95439,N,08024.84348,E,1,10,0.91,49.5,M,-95.1,M,,*47[0m
+[0;32mI (393964) GPS: Invalid GPGLL format[0m
+[0;32mI (393964) GPS: GPS Data: $GPGSA,A,3,32,23,10,28,27,02,25,31,26,08,,,1.66,0.91,1.40*0B[0m
+[0;32mI (393974) GPS: Invalid GPGLL format[0m
+[0;32mI (393984) GPS: GPS Data: $GPGSV,4,1,14,01,11,318,18,02,33,300,26,08,05,248,14,10,50,071,27*7F[0m
+[0;32mI (393984) GPS: Invalid GPGLL format[0m
+[0;32mI (393994) GPS: GPS Data: $GPGSV,4,2,14,16,14,190,06,18,01,152,,23,21,114,25,25,15,064,25*7F[0m
+[0;32mI (394004) GPS: Invalid GPGLL format[0m
+[0;32mI (394004) GPS: GPS Data: $GPGSV,4,3,14,26,34,172,25,27,14,215,26,28,66,006,27,31,76,260,35*71[0m
+[0;32mI (394014) GPS: Invalid GPGLL format[0m
+[0;32mI (394024) GPS: GPS Data: $GPGSV,4,4,14,32,28,019,29,42,22,095,30*7D[0m
+[0;32mI (394024) GPS: Invalid GPGLL format[0m
+[0;32mI (394034) GPS: GPS Data: $GPGLL,0919.95439,N,08024.84348,E,175304.00,A,A*63[0m
+[0;32mI (394044) GPS: Latitude: 9.332573 N[0m
+[0;32mI (394044) GPS: Longitude: 80.414058 E[0m
+[0;32mI (394044) GPS: GPS Data: $GPRMC,175305.00,A,0919.95444,N,08024.84345,E,0.025,,070425,,,A*7F[0m
+[0;32mI (394054) GPS: Invalid GPGLL format[0m
+[0;32mI (394064) GPS: GPS Data: $GPVTG,,T,,M,0.025,N,0.047,K,A*27[0m
+[0;32mI (394064) GPS: Invalid GPGLL format[0m
+[0;32mI (394074) GPS: GPS Data: $GPGGA,175305.00,0919.95444,N,08024.84345,E,1,10,0.91,49.4,M,-95.1,M,,*40[0m
+[0;32mI (394084) GPS: Invalid GPGLL format[0m
+[0;32mI (394084) GPS: GPS Data: $GPGSA,A,3,32,23,10,28,27,02,25,31,26,08,,,1.66,0.91,1.40*0B[0m
+[0;32mI (394094) GPS: Invalid GPGLL format[0m
+[0;32mI (394094) GPS: GPS Data: $GPGSV,4,1,14,01,11,318,19,02,33,300,27,08,05,248,14,10,50,071,26*7E[0m
+[0;32mI (394104) GPS: Invalid GPGLL format[0m
+[0;32mI (394114) GPS_MAIN: Latitude: 9.332573, Longitude: 80.414058[0m
+[0;32mI (396384) FIREBASE: ✅ Updated GPS data in existing 'gps' object.[0m
+[0;32mI (406394) GPS: GPS Data: $GPGSV,4,2,14,16,14,190,,18,01,152,16,23,21,114,25425,,,A*7C[0m
+[0;32mI (406394) GPS: Invalid GPGLL format[0m
+[0;32mI (406394) GPS: GPS Data: $GPVTG,,T,,M,0.088,N,0.163,K,A*27[0m
+[0;32mI (406394) GPS: Invalid GPGLL format[0m
+[0;32mI (406404) GPS: GPS Data: $GPGGA,175316.00,0919.95422,N,08024.84343,E,1,10,0.91,51.2,M,-95.1,M,,*4B[0m
+[0;32mI (406414) GPS: Invalid GPGLL format[0m
+[0;32mI (406414) GPS: GPS Data: $GPGSA,A,3,32,23,10,28,27,02,25,31,26,08,,,1.66,0.91,1.40*0B[0m
+[0;32mI (406424) GPS: Invalid GPGLL format[0m
+[0;32mI (406434) GPS: GPS Data: $GPGSV,4,1,14,01,11,318,21,02,33,300,28,08,05,248,16,10,50,071,23*7D[0m
+[0;32mI (406434) GPS: Invalid GPGLL format[0m
+[0;32mI (406444) GPS: GPS Data: $GPGSV,4,2,14,16,14,190,,18,01,152,,23,21,114,27,25,15,064,27*79[0m
+[0;32mI (406454) GPS: Invalid GPGLL format[0m
+[0;32mI (406454) GPS: GPS Data: $GPGSV,4,3,14,26,35,172,25,27,14,215,23,28,66,006,26,31,76,260,37*76[0m
+[0;32mI (406464) GPS: Invalid GPGLL format[0m
+[0;32mI (406474) GPS: GPS Data: $GPGSV,4,4,14,32,28,019,31,42,22,095,29*7C[0m
+[0;32mI (406474) GPS: Invalid GPGLL format[0m
+[0;32mI (406484) GPS: GPS Data: $GPGLL,0919.95422,N,08024.84343,E,175316.00,A,A*61[0m
+[0;32mI (406494) GPS: Latitude: 9.332570 N[0m
+[0;32mI (406494) GPS: Longitude: 80.414057 E[0m
+[0;32mI (406494) GPS: GPS Data: $GPRMC,175317.00,A,0919.95426,N,08024.84338,E,0.044,,070425,,,A*75[0m
+[0;32mI (406504) GPS: Invalid GPGLL format[0m
+[0;32mI (406514) GPS: GPS Data: $GPVTG,,T,,M,0.044,N,0.081,K,A*2A[0m
+[0;32mI (406514) GPS: Invalid GPGLL format[0m
+[0;32mI (406524) GPS: GPS Data: $GPGGA,175317.00,0919.95426,N,08024.84338,E,1,10,0.91,51.3,M,-95.1,M,,*43[0m
+[0;32mI (406534) GPS: Invalid GPGLL format[0m
+[0;32mI (406534) GPS: GPS Data: $GPGSA,A,3,32,23,10,28,27,02,25,31,26,08,,,1.66,0.91,1.40*0B[0m
+[0;32mI (406544) GPS: Invalid GPGLL format[0m
+[0;32mI (406544) GPS: GPS Data: $GPGSV,4,1,14,01,11,318,22,02,33,300,27,08,05,248,18,10,50,071,22*7E[0m
+[0;32mI (406554) GPS: Invalid GPGLL format[0m
+[0;32mI (406564) GPS: GPS Data: $GPGSV,4,2,14,16,14,190,,18,01,152,,23,21,114,27,25,15,064,28*76[0m
+[0;32mI (406574) GPS: Invalid GPGLL format[0m
+[0;32mI (406574) GPS: GPS Data: $GPGSV,4,3,14,26,35,172,24,27,14,215,23,28,66,006,26,31,76,262,37*75[0m
+[0;32mI (406584) GPS: Invalid GPGLL format[0m
+[0;32mI (406584) GPS: GPS Data: $GPGSV,4,4,14,32,28,019,32,42,22,095,29*7F[0m
+[0;32mI (406594) GPS: Invalid GPGLL format[0m
+[0;32mI (406604) GPS_MAIN: Latitude: 9.332570, Longitude: 80.414057[0m
+[0;32mI (408884) FIREBASE: ✅ Updated GPS data in existing 'gps' object.[0m
+[0;32mI (418884) GPS: GPS Data: $GPGLL,0919.95426,N,08024.84338,E,175317.00,A,A*68[0m
+[0;32mI (418884) GPS: Latitude: 9.332571 N[0m
+[0;32mI (418884) GPS: Longitude: 80.414056 E[0m
+[0;32mI (418884) GPS: GPS Data: PGLL,0919.95419,N,08024.84237,E,175328.00,A,A*66[0m
+[0;32mI (418894) GPS: Invalid GPGLL format[0m
+[0;32mI (418894) GPS: GPS Data: $GPRMC,175329.00,A,0919.95421,N,08024.84241,E,0.082,,070425,,,A*7A[0m
+[0;32mI (418904) GPS: Invalid GPGLL format[0m
+[0;32mI (418914) GPS: GPS Data: $GPVTG,,T,,M,0.082,N,0.151,K,A*2C[0m
+[0;32mI (418914) GPS: Invalid GPGLL format[0m
+[0;32mI (418924) GPS: GPS Data: $GPGGA,175329.00,0919.95421,N,08024.84241,E,1,09,0.94,50.1,M,-95.1,M,,*48[0m
+[0;32mI (418934) GPS: Invalid GPGLL format[0m
+[0;32mI (418934) GPS: GPS Data: $GPGSA,A,3,32,23,28,27,02,25,31,26,08,,,,1.77,0.94,1.50*0E[0m
+[0;32mI (418944) GPS: Invalid GPGLL format[0m
+[0;32mI (418944) GPS: GPS Data: $GPGSV,4,1,14,01,11,318,23,02,33,300,21,08,05,248,15,10,50,071,*74[0m
+[0;32mI (418954) GPS: Invalid GPGLL format[0m
+[0;32mI (418964) GPS: GPS Data: $GPGSV,4,2,14,16,14,190,13,18,01,152,,23,21,114,23,25,15,064,27*7F[0m
+[0;32mI (418974) GPS: Invalid GPGLL format[0m
+[0;32mI (418974) GPS: GPS Data: $GPGSV,4,3,14,26,35,172,20,27,14,215,21,28,66,006,24,31,76,262,38*7E[0m
+[0;32mI (418984) GPS: Invalid GPGLL format[0m
+[0;32mI (418984) GPS: GPS Data: $GPGSV,4,4,14,32,28,019,32,42,22,095,27*71[0m
+[0;32mI (418994) GPS: Invalid GPGLL format[0m
+[0;32mI (419004) GPS: GPS Data: $GPGLL,0919.95421,N,08024.84241,E,175329.00,A,A*6D[0m
+[0;32mI (419004) GPS: Latitude: 9.332570 N[0m
+[0;32mI (419014) GPS: Longitude: 80.414040 E[0m
+[0;32mI (419014) GPS: GPS Data: $GPRMC,175330.00,A,0919.95421,N,08024.84225,E,0.118,,070425,,,A*72[0m
+[0;32mI (419024) GPS: Invalid GPGLL format[0m
+[0;32mI (419034) GPS: GPS Data: $GPVTG,,T,,M,0.118,N,0.219,K,A*21[0m
+[0;32mI (419034) GPS: Invalid GPGLL format[0m
+[0;32mI (419044) GPS: GPS Data: $GPGGA,175330.00,0919.95421,N,08024.84225,E,1,09,0.94,49.7,M,-95.1,M,,*4C[0m
+[0;32mI (419054) GPS: Invalid GPGLL format[0m
+[0;32mI (419054) GPS: GPS Data: $GPGSA,A,3,32,23,28,27,02,25,31,26,08,,,,1.77,0.94,1.50*0E[0m
+[0;32mI (419064) GPS: Invalid GPGLL format[0m
+[0;32mI (419064) GPS: GPS Data: $GPGSV,4,1,14,01,11,318,23,02,33,300,22,08,05,248,15,10,50,071,*77[0m
+[0;32mI (419074) GPS: Invalid GPGLL format[0m
+[0;32mI (419084) GPS: GPS Data: $GPGSV,4,2,14,16,14,190,12,18,01,152,,23,21,114,23,25,15,064,27*7E[0m
+[0;32mI (419084) GPS: Invalid GPGLL format[0m
+[0;32mI (419094) GPS_MAIN: Latitude: 9.332570, Longitude: 80.414040[0m
+[0;32mI (421384) FIREBASE: ✅ Updated GPS data in existing 'gps' object.[0m
+[0;32mI (431394) GPS: GPS Data: $GPGSV,4,3,14,26,35,172,20,27,14,215,21,28,66,006,23,31,76,262,37*76[0m
+[0;32mI (431394) GPS: Invalid GPGLL format[0m
+[0;32mI (431394) GPS: GPS Data: $GPGSV,4,4,14,32,28,019,31,42,22,095196,E,175340.00,A,A*69[0m
+[0;32mI (431404) GPS: Invalid GPGLL format[0m
+[0;32mI (431404) GPS: GPS Data: $GPRMC,175341.00,A,0919.95426,N,08024.84199,E,0.155,,070425,,,A*7E[0m
+[0;32mI (431414) GPS: Invalid GPGLL format[0m
+[0;32mI (431414) GPS: GPS Data: $GPVTG,,T,,M,0.155,N,0.287,K,A*2F[0m
+[0;32mI (431424) GPS: Invalid GPGLL format[0m
+[0;32mI (431434) GPS: GPS Data: $GPGGA,175341.00,0919.95426,N,08024.84199,E,1,09,0.95,47.7,M,-95.1,M,,*46[0m
+[0;32mI (431444) GPS: Invalid GPGLL format[0m
+[0;32mI (431444) GPS: GPS Data: $GPGSA,A,3,32,23,10,27,02,25,31,26,08,,,,2.00,0.95,1.76*03[0m
+[0;32mI (431454) GPS: Invalid GPGLL format[0m
+[0;32mI (431454) GPS: GPS Data: $GPGSV,4,1,14,01,11,318,24,02,33,300,27,08,05,248,18,10,50,071,19*70[0m
+[0;32mI (431464) GPS: Invalid GPGLL format[0m
+[0;32mI (431474) GPS: GPS Data: $GPGSV,4,2,14,16,14,190,11,18,01,152,,23,21,114,25,25,15,064,27*7B[0m
+[0;32mI (431474) GPS: Invalid GPGLL format[0m
+[0;32mI (431484) GPS: GPS Data: $GPGSV,4,3,14,26,35,172,21,27,14,215,26,28,66,006,,31,76,262,40*71[0m
+[0;32mI (431494) GPS: Invalid GPGLL format[0m
+[0;32mI (431494) GPS: GPS Data: $GPGSV,4,4,14,32,28,019,33,42,22,095,29*7E[0m
+[0;32mI (431504) GPS: Invalid GPGLL format[0m
+[0;32mI (431504) GPS: GPS Data: $GPGLL,0919.95426,N,08024.84199,E,175341.00,A,A*62[0m
+[0;32mI (431514) GPS: Latitude: 9.332571 N[0m
+[0;32mI (431524) GPS: Longitude: 80.414033 E[0m
+[0;32mI (431524) GPS: GPS Data: $GPRMC,175342.00,A,0919.95424,N,08024.84200,E,0.175,,070425,,,A*7E[0m
+[0;32mI (431534) GPS: Invalid GPGLL format[0m
+[0;32mI (431534) GPS: GPS Data: $GPVTG,,T,,M,0.175,N,0.325,K,A*24[0m
+[0;32mI (431544) GPS: Invalid GPGLL format[0m
+[0;32mI (431544) GPS: GPS Data: $GPGGA,175342.00,0919.95424,N,08024.84200,E,1,09,0.95,47.7,M,-95.1,M,,*44[0m
+[0;32mI (431554) GPS: Invalid GPGLL format[0m
+[0;32mI (431564) GPS: GPS Data: $GPGSA,A,3,32,23,10,27,02,25,31,26,08,,,,2.00,0.95,1.76*03[0m
+[0;32mI (431574) GPS: Invalid GPGLL format[0m
+[0;32mI (431574) GPS: GPS Data: $GPGSV,4,1,14,01,11,318,24,02,33,300,28,08,05,248,19,10,50,071,19*7E[0m
+[0;32mI (431584) GPS: Invalid GPGLL format[0m
+[0;32mI (431584) GPS: GPS Data: $GPGSV,4,2,14,16,14,190,09,18,01,152,,23,21,114,25,25,15,064,27*72[0m
+[0;32mI (431594) GPS: Invalid GPGLL format[0m
+[0;32mI (431604) GPS_MAIN: Latitude: 9.332571, Longitude: 80.414033[0m
+[0;32mI (433864) FIREBASE: ✅ Updated GPS data in existing 'gps' object.[0m
+[0;32mI (443874) GPS: GPS Data: $GPGSV,4,3,14,26,35,172,21,27,14,215,26,28,66,006,,31,76,262,41*70[0m
+[0;32mI (443874) GPS: Invalid GPGLL format[0m
+[0;32mI (443874) GPS: GPS Data: $GPGSV,4,4,14,32,28,019,36,42,22,09576,262,42*77[0m
+[0;32mI (443884) GPS: Invalid GPGLL format[0m
+[0;32mI (443884) GPS: GPS Data: $GPGSV,4,4,14,32,28,019,34,42,22,095,30*71[0m
+[0;32mI (443894) GPS: Invalid GPGLL format[0m
+[0;32mI (443894) GPS: GPS Data: $GPGLL,0919.95401,N,08024.84157,E,175353.00,A,A*66[0m
+[0;32mI (443904) GPS: Latitude: 9.332567 N[0m
+[0;32mI (443904) GPS: Longitude: 80.414026 E[0m
+[0;32mI (443914) GPS: GPS Data: $GPRMC,175354.00,A,0919.95400,N,08024.84157,E,0.198,,070425,,,A*7D[0m
+[0;32mI (443924) GPS: Invalid GPGLL format[0m
+[0;32mI (443924) GPS: GPS Data: $GPVTG,,T,,M,0.198,N,0.367,K,A*21[0m
+[0;32mI (443934) GPS: Invalid GPGLL format[0m
+[0;32mI (443934) GPS: GPS Data: $GPGGA,175354.00,0919.95400,N,08024.84157,E,1,10,0.91,46.2,M,-95.1,M,,*4C[0m
+[0;32mI (443944) GPS: Invalid GPGLL format[0m
+[0;32mI (443954) GPS: GPS Data: $GPGSA,A,3,32,23,10,28,27,02,25,31,26,08,,,1.66,0.91,1.40*0B[0m
+[0;32mI (443954) GPS: Invalid GPGLL format[0m
+[0;32mI (443964) GPS: GPS Data: $GPGSV,4,1,14,01,11,318,14,02,33,300,24,08,05,248,18,10,50,071,27*7D[0m
+[0;32mI (443974) GPS: Invalid GPGLL format[0m
+[0;32mI (443974) GPS: GPS Data: $GPGSV,4,2,14,16,14,190,,18,01,152,,23,21,114,25,25,15,064,14*7B[0m
+[0;32mI (443984) GPS: Invalid GPGLL format[0m
+[0;32mI (443994) GPS: GPS Data: $GPGSV,4,3,14,26,35,172,26,27,14,215,26,28,66,006,23,31,76,262,42*75[0m
+[0;32mI (443994) GPS: Invalid GPGLL format[0m
+[0;32mI (444004) GPS: GPS Data: $GPGSV,4,4,14,32,28,019,33,42,22,095,29*7E[0m
+[0;32mI (444014) GPS: Invalid GPGLL format[0m
+[0;32mI (444014) GPS: GPS Data: $GPGLL,0919.95400,N,08024.84157,E,175354.00,A,A*60[0m
+[0;32mI (444024) GPS: Latitude: 9.332567 N[0m
+[0;32mI (444024) GPS: Longitude: 80.414026 E[0m
+[0;32mI (444034) GPS: GPS Data: $GPRMC,175355.00,A,0919.95407,N,08024.84148,E,0.497,,070425,,,A*7F[0m
+[0;32mI (444044) GPS: Invalid GPGLL format[0m
+[0;32mI (444044) GPS: GPS Data: $GPVTG,,T,,M,0.497,N,0.921,K,A*23[0m
+[0;32mI (444054) GPS: Invalid GPGLL format[0m
+[0;32mI (444054) GPS: GPS Data: $GPGGA,175355.00,0919.95407,N,08024.84148,E,1,10,0.91,46.0,M,-95.1,M,,*46[0m
+[0;32mI (444064) GPS: Invalid GPGLL format[0m
+[0;32mI (444064) GPS: GPS Data: $GPGSA,A,3,32,23,10,28,27,02,25,31,26,08,,,1.66,0.91,1.40*0B[0m
+[0;32mI (444074) GPS: Invalid GPGLL format[0m
+[0;32mI (444084) GPS_MAIN: Latitude: 9.332567, Longitude: 80.414026[0m
+[0;32mI (446564) FIREBASE: ✅ Updated GPS data in existing 'gps' object.[0m
+[0;32mI (456564) GPS: GPS Data: $GPGSV,4,1,14,01,11,318,13,02,33,300,24,08,05,248,19,10,50,071,27*7B[0m
+[0;32mI (456564) GPS: Invalid GPGLL format[0m
+[0;32mI (456564) GPS: GPS Data: $GPGSV,4,2,14,16,14,190,,18,01,152,,23,21,114,25,2405.00,A,A*68[0m
+[0;32mI (456574) GPS: Invalid GPGLL format[0m
+[0;32mI (456574) GPS: GPS Data: $GPRMC,175406.00,A,0919.95452,N,08024.84137,E,0.081,,070425,,,A*75[0m
+[0;32mI (456584) GPS: Invalid GPGLL format[0m
+[0;32mI (456594) GPS: GPS Data: $GPVTG,,T,,M,0.081,N,0.151,K,A*2F[0m
+[0;32mI (456594) GPS: Invalid GPGLL format[0m
+[0;32mI (456604) GPS: GPS Data: $GPGGA,175406.00,0919.95452,N,08024.84137,E,1,08,0.98,43.4,M,-95.1,M,,*4E[0m
+[0;32mI (456614) GPS: Invalid GPGLL format[0m
+[0;32mI (456614) GPS: GPS Data: $GPGSA,A,3,32,23,10,27,02,31,26,08,,,,,2.00,0.98,1.74*0B[0m
+[0;32mI (456624) GPS: Invalid GPGLL format[0m
+[0;32mI (456624) GPS: GPS Data: $GPGSV,4,1,14,01,12,318,10,02,33,300,14,08,05,248,18,10,50,071,24*7A[0m
+[0;32mI (456634) GPS: Invalid GPGLL format[0m
+[0;32mI (456644) GPS: GPS Data: $GPGSV,4,2,14,16,14,190,,18,01,152,,23,21,114,27,25,15,064,*7C[0m
+[0;32mI (456644) GPS: Invalid GPGLL format[0m
+[0;32mI (456654) GPS: GPS Data: $GPGSV,4,3,14,26,35,172,28,27,14,215,24,28,66,006,,31,76,262,40*7A[0m
+[0;32mI (456664) GPS: Invalid GPGLL format[0m
+[0;32mI (456664) GPS: GPS Data: $GPGSV,4,4,14,32,28,019,34,42,22,095,29*79[0m
+[0;32mI (456674) GPS: Invalid GPGLL format[0m
+[0;32mI (456674) GPS: GPS Data: $GPGLL,0919.95452,N,08024.84137,E,175406.00,A,A*61[0m
+[0;32mI (456684) GPS: Latitude: 9.332575 N[0m
+[0;32mI (456694) GPS: Longitude: 80.414023 E[0m
+[0;32mI (456694) GPS: GPS Data: $GPRMC,175407.00,A,0919.95456,N,08024.84150,E,0.111,,070425,,,A*79[0m
+[0;32mI (456704) GPS: Invalid GPGLL format[0m
+[0;32mI (456704) GPS: GPS Data: $GPVTG,,T,,M,0.111,N,0.206,K,A*26[0m
+[0;32mI (456714) GPS: Invalid GPGLL format[0m
+[0;32mI (456714) GPS: GPS Data: $GPGGA,175407.00,0919.95456,N,08024.84150,E,1,10,0.98,43.6,M,-95.1,M,,*41[0m
+[0;32mI (456724) GPS: Invalid GPGLL format[0m
+[0;32mI (456734) GPS: GPS Data: $GPGSA,A,3,32,23,10,28,27,02,25,31,26,08,,,2.00,0.98,1.74*06[0m
+[0;32mI (456744) GPS: Invalid GPGLL format[0m
+[0;32mI (456744) GPS: GPS Data: $GPGSV,4,1,14,01,12,318,,02,33,300,13,08,05,248,17,10,50,072,22*76[0m
+[0;32mI (456754) GPS: Invalid GPGLL format[0m
+[0;32mI (456754) GPS: GPS Data: $GPGSV,4,2,14,16,14,190,,18,01,152,,23,21,114,26,25,15,064,12*7E[0m
+[0;32mI (456764) GPS: Invalid GPGLL format[0m
+[0;32mI (456774) GPS_MAIN: Latitude: 9.332575, Longitude: 80.414023[0m
+[0;32mI (459264) FIREBASE: ✅ Updated GPS data in existing 'gps' object.[0m
+[0;32mI (469264) GPS: GPS Data: $GPGSV,4,3,14,26,35,172,28,27,14,215,23,28,66,006,21,31,76,262,40*7E[0m
+[0;32mI (469264) GPS: Invalid GPGLL format[0m
+[0;32mI (469264) GPS: GPS Data: $GPGSV,4,4,14,32,28,019,34,42,22,095N,08024.84256,E,175418.00,A,A*69[0m
+[0;32mI (469274) GPS: Invalid GPGLL format[0m
+[0;32mI (469274) GPS: GPS Data: $GPRMC,175419.00,A,0919.95503,N,08024.84243,E,0.060,,070425,,,A*71[0m
+[0;32mI (469284) GPS: Invalid GPGLL format[0m
+[0;32mI (469294) GPS: GPS Data: $GPVTG,,T,,M,0.060,N,0.111,K,A*24[0m
+[0;32mI (469294) GPS: Invalid GPGLL format[0m
+[0;32mI (469304) GPS: GPS Data: $GPGGA,175419.00,0919.95503,N,08024.84243,E,1,10,0.95,46.5,M,-95.1,M,,*45[0m
+[0;32mI (469314) GPS: Invalid GPGLL format[0m
+[0;32mI (469314) GPS: GPS Data: $GPGSA,A,3,32,23,10,28,27,02,25,31,26,08,,,1.77,0.95,1.50*0E[0m
+[0;32mI (469324) GPS: Invalid GPGLL format[0m
+[0;32mI (469324) GPS: GPS Data: $GPGSV,4,1,14,01,12,318,21,02,33,300,10,08,05,248,16,10,50,072,20*75[0m
+[0;32mI (469334) GPS: Invalid GPGLL format[0m
+[0;32mI (469344) GPS: GPS Data: $GPGSV,4,2,14,16,14,190,,18,01,152,14,23,21,114,26,25,15,064,16*7F[0m
+[0;32mI (469354) GPS: Invalid GPGLL format[0m
+[0;32mI (469354) GPS: GPS Data: $GPGSV,4,3,14,26,35,172,27,27,14,215,21,28,66,006,18,31,76,262,40*79[0m
+[0;32mI (469364) GPS: Invalid GPGLL format[0m
+[0;32mI (469364) GPS: GPS Data: $GPGSV,4,4,14,32,28,019,33,42,22,095,29*7E[0m
+[0;32mI (469374) GPS: Invalid GPGLL format[0m
+[0;32mI (469374) GPS: GPS Data: $GPGLL,0919.95503,N,08024.84243,E,175419.00,A,A*6A[0m
+[0;32mI (469384) GPS: Latitude: 9.332584 N[0m
+[0;32mI (469394) GPS: Longitude: 80.414040 E[0m
+[0;32mI (469394) GPS: GPS Data: $GPRMC,175420.00,A,0919.95500,N,08024.84207,E,0.416,,070425,,,A*7D[0m
+[0;32mI (469404) GPS: Invalid GPGLL format[0m
+[0;32mI (469404) GPS: GPS Data: $GPVTG,,T,,M,0.416,N,0.771,K,A*21[0m
+[0;32mI (469414) GPS: Invalid GPGLL format[0m
+[0;32mI (469424) GPS: GPS Data: $GPGGA,175420.00,0919.95500,N,08024.84207,E,1,09,0.95,45.7,M,-95.1,M,,*45[0m
+[0;32mI (469424) GPS: Invalid GPGLL format[0m
+[0;32mI (469434) GPS: GPS Data: $GPGSA,A,3,32,23,28,27,02,25,31,26,08,,,,1.77,0.95,1.50*0F[0m
+[0;32mI (469444) GPS: Invalid GPGLL format[0m
+[0;32mI (469444) GPS: GPS Data: $GPGSV,4,1,14,01,12,318,18,02,33,300,11,08,05,248,15,10,50,072,*7F[0m
+[0;32mI (469454) GPS: Invalid GPGLL format[0m
+[0;32mI (469464) GPS: GPS Data: $GPGSV,4,2,14,16,14,190,,18,01,152,10,23,21,115,26,25,15,064,13*7F[0m
+[0;32mI (469464) GPS: Invalid GPGLL format[0m
+[0;32mI (469474) GPS_MAIN: Latitude: 9.332584, Longitude: 80.414040[0m
+[0;32mI (471754) FIREBASE: ✅ Updated GPS data in existing 'gps' object.[0m
+[0;32mI (481754) GPS: GPS Data: $GPGSV,4,3,14,26,35,172,26,27,14,215,20,28,66,006,18,31,76,262,40*79[0m
+[0;32mI (481754) GPS: Invalid GPGLL format[0m
+[0;32mI (481754) GPS: GPS Data: $GPGSV,4,4,14,32,28,019,32,42,22,095152,,23,21,115,27,25,15,063,15*7E[0m
+[0;32mI (481764) GPS: Invalid GPGLL format[0m
+[0;32mI (481764) GPS: GPS Data: $GPGSV,4,3,14,26,35,171,25,27,14,215,09,28,65,006,21,31,76,265,39*72[0m
+[0;32mI (481774) GPS: Invalid GPGLL format[0m
+[0;32mI (481784) GPS: GPS Data: $GPGSV,4,4,14,32,28,020,30,42,22,095,28*76[0m
+[0;32mI (481784) GPS: Invalid GPGLL format[0m
+[0;32mI (481794) GPS: GPS Data: $GPGLL,0919.95474,N,08024.84131,E,175431.00,A,A*67[0m
+[0;32mI (481804) GPS: Latitude: 9.332579 N[0m
+[0;32mI (481804) GPS: Longitude: 80.414022 E[0m
+[0;32mI (481804) GPS: GPS Data: $GPRMC,175432.00,A,0919.95486,N,08024.84146,E,0.416,,070425,,,A*77[0m
+[0;32mI (481814) GPS: Invalid GPGLL format[0m
+[0;32mI (481824) GPS: GPS Data: $GPVTG,,T,,M,0.416,N,0.771,K,A*21[0m
+[0;32mI (481824) GPS: Invalid GPGLL format[0m
+[0;32mI (481834) GPS: GPS Data: $GPGGA,175432.00,0919.95486,N,08024.84146,E,1,09,0.95,44.6,M,-95.1,M,,*4F[0m
+[0;32mI (481844) GPS: Invalid GPGLL format[0m
+[0;32mI (481844) GPS: GPS Data: $GPGSA,A,3,32,23,28,27,02,25,31,26,08,,,,1.77,0.95,1.50*0F[0m
+[0;32mI (481854) GPS: Invalid GPGLL format[0m
+[0;32mI (481854) GPS: GPS Data: $GPGSV,4,1,14,01,12,318,,02,33,300,27,08,05,248,15,10,50,072,*73[0m
+[0;32mI (481864) GPS: Invalid GPGLL format[0m
+[0;32mI (481874) GPS: GPS Data: $GPGSV,4,2,14,16,14,190,,18,01,152,,23,21,115,28,25,15,063,14*70[0m
+[0;32mI (481884) GPS: Invalid GPGLL format[0m
+[0;32mI (481884) GPS: GPS Data: $GPGSV,4,3,14,26,35,171,25,27,14,215,10,28,65,006,21,31,76,265,41*75[0m
+[0;32mI (481894) GPS: Invalid GPGLL format[0m
+[0;32mI (481894) GPS: GPS Data: $GPGSV,4,4,14,32,28,020,30,42,22,095,29*77[0m
+[0;32mI (481904) GPS: Invalid GPGLL format[0m
+[0;32mI (481914) GPS: GPS Data: $GPGLL,0919.95486,N,08024.84146,E,175432.00,A,A*69[0m
+[0;32mI (481914) GPS: Latitude: 9.332581 N[0m
+[0;32mI (481924) GPS: Longitude: 80.414024 E[0m
+[0;32mI (481924) GPS: GPS Data: $GPRMC,175433.00,A,0919.95485,N,08024.84146,E,0.141,,070425,,,A*72[0m
+[0;32mI (481934) GPS: Invalid GPGLL format[0m
+[0;32mI (481944) GPS: GPS Data: $GPVTG,,T,,M,0.141,N,0.262,K,A*21[0m
+[0;32mI (481944) GPS: Invalid GPGLL format[0m
+[0;32mI (481954) GPS: GPS Data: $GPGGA,175433.00,0919.95485,N,08024.84146,E,1,08,1.27,44.6,M,-95.1,M,,*44[0m
+[0;32mI (481964) GPS: Invalid GPGLL format[0m
+[0;32mI (481964) GPS_MAIN: Latitude: 9.332581, Longitude: 80.414024[0m
+[0;32mI (484244) FIREBASE: ✅ Updated GPS data in existing 'gps' object.[0m
+[0;32mI (494254) GPS: GPS Data: $GPGSA,A,3,32,23,10,28,02,31,26,08,,,,,2.42,1.27,2.06*01[0m
+[0;32mI (494254) GPS: Invalid GPGLL format[0m
+[0;32mI (494254) GPS: GPS Data: $GPG.00,A,A*61[0m
+[0;32mI (494254) GPS: Invalid GPGLL format[0m
+[0;32mI (494264) GPS: GPS Data: $GPRMC,175444.00,A,0919.95477,N,08024.84069,E,0.084,,070425,,,A*7B[0m
+[0;32mI (494274) GPS: Invalid GPGLL format[0m
+[0;32mI (494274) GPS: GPS Data: $GPVTG,,T,,M,0.084,N,0.156,K,A*2D[0m
+[0;32mI (494284) GPS: Invalid GPGLL format[0m
+[0;32mI (494284) GPS: GPS Data: $GPGGA,175444.00,0919.95477,N,08024.84069,E,1,08,1.14,43.9,M,-95.1,M,,*4D[0m
+[0;32mI (494294) GPS: Invalid GPGLL format[0m
+[0;32mI (494294) GPS: GPS Data: $GPGSA,A,3,32,23,10,28,02,31,26,08,,,,,2.21,1.14,1.89*00[0m
+[0;32mI (494304) GPS: Invalid GPGLL format[0m
+[0;32mI (494314) GPS: GPS Data: $GPGSV,4,1,14,01,12,318,,02,33,300,26,08,05,248,17,10,50,072,25*77[0m
+[0;32mI (494324) GPS: Invalid GPGLL format[0m
+[0;32mI (494324) GPS: GPS Data: $GPGSV,4,2,14,16,14,190,17,18,01,152,12,23,21,115,29,25,15,063,*71[0m
+[0;32mI (494334) GPS: Invalid GPGLL format[0m
+[0;32mI (494334) GPS: GPS Data: $GPGSV,4,3,14,26,35,171,23,27,14,215,,28,65,006,21,31,76,265,38*7C[0m
+[0;32mI (494344) GPS: Invalid GPGLL format[0m
+[0;32mI (494354) GPS: GPS Data: $GPGSV,4,4,14,32,28,020,31,42,22,095,28*77[0m
+[0;32mI (494354) GPS: Invalid GPGLL format[0m
+[0;32mI (494364) GPS: GPS Data: $GPGLL,0919.95477,N,08024.84069,E,175444.00,A,A*6A[0m
+[0;32mI (494374) GPS: Latitude: 9.332580 N[0m
+[0;32mI (494374) GPS: Longitude: 80.414012 E[0m
+[0;32mI (494374) GPS: GPS Data: $GPRMC,175445.00,A,0919.95466,N,08024.84060,E,0.139,,070425,,,A*74[0m
+[0;32mI (494384) GPS: Invalid GPGLL format[0m
+[0;32mI (494394) GPS: GPS Data: $GPVTG,,T,,M,0.139,N,0.258,K,A*27[0m
+[0;32mI (494394) GPS: Invalid GPGLL format[0m
+[0;32mI (494404) GPS: GPS Data: $GPGGA,175445.00,0919.95466,N,08024.84060,E,1,08,1.14,43.6,M,-95.1,M,,*4A[0m
+[0;32mI (494414) GPS: Invalid GPGLL format[0m
+[0;32mI (494414) GPS: GPS Data: $GPGSA,A,3,32,23,10,28,02,31,26,08,,,,,2.21,1.14,1.89*00[0m
+[0;32mI (494424) GPS: Invalid GPGLL format[0m
+[0;32mI (494434) GPS: GPS Data: $GPGSV,4,1,14,01,12,318,,02,33,300,26,08,05,248,16,10,50,072,25*76[0m
+[0;32mI (494434) GPS: Invalid GPGLL format[0m
+[0;32mI (494444) GPS: GPS Data: $GPGSV,4,2,14,16,14,190,16,18,01,152,10,23,21,115,28,25,15,063,*73[0m
+[0;32mI (494454) GPS: Invalid GPGLL format[0m
+[0;32mI (494454) GPS_MAIN: Latitude: 9.332580, Longitude: 80.414012[0m
+[0;32mI (496744) FIREBASE: ✅ Updated GPS data in existing 'gps' object.[0m
+[0;32mI (506744) GPS: GPS Data: $GPGSV,4,3,14,26,35,171,22,27,14,215,,28,65,006,21,31,76,265,39*7C[0m
+[0;32mI (506744) GPS: Invalid GPGLL format[0m
+[0;32mI (506744) GPS: GPS Data: $GPGSV,4,4,14,32,28,020,31,42,22,095,28*,16,14,190,17,18,01,152,17,23,21,115,30,25,15,063,17*7A[0m
+[0;32mI (506754) GPS: Invalid GPGLL format[0m
+[0;32mI (506754) GPS: GPS Data: $GPGSV,4,3,14,26,35,171,27,27,14,215,07,28,65,006,17,31,76,265,38*7A[0m
+[0;32mI (506764) GPS: Invalid GPGLL format[0m
+[0;32mI (506774) GPS: GPS Data: $GPGSV,4,4,14,32,28,020,32,42,22,095,30*7D[0m
+[0;32mI (506784) GPS: Invalid GPGLL format[0m
+[0;32mI (506784) GPS: GPS Data: $GPGLL,0919.95397,N,08024.84037,E,175456.00,A,A*6B[0m
+[0;32mI (506794) GPS: Latitude: 9.332566 N[0m
+[0;32mI (506794) GPS: Longitude: 80.414006 E[0m
+[0;32mI (506804) GPS: GPS Data: $GPRMC,175457.00,A,0919.95393,N,08024.84035,E,0.065,,070425,,,A*72[0m
+[0;32mI (506804) GPS: Invalid GPGLL format[0m
+[0;32mI (506814) GPS: GPS Data: $GPVTG,,T,,M,0.065,N,0.121,K,A*22[0m
+[0;32mI (506824) GPS: Invalid GPGLL format[0m
+[0;32mI (506824) GPS: GPS Data: $GPGGA,175457.00,0919.95393,N,08024.84035,E,1,10,1.14,43.7,M,-95.1,M,,*4C[0m
+[0;32mI (506834) GPS: Invalid GPGLL format[0m
+[0;32mI (506834) GPS: GPS Data: $GPGSA,A,3,32,23,10,28,27,02,25,31,26,08,,,2.21,1.14,1.89*02[0m
+[0;32mI (506844) GPS: Invalid GPGLL format[0m
+[0;32mI (506854) GPS: GPS Data: $GPGSV,4,1,14,01,12,318,22,02,33,300,24,08,05,248,16,10,50,072,26*77[0m
+[0;32mI (506864) GPS: Invalid GPGLL format[0m
+[0;32mI (506864) GPS: GPS Data: $GPGSV,4,2,14,16,14,190,15,18,01,152,14,23,21,115,29,25,15,063,16*72[0m
+[0;32mI (506874) GPS: Invalid GPGLL format[0m
+[0;32mI (506874) GPS: GPS Data: $GPGSV,4,3,14,26,35,171,26,27,14,215,08,28,65,006,17,31,76,265,38*74[0m
+[0;32mI (506884) GPS: Invalid GPGLL format[0m
+[0;32mI (506894) GPS: GPS Data: $GPGSV,4,4,14,32,28,020,30,42,22,095,29*77[0m
+[0;32mI (506894) GPS: Invalid GPGLL format[0m
+[0;32mI (506904) GPS: GPS Data: $GPGLL,0919.95393,N,08024.84035,E,175457.00,A,A*6C[0m
+[0;32mI (506914) GPS: Latitude: 9.332565 N[0m
+[0;32mI (506914) GPS: Longitude: 80.414006 E[0m
+[0;32mI (506914) GPS: GPS Data: $GPRMC,175458.00,A,0919.95369,N,08024.83997,E,0.301,,070425,,,A*7F[0m
+[0;32mI (506924) GPS: Invalid GPGLL format[0m
+[0;32mI (506934) GPS: GPS Data: $GPVTG,,T,,M,0.301,N,0.558,K,A*29[0m
+[0;32mI (506934) GPS: Invalid GPGLL format[0m
+[0;32mI (506944) GPS: GPS Data: $GPGGA,175458.00,0919.95369,N,08024.83997,E,1,10,0.91,42.4,M,-95.1,M,,*4E[0m
+[0;32mI (506954) GPS: Invalid GPGLL format[0m
+[0;32mI (506954) GPS_MAIN: Latitude: 9.332565, Longitude: 80.414006[0m
+[0;32mI (509234) FIREBASE: ✅ Updated GPS data in existing 'gps' object.[0m
+[0;32mI (519234) GPS: GPS Data: $GPGSA,A,3,32,23,10,28,27,02,25,31,26,08,,,1.66,0.91,1.39*05[0m
+[0;32mI (519234) GPS: Invalid GPGLL format[0m
+[0;32mI (519234) GPS: GPS Data: 804,E,175508.00,A,A*62[0m
+[0;32mI (519234) GPS: Invalid GPGLL format[0m
+[0;32mI (519244) GPS: GPS Data: $GPRMC,175509.00,A,0919.95228,N,08024.83834,E,0.334,,070425,,,A*70[0m
+[0;32mI (519254) GPS: Invalid GPGLL format[0m
+[0;32mI (519254) GPS: GPS Data: $GPVTG,,T,,M,0.334,N,0.619,K,A*29[0m
+[0;32mI (519264) GPS: Invalid GPGLL format[0m
+[0;32mI (519264) GPS: GPS Data: $GPGGA,175509.00,0919.95228,N,08024.83834,E,1,08,1.17,36.3,M,-95.1,M,,*45[0m
+[0;32mI (519274) GPS: Invalid GPGLL format[0m
+[0;32mI (519284) GPS: GPS Data: $GPGSA,A,3,32,23,10,27,02,31,26,08,,,,,2.45,1.17,2.15*08[0m
+[0;32mI (519284) GPS: Invalid GPGLL format[0m
+[0;32mI (519294) GPS: GPS Data: $GPGSV,4,1,14,01,12,317,24,02,33,300,26,08,05,248,15,10,50,072,23*7A[0m
+[0;32mI (519304) GPS: Invalid GPGLL format[0m
+[0;32mI (519304) GPS: GPS Data: $GPGSV,4,2,14,16,14,190,15,18,01,152,07,23,21,115,30,25,15,063,*7F[0m
+[0;32mI (519314) GPS: Invalid GPGLL format[0m
+[0;32mI (519324) GPS: GPS Data: $GPGSV,4,3,14,26,35,171,22,27,14,215,14,28,65,006,,31,76,265,37*74[0m
+[0;32mI (519324) GPS: Invalid GPGLL format[0m
+[0;32mI (519334) GPS: GPS Data: $GPGSV,4,4,14,32,28,020,28,42,22,095,30*76[0m
+[0;32mI (519344) GPS: Invalid GPGLL format[0m
+[0;32mI (519344) GPS: GPS Data: $GPGLL,0919.95228,N,08024.83834,E,175509.00,A,A*69[0m
+[0;32mI (519354) GPS: Latitude: 9.332538 N[0m
+[0;32mI (519354) GPS: Longitude: 80.413972 E[0m
+[0;32mI (519364) GPS: GPS Data: $GPRMC,175510.00,A,0919.95213,N,08024.83836,E,0.635,,070425,,,A*76[0m
+[0;32mI (519374) GPS: Invalid GPGLL format[0m
+[0;32mI (519374) GPS: GPS Data: $GPVTG,,T,,M,0.635,N,1.177,K,A*23[0m
+[0;32mI (519384) GPS: Invalid GPGLL format[0m
+[0;32mI (519384) GPS: GPS Data: $GPGGA,175510.00,0919.95213,N,08024.83836,E,1,08,1.17,36.3,M,-95.1,M,,*47[0m
+[0;32mI (519394) GPS: Invalid GPGLL format[0m
+[0;32mI (519394) GPS: GPS Data: $GPGSA,A,3,32,23,10,27,02,31,26,08,,,,,2.45,1.17,2.15*08[0m
+[0;32mI (519404) GPS: Invalid GPGLL format[0m
+[0;32mI (519414) GPS: GPS Data: $GPGSV,4,1,14,01,12,317,23,02,34,299,25,08,05,248,12,10,50,072,22*7E[0m
+[0;32mI (519424) GPS: Invalid GPGLL format[0m
+[0;32mI (519424) GPS: GPS Data: $GPGSV,4,2,14,16,14,190,15,18,01,152,07,23,21,115,29,25,15,063,*77[0m
+[0;32mI (519434) GPS: Invalid GPGLL format[0m
+[0;32mI (519434) GPS_MAIN: Latitude: 9.332538, Longitude: 80.413972[0m
+[0;32mI (521724) FIREBASE: ✅ Updated GPS data in existing 'gps' object.[0m
+[0;32mI (531734) GPS: GPS Data: $GPGSV,4,3,14,26,35,171,20,27,14,215,12,28,65,006,,31,76,265,37*70[0m
+[0;32mI (531734) GPS: Invalid GPGLL format[0m
+[0;32mI (531734) GPS: GPS Data: $GPGSV,4,4,14,32,28,020,27,42,22,095,215,29,25,15,063,17*79[0m
+[0;32mI (531744) GPS: Invalid GPGLL format[0m
+[0;32mI (531744) GPS: GPS Data: $GPGSV,4,3,14,26,35,171,21,27,14,215,10,28,65,006,,31,76,265,38*7C[0m
+[0;32mI (531754) GPS: Invalid GPGLL format[0m
+[0;32mI (531754) GPS: GPS Data: $GPGSV,4,4,14,32,28,020,24,42,22,095,29*72[0m
+[0;32mI (531764) GPS: Invalid GPGLL format[0m
+[0;32mI (531774) GPS: GPS Data: $GPGLL,0919.95343,N,08024.84056,E,175521.00,A,A*64[0m
+[0;32mI (531774) GPS: Latitude: 9.332557 N[0m
+[0;32mI (531784) GPS: Longitude: 80.414009 E[0m
+[0;32mI (531784) GPS: GPS Data: $GPRMC,175522.00,A,0919.95356,N,08024.84086,E,0.458,,070425,,,A*7A[0m
+[0;32mI (531794) GPS: Invalid GPGLL format[0m
+[0;32mI (531804) GPS: GPS Data: $GPVTG,,T,,M,0.458,N,0.848,K,A*2E[0m
+[0;32mI (531804) GPS: Invalid GPGLL format[0m
+[0;32mI (531814) GPS: GPS Data: $GPGGA,175522.00,0919.95356,N,08024.84086,E,1,09,0.98,45.0,M,-95.1,M,,*42[0m
+[0;32mI (531824) GPS: Invalid GPGLL format[0m
+[0;32mI (531824) GPS: GPS Data: $GPGSA,A,3,32,23,10,28,27,02,25,31,26,,,,1.99,0.98,1.73*0A[0m
+[0;32mI (531834) GPS: Invalid GPGLL format[0m
+[0;32mI (531834) GPS: GPS Data: $GPGSV,4,1,14,01,12,317,23,02,34,299,22,08,05,247,08,10,50,073,19*74[0m
+[0;32mI (531844) GPS: Invalid GPGLL format[0m
+[0;32mI (531854) GPS: GPS Data: $GPGSV,4,2,14,16,14,190,18,18,01,152,14,23,21,115,30,25,15,063,18*79[0m
+[0;32mI (531864) GPS: Invalid GPGLL format[0m
+[0;32mI (531864) GPS: GPS Data: $GPGSV,4,3,14,26,35,171,21,27,14,215,10,28,65,006,15,31,76,265,38*78[0m
+[0;32mI (531874) GPS: Invalid GPGLL format[0m
+[0;32mI (531874) GPS: GPS Data: $GPGSV,4,4,14,32,28,020,24,42,22,095,29*72[0m
+[0;32mI (531884) GPS: Invalid GPGLL format[0m
+[0;32mI (531884) GPS: GPS Data: $GPGLL,0919.95356,N,08024.84086,E,175522.00,A,A*6E[0m
+[0;32mI (531894) GPS: Latitude: 9.332559 N[0m
+[0;32mI (531904) GPS: Longitude: 80.414014 E[0m
+[0;32mI (531904) GPS: GPS Data: $GPRMC,175523.00,A,0919.95360,N,08024.84096,E,0.319,,070425,,,A*7D[0m
+[0;32mI (531914) GPS: Invalid GPGLL format[0m
+[0;32mI (531914) GPS: GPS Data: $GPVTG,,T,,M,0.319,N,0.591,K,A*25[0m
+[0;32mI (531924) GPS: Invalid GPGLL format[0m
+[0;32mI (531934) GPS: GPS Data: $GPGGA,175523.00,0919.95360,N,08024.84096,E,1,09,0.91,45.6,M,-95.1,M,,*48[0m
+[0;32mI (531934) GPS: Invalid GPGLL format[0m
+[0;32mI (531944) GPS_MAIN: Latitude: 9.332559, Longitude: 80.414014[0m
+[0;32mI (534224) FIREBASE: ✅ Updated GPS data in existing 'gps' object.[0m
+[0;32mI (544224) GPS: GPS Data: $GPGSA,A,3,32,23,10,28,27,02,25,31,26,,,,1.79,0.91,1.54*08[0m
+[0;32mI (544224) GPS: Invalid GPGLL format[0m
+[0;32mI (544224) GPS: GPS Data: $G[0m
+[0;32mI (544224) GPS: Invalid GPGLL format[0m
+[0;32mI (544234) GPS: GPS Data: $GPGLL,0919.95499,N,08024.84305,E,175533.00,A,A*62[0m
+[0;32mI (544234) GPS: Latitude: 9.332583 N[0m
+[0;32mI (544244) GPS: Longitude: 80.414051 E[0m
+[0;32mI (544244) GPS: GPS Data: $GPRMC,175534.00,A,0919.95509,N,08024.84330,E,0.197,,070425,,,A*79[0m
+[0;32mI (544254) GPS: Invalid GPGLL format[0m
+[0;32mI (544264) GPS: GPS Data: $GPVTG,,T,,M,0.197,N,0.364,K,A*2D[0m
+[0;32mI (544264) GPS: Invalid GPGLL format[0m
+[0;32mI (544274) GPS: GPS Data: $GPGGA,175534.00,0919.95509,N,08024.84330,E,1,09,0.91,52.1,M,-95.1,M,,*49[0m
+[0;32mI (544284) GPS: Invalid GPGLL format[0m
+[0;32mI (544284) GPS: GPS Data: $GPGSA,A,3,32,23,10,28,27,02,25,31,26,,,,1.79,0.91,1.54*08[0m
+[0;32mI (544294) GPS: Invalid GPGLL format[0m
+[0;32mI (544294) GPS: GPS Data: $GPGSV,4,1,14,01,12,317,16,02,34,299,29,08,05,247,,10,50,073,25*7E[0m
+[0;32mI (544304) GPS: Invalid GPGLL format[0m
+[0;32mI (544314) GPS: GPS Data: $GPGSV,4,2,14,16,15,190,16,18,00,152,14,23,20,115,29,25,15,063,10*76[0m
+[0;32mI (544324) GPS: Invalid GPGLL format[0m
+[0;32mI (544324) GPS: GPS Data: $GPGSV,4,3,14,26,35,171,26,27,14,215,12,28,65,006,18,31,76,265,38*70[0m
+[0;32mI (544334) GPS: Invalid GPGLL format[0m
+[0;32mI (544334) GPS: GPS Data: $GPGSV,4,4,14,32,28,020,23,42,22,095,29*75[0m
+[0;32mI (544344) GPS: Invalid GPGLL format[0m
+[0;32mI (544344) GPS: GPS Data: $GPGLL,0919.95509,N,08024.84330,E,175534.00,A,A*6B[0m
+[0;32mI (544354) GPS: Latitude: 9.332585 N[0m
+[0;32mI (544364) GPS: Longitude: 80.414055 E[0m
+[0;32mI (544364) GPS: GPS Data: $GPRMC,175535.00,A,0919.95508,N,08024.84336,E,0.081,,070425,,,A*79[0m
+[0;32mI (544374) GPS: Invalid GPGLL format[0m
+[0;32mI (544374) GPS: GPS Data: $GPVTG,,T,,M,0.081,N,0.151,K,A*2F[0m
+[0;32mI (544384) GPS: Invalid GPGLL format[0m
+[0;32mI (544384) GPS: GPS Data: $GPGGA,175535.00,0919.95508,N,08024.84336,E,1,09,0.91,52.4,M,-95.1,M,,*4A[0m
+[0;32mI (544394) GPS: Invalid GPGLL format[0m
+[0;32mI (544404) GPS: GPS Data: $GPGSA,A,3,32,23,10,28,27,02,25,31,26,,,,1.79,0.91,1.54*08[0m
+[0;32mI (544414) GPS: Invalid GPGLL format[0m
+[0;32mI (544414) GPS: GPS Data: $GPGSV,4,1,14,01,12,317,14,02,34,299,29,08,05,247,,10,50,073,24*7D[0m
+[0;32mI (544424) GPS: Invalid GPGLL format[0m
+[0;32mI (544424) GPS: GPS Data: $GPGSV,4,2,14,16,15,190,15,18,00,152,13,23,20,115,28,25,15,063,12*71[0m
+[0;32mI (544434) GPS: Invalid GPGLL format[0m
+[0;32mI (544444) GPS_MAIN: Latitude: 9.332585, Longitude: 80.414055[0m
+[0;32mI (546714) FIREBASE: ✅ Updated GPS data in existing 'gps' object.[0m
+[0;32mI (556714) GPS: GPS Data: $GPGSV,4,3,14,26,35,171,26,27,14,214,12,28,65,006,16,31,76,265,39*7E[0m
+[0;32mI (556714) GPS: Invalid GPGLL format[0m
+[0;32mI (556714) GPS: GPS Data: $GPGSV,4,4,14,32,28,020,24,42,22,013,23,20,115,25,25,15,063,17*7B[0m
+[0;32mI (556724) GPS: Invalid GPGLL format[0m
+[0;32mI (556724) GPS: GPS Data: $GPGSV,4,3,14,26,35,171,27,27,14,214,,28,64,006,24,31,76,267,36*71[0m
+[0;32mI (556734) GPS: Invalid GPGLL format[0m
+[0;32mI (556744) GPS: GPS Data: $GPGSV,4,4,14,32,28,020,30,42,22,095,30*7F[0m
+[0;32mI (556744) GPS: Invalid GPGLL format[0m
+[0;32mI (556754) GPS: GPS Data: $GPGLL,0919.95378,N,08024.84120,E,175546.00,A,A*6D[0m
+[0;32mI (556754) GPS: Latitude: 9.332563 N[0m
+[0;32mI (556764) GPS: Longitude: 80.414020 E[0m
+[0;32mI (556764) GPS: GPS Data: $GPRMC,175547.00,A,0919.95369,N,08024.84095,E,0.319,,070425,,,A*75[0m
+[0;32mI (556774) GPS: Invalid GPGLL format[0m
+[0;32mI (556784) GPS: GPS Data: $GPVTG,,T,,M,0.319,N,0.590,K,A*24[0m
+[0;32mI (556784) GPS: Invalid GPGLL format[0m
+[0;32mI (556794) GPS: GPS Data: $GPGGA,175547.00,0919.95369,N,08024.84095,E,1,08,1.09,48.8,M,-95.1,M,,*42[0m
+[0;32mI (556804) GPS: Invalid GPGLL format[0m
+[0;32mI (556804) GPS: GPS Data: $GPGSA,A,3,32,23,10,28,02,25,31,26,,,,,2.03,1.09,1.72*07[0m
+[0;32mI (556814) GPS: Invalid GPGLL format[0m
+[0;32mI (556814) GPS: GPS Data: $GPGSV,4,1,14,01,12,317,19,02,34,299,24,08,05,247,,10,50,073,24*7D[0m
+[0;32mI (556824) GPS: Invalid GPGLL format[0m
+[0;32mI (556834) GPS: GPS Data: $GPGSV,4,2,14,16,15,190,16,18,00,152,11,23,20,115,25,25,15,063,16*79[0m
+[0;32mI (556844) GPS: Invalid GPGLL format[0m
+[0;32mI (556844) GPS: GPS Data: $GPGSV,4,3,14,26,35,171,27,27,14,214,,28,64,006,24,31,76,267,35*72[0m
+[0;32mI (556854) GPS: Invalid GPGLL format[0m
+[0;32mI (556854) GPS: GPS Data: $GPGSV,4,4,14,32,28,020,30,42,22,095,29*77[0m
+[0;32mI (556864) GPS: Invalid GPGLL format[0m
+[0;32mI (556874) GPS: GPS Data: $GPGLL,0919.95369,N,08024.84095,E,175547.00,A,A*63[0m
+[0;32mI (556874) GPS: Latitude: 9.332562 N[0m
+[0;32mI (556884) GPS: Longitude: 80.414016 E[0m
+[0;32mI (556884) GPS: GPS Data: $GPRMC,175548.00,A,0919.95364,N,08024.84072,E,0.204,,070425,,,A*73[0m
+[0;32mI (556894) GPS: Invalid GPGLL format[0m
+[0;32mI (556894) GPS: GPS Data: $GPVTG,,T,,M,0.204,N,0.378,K,A*29[0m
+[0;32mI (556904) GPS: Invalid GPGLL format[0m
+[0;32mI (556914) GPS: GPS Data: $GPGGA,175548.00,0919.95364,N,08024.84072,E,1,08,1.09,48.6,M,-95.1,M,,*47[0m
+[0;32mI (556924) GPS: Invalid GPGLL format[0m
+[0;32mI (556924) GPS_MAIN: Latitude: 9.332562, Longitude: 80.414016[0m
+[0;32mI (559204) FIREBASE: ✅ Updated GPS data in existing 'gps' object.[0m
+[0;32mI (569214) GPS: GPS Data: $GPGSA,A,3,32,23,10,28,02,25,31,26,,,,,2.03,1.09,1.72*07[0m
+[0;32mI (569214) GPS: Invalid GPGLL format[0m
+[0;32mI (569214) GPS: GPS Data: $GPG,0919.95338,N,08024.83994,E,175558.00,A,A*66[0m
+[0;32mI (569224) GPS: Invalid GPGLL format[0m
+[0;32mI (569224) GPS: GPS Data: $GPRMC,175559.00,A,0919.95345,N,08024.83993,E,0.113,,070425,,,A*74[0m
+[0;32mI (569234) GPS: Invalid GPGLL format[0m
+[0;32mI (569234) GPS: GPS Data: $GPVTG,,T,,M,0.113,N,0.209,K,A*2B[0m
+[0;32mI (569244) GPS: Invalid GPGLL format[0m
+[0;32mI (569244) GPS: GPS Data: $GPGGA,175559.00,0919.95345,N,08024.83993,E,1,09,1.09,48.2,M,-95.1,M,,*40[0m
+[0;32mI (569254) GPS: Invalid GPGLL format[0m
+[0;32mI (569264) GPS: GPS Data: $GPGSA,A,3,32,23,10,28,02,25,31,26,08,,,,2.03,1.09,1.72*0F[0m
+[0;32mI (569274) GPS: Invalid GPGLL format[0m
+[0;32mI (569274) GPS: GPS Data: $GPGSV,4,1,14,01,12,317,22,02,34,299,24,08,05,247,11,10,50,073,25*74[0m
+[0;32mI (569284) GPS: Invalid GPGLL format[0m
+[0;32mI (569284) GPS: GPS Data: $GPGSV,4,2,14,16,15,190,,18,00,152,07,23,20,115,25,25,15,063,16*79[0m
+[0;32mI (569294) GPS: Invalid GPGLL format[0m
+[0;32mI (569304) GPS: GPS Data: $GPGSV,4,3,14,26,35,171,33,27,14,214,,28,64,006,25,31,76,267,37*74[0m
+[0;32mI (569314) GPS: Invalid GPGLL format[0m
+[0;32mI (569314) GPS: GPS Data: $GPGSV,4,4,14,32,28,020,32,42,22,095,29*75[0m
+[0;32mI (569324) GPS: Invalid GPGLL format[0m
+[0;32mI (569324) GPS: GPS Data: $GPGLL,0919.95345,N,08024.83993,E,175559.00,A,A*6A[0m
+[0;32mI (569334) GPS: Latitude: 9.332558 N[0m
+[0;32mI (569334) GPS: Longitude: 80.413999 E[0m
+[0;32mI (569344) GPS: GPS Data: $GPRMC,175600.00,A,0919.95349,N,08024.83995,E,0.050,,070425,,,A*77[0m
+[0;32mI (569354) GPS: Invalid GPGLL format[0m
+[0;32mI (569354) GPS: GPS Data: $GPVTG,,T,,M,0.050,N,0.093,K,A*2C[0m
+[0;32mI (569364) GPS: Invalid GPGLL format[0m
+[0;32mI (569364) GPS: GPS Data: $GPGGA,175600.00,0919.95349,N,08024.83995,E,1,09,1.09,48.3,M,-95.1,M,,*44[0m
+[0;32mI (569374) GPS: Invalid GPGLL format[0m
+[0;32mI (569384) GPS: GPS Data: $GPGSA,A,3,32,23,10,28,02,25,31,26,08,,,,2.03,1.09,1.72*0F[0m
+[0;32mI (569384) GPS: Invalid GPGLL format[0m
+[0;32mI (569394) GPS: GPS Data: $GPGSV,4,1,14,01,12,317,21,02,34,299,25,08,05,247,10,10,50,073,24*76[0m
+[0;32mI (569404) GPS: Invalid GPGLL format[0m
+[0;32mI (569404) GPS: GPS Data: $GPGSV,4,2,14,16,15,190,,18,00,152,07,23,20,115,24,25,15,063,13*7D[0m
+[0;32mI (569414) GPS: Invalid GPGLL format[0m
+[0;32mI (569424) GPS_MAIN: Latitude: 9.332558, Longitude: 80.413999[0m
+[0;32mI (571694) FIREBASE: ✅ Updated GPS data in existing 'gps' object.[0m
+[0;32mI (581704) GPS: GPS Data: $GPGSV,4,3,14,26,35,171,32,27,14,214,,28,64,006,24,31,76,267,37*74[0m
+[0;32mI (581704) GPS: Invalid GPGLL format[0m
+[0;32mI (581704) GPS: GPS Data: $GPGSV,4,4,14,32,28,020,31,42,22,09520,115,19,25,15,063,19*71[0m
+[0;32mI (581714) GPS: Invalid GPGLL format[0m
+[0;32mI (581714) GPS: GPS Data: $GPGSV,4,3,14,26,35,171,33,27,14,214,,28,64,006,22,31,76,267,38*7C[0m
+[0;32mI (581724) GPS: Invalid GPGLL format[0m
+[0;32mI (581724) GPS: GPS Data: $GPGSV,4,4,14,32,28,020,31,42,22,095,29*76[0m
+[0;32mI (581734) GPS: Invalid GPGLL format[0m
+[0;32mI (581744) GPS: GPS Data: $GPGLL,0919.95393,N,08024.84243,E,175611.00,A,A*6F[0m
+[0;32mI (581744) GPS: Latitude: 9.332565 N[0m
+[0;32mI (581754) GPS: Longitude: 80.414040 E[0m
+[0;32mI (581754) GPS: GPS Data: $GPRMC,175612.00,A,0919.95401,N,08024.84244,E,0.278,,070425,,,A*77[0m
+[0;32mI (581764) GPS: Invalid GPGLL format[0m
+[0;32mI (581774) GPS: GPS Data: $GPVTG,,T,,M,0.278,N,0.514,K,A*2E[0m
+[0;32mI (581774) GPS: Invalid GPGLL format[0m
+[0;32mI (581784) GPS: GPS Data: $GPGGA,175612.00,0919.95401,N,08024.84244,E,1,10,1.09,51.2,M,-95.1,M,,*4D[0m
+[0;32mI (581794) GPS: Invalid GPGLL format[0m
+[0;32mI (581794) GPS: GPS Data: $GPGSA,A,3,32,23,10,28,27,02,25,31,26,08,,,2.03,1.09,1.72*0A[0m
+[0;32mI (581804) GPS: Invalid GPGLL format[0m
+[0;32mI (581804) GPS: GPS Data: $GPGSV,4,1,14,01,12,317,23,02,34,299,25,08,05,247,09,10,50,073,26*7E[0m
+[0;32mI (581814) GPS: Invalid GPGLL format[0m
+[0;32mI (581824) GPS: GPS Data: $GPGSV,4,2,14,16,15,190,18,18,00,152,07,23,20,115,19,25,15,063,19*70[0m
+[0;32mI (581834) GPS: Invalid GPGLL format[0m
+[0;32mI (581834) GPS: GPS Data: $GPGSV,4,3,14,26,35,171,33,27,14,214,14,28,64,006,21,31,76,267,37*75[0m
+[0;32mI (581844) GPS: Invalid GPGLL format[0m
+[0;32mI (581844) GPS: GPS Data: $GPGSV,4,4,14,32,28,020,30,42,22,095,29*77[0m
+[0;32mI (581854) GPS: Invalid GPGLL format[0m
+[0;32mI (581864) GPS: GPS Data: $GPGLL,0919.95401,N,08024.84244,E,175612.00,A,A*67[0m
+[0;32mI (581864) GPS: Latitude: 9.332567 N[0m
+[0;32mI (581874) GPS: Longitude: 80.414041 E[0m
+[0;32mI (581874) GPS: GPS Data: $GPRMC,175613.00,A,0919.95410,N,08024.84238,E,0.071,,070425,,,A*76[0m
+[0;32mI (581884) GPS: Invalid GPGLL format[0m
+[0;32mI (581884) GPS: GPS Data: $GPVTG,,T,,M,0.071,N,0.131,K,A*26[0m
+[0;32mI (581894) GPS: Invalid GPGLL format[0m
+[0;32mI (581904) GPS: GPS Data: $GPGGA,175613.00,0919.95410,N,08024.84238,E,1,10,1.09,50.8,M,-95.1,M,,*4C[0m
+[0;32mI (581914) GPS: Invalid GPGLL format[0m
+[0;32mI (581914) GPS_MAIN: Latitude: 9.332567, Longitude: 80.414041[0m
+[0;32mI (584194) FIREBASE: ✅ Updated GPS data in existing 'gps' object.[0m
+[0;32mI (594194) GPS: GPS Data: $GPGSA,A,3,32,23,10,28,27,02,25,31,26,08,,,2.03,1.09,1.72*0A[0m
+[0;32mI (594194) GPS: Invalid GPGLL format[0m
+[0;32mI (594194) GPS: GPS Data: 024.84310,E,175623.00,A,A*6C[0m
+[0;32mI (594194) GPS: Invalid GPGLL format[0m
+[0;32mI (594204) GPS: GPS Data: $GPRMC,175624.00,A,0919.95488,N,08024.84318,E,0.072,,070425,,,A*73[0m
+[0;32mI (594214) GPS: Invalid GPGLL format[0m
+[0;32mI (594214) GPS: GPS Data: $GPVTG,,T,,M,0.072,N,0.133,K,A*27[0m
+[0;32mI (594224) GPS: Invalid GPGLL format[0m
+[0;32mI (594224) GPS: GPS Data: $GPGGA,175624.00,0919.95488,N,08024.84318,E,1,09,1.09,48.7,M,-95.1,M,,*44[0m
+[0;32mI (594234) GPS: Invalid GPGLL format[0m
+[0;32mI (594244) GPS: GPS Data: $GPGSA,A,3,32,23,10,28,27,02,25,31,26,,,,2.03,1.09,1.72*02[0m
+[0;32mI (594244) GPS: Invalid GPGLL format[0m
+[0;32mI (594254) GPS: GPS Data: $GPGSV,4,1,14,01,13,317,20,02,34,298,19,08,05,247,,10,50,073,23*7E[0m
+[0;32mI (594264) GPS: Invalid GPGLL format[0m
+[0;32mI (594264) GPS: GPS Data: $GPGSV,4,2,14,16,15,190,,18,00,152,,23,20,115,24,25,15,063,11*78[0m
+[0;32mI (594274) GPS: Invalid GPGLL format[0m
+[0;32mI (594284) GPS: GPS Data: $GPGSV,4,3,14,26,35,171,32,27,14,214,18,28,64,006,23,31,76,267,38*75[0m
+[0;32mI (594284) GPS: Invalid GPGLL format[0m
+[0;32mI (594294) GPS: GPS Data: $GPGSV,4,4,14,32,28,020,30,42,22,095,30*7F[0m
+[0;32mI (594304) GPS: Invalid GPGLL format[0m
+[0;32mI (594304) GPS: GPS Data: $GPGLL,0919.95488,N,08024.84318,E,175624.00,A,A*6B[0m
+[0;32mI (594314) GPS: Latitude: 9.332581 N[0m
+[0;32mI (594314) GPS: Longitude: 80.414053 E[0m
+[0;32mI (594324) GPS: GPS Data: $GPRMC,175625.00,A,0919.95493,N,08024.84327,E,0.224,,070425,,,A*75[0m
+[0;32mI (594334) GPS: Invalid GPGLL format[0m
+[0;32mI (594334) GPS: GPS Data: $GPVTG,,T,,M,0.224,N,0.416,K,A*24[0m
+[0;32mI (594344) GPS: Invalid GPGLL format[0m
+[0;32mI (594344) GPS: GPS Data: $GPGGA,175625.00,0919.95493,N,08024.84327,E,1,09,1.09,48.5,M,-95.1,M,,*41[0m
+[0;32mI (594354) GPS: Invalid GPGLL format[0m
+[0;32mI (594354) GPS: GPS Data: $GPGSA,A,3,32,23,10,28,27,02,25,31,26,,,,2.03,1.09,1.72*02[0m
+[0;32mI (594364) GPS: Invalid GPGLL format[0m
+[0;32mI (594374) GPS: GPS Data: $GPGSV,4,1,14,01,13,317,19,02,34,298,20,08,05,247,,10,50,073,23*7E[0m
+[0;32mI (594384) GPS: Invalid GPGLL format[0m
+[0;32mI (594384) GPS: GPS Data: $GPGSV,4,2,14,16,15,190,,18,00,152,,23,20,115,25,25,15,063,12*7A[0m
+[0;32mI (594394) GPS: Invalid GPGLL format[0m
+[0;32mI (594394) GPS: GPS Data: $GPGSV,4,3,14,26,35,171,33,27,14,214,20,28,64,006,24,31,76,267,39*79[0m
+[0;32mI (594404) GPS: Invalid GPGLL format[0m
+[0;32mI (594414) GPS_MAIN: Latitude: 9.332581, Longitude: 80.414053[0m
+[0;32mI (596684) FIREBASE: ✅ Updated GPS data in existing 'gps' object.[0m
+[0;32mI (606694) GPS: GPS Data: $GPGSV,4,4,14,32,28,020,30,42,22,095,34,25,15,063,*75[0m
+[0;32mI (606694) GPS: Invalid GPGLL format[0m
+[0;32mI (606694) GPS: GPS Data: $GPGSV,4,3,14,26,35,171,31,27,14,214,25,28,64,006,24,31,76,267,37*70[0m
+[0;32mI (606704) GPS: Invalid GPGLL format[0m
+[0;32mI (606704) GPS: GPS Data: $GPGSV,4,4,14,32,28,020,29,42,22,095,30*77[0m
+[0;32mI (606714) GPS: Invalid GPGLL format[0m
+[0;32mI (606714) GPS: GPS Data: $GPGLL,0919.95538,N,08024.84564,E,175636.00,A,A*6F[0m
+[0;32mI (606724) GPS: Latitude: 9.332590 N[0m
+[0;32mI (606724) GPS: Longitude: 80.414094 E[0m
+[0;32mI (606734) GPS: GPS Data: $GPRMC,175637.00,A,0919.95551,N,08024.84583,E,0.509,,070425,,,A*79[0m
+[0;32mI (606744) GPS: Invalid GPGLL format[0m
+[0;32mI (606744) GPS: GPS Data: $GPVTG,,T,,M,0.509,N,0.943,K,A*21[0m
+[0;32mI (606754) GPS: Invalid GPGLL format[0m
+[0;32mI (606754) GPS: GPS Data: $GPGGA,175637.00,0919.95551,N,08024.84583,E,1,08,0.98,50.5,M,-95.1,M,,*44[0m
+[0;32mI (606764) GPS: Invalid GPGLL format[0m
+[0;32mI (606774) GPS: GPS Data: $GPGSA,A,3,32,23,10,28,27,02,31,26,,,,,1.87,0.98,1.59*0A[0m
+[0;32mI (606774) GPS: Invalid GPGLL format[0m
+[0;32mI (606784) GPS: GPS Data: $GPGSV,4,1,14,01,13,317,09,02,34,298,25,08,05,247,,10,50,074,27*79[0m
+[0;32mI (606794) GPS: Invalid GPGLL format[0m
+[0;32mI (606794) GPS: GPS Data: $GPGSV,4,2,14,16,15,189,22,18,00,151,07,23,20,115,25,25,15,063,*75[0m
+[0;32mI (606804) GPS: Invalid GPGLL format[0m
+[0;32mI (606814) GPS: GPS Data: $GPGSV,4,3,14,26,35,171,31,27,14,214,26,28,64,006,24,31,76,267,37*73[0m
+[0;32mI (606824) GPS: Invalid GPGLL format[0m
+[0;32mI (606824) GPS: GPS Data: $GPGSV,4,4,14,32,28,020,29,42,22,095,30*77[0m
+[0;32mI (606834) GPS: Invalid GPGLL format[0m
+[0;32mI (606834) GPS: GPS Data: $GPGLL,0919.95551,N,08024.84583,E,175637.00,A,A*68[0m
+[0;32mI (606844) GPS: Latitude: 9.332592 N[0m
+[0;32mI (606844) GPS: Longitude: 80.414097 E[0m
+[0;32mI (606854) GPS: GPS Data: $GPRMC,175638.00,A,0919.95556,N,08024.84604,E,0.066,,070425,,,A*71[0m
+[0;32mI (606864) GPS: Invalid GPGLL format[0m
+[0;32mI (606864) GPS: GPS Data: $GPVTG,,T,,M,0.066,N,0.123,K,A*23[0m
+[0;32mI (606874) GPS: Invalid GPGLL format[0m
+[0;32mI (606874) GPS: GPS Data: $GPGGA,175638.00,0919.95556,N,08024.84604,E,1,08,0.98,50.7,M,-95.1,M,,*42[0m
+[0;32mI (606884) GPS: Invalid GPGLL format[0m
+[0;32mI (606884) GPS: GPS Data: $GPGSA,A,3,32,23,10,28,27,02,31,26,,,,,1.87,0.98,1.59*0A[0m
+[0;32mI (606894) GPS: Invalid GPGLL format[0m
+[0;32mI (606904) GPS_MAIN: Latitude: 9.332592, Longitude: 80.414097[0m
+[0;32mI (609184) FIREBASE: ✅ Updated GPS data in existing 'gps' object.[0m
+[0;32mI (619184) GPS: GPS Data: $GPGSV,4,1,14,01,13,317,09,02,34,298,25,08,05,247,,10,50,074,28*76[0m
+[0;32mI (619184) GPS: Invalid GPGLL format[0m
+[0;32mI (619184) GPS: GPS Data: $GPGSV,4,2,14,16,15,189,21,18,00,151,07,23,20,115,25,25,19.95547,N,08024.84737,E,175648.00,A,A*6A[0m
+[0;32mI (619194) GPS: Invalid GPGLL format[0m
+[0;32mI (619194) GPS: GPS Data: $GPRMC,175649.00,A,0919.95546,N,08024.84740,E,0.061,,070425,,,A*70[0m
+[0;32mI (619204) GPS: Invalid GPGLL format[0m
+[0;32mI (619214) GPS: GPS Data: $GPVTG,,T,,M,0.061,N,0.113,K,A*27[0m
+[0;32mI (619214) GPS: Invalid GPGLL format[0m
+[0;32mI (619224) GPS: GPS Data: $GPGGA,175649.00,0919.95546,N,08024.84740,E,1,08,0.98,53.9,M,-95.1,M,,*49[0m
+[0;32mI (619234) GPS: Invalid GPGLL format[0m
+[0;32mI (619234) GPS: GPS Data: $GPGSA,A,3,32,23,10,28,27,02,31,26,,,,,1.87,0.98,1.59*0A[0m
+[0;32mI (619244) GPS: Invalid GPGLL format[0m
+[0;32mI (619254) GPS: GPS Data: $GPGSV,4,1,14,01,13,317,11,02,34,298,27,08,05,247,,10,50,074,36*72[0m
+[0;32mI (619254) GPS: Invalid GPGLL format[0m
+[0;32mI (619264) GPS: GPS Data: $GPGSV,4,2,14,16,15,189,21,18,00,151,05,23,20,116,29,25,14,062,09*72[0m
+[0;32mI (619274) GPS: Invalid GPGLL format[0m
+[0;32mI (619274) GPS: GPS Data: $GPGSV,4,3,14,26,36,170,34,27,14,214,27,28,64,006,27,31,76,267,39*78[0m
+[0;32mI (619284) GPS: Invalid GPGLL format[0m
+[0;32mI (619294) GPS: GPS Data: $GPGSV,4,4,14,32,28,020,31,42,22,095,29*76[0m
+[0;32mI (619294) GPS: Invalid GPGLL format[0m
+[0;32mI (619304) GPS: GPS Data: $GPGLL,0919.95546,N,08024.84740,E,175649.00,A,A*6A[0m
+[0;32mI (619304) GPS: Latitude: 9.332591 N[0m
+[0;32mI (619314) GPS: Longitude: 80.414123 E[0m
+[0;32mI (619314) GPS: GPS Data: $GPRMC,175650.00,A,0919.95544,N,08024.84739,E,0.030,,070425,,,A*70[0m
+[0;32mI (619324) GPS: Invalid GPGLL format[0m
+[0;32mI (619334) GPS: GPS Data: $GPVTG,,T,,M,0.030,N,0.055,K,A*20[0m
+[0;32mI (619334) GPS: Invalid GPGLL format[0m
+[0;32mI (619344) GPS: GPS Data: $GPGGA,175650.00,0919.95544,N,08024.84739,E,1,08,0.98,54.1,M,-95.1,M,,*42[0m
+[0;32mI (619354) GPS: Invalid GPGLL format[0m
+[0;32mI (619354) GPS: GPS Data: $GPGSA,A,3,32,23,10,28,27,02,31,26,,,,,1.87,0.98,1.59*0A[0m
+[0;32mI (619364) GPS: Invalid GPGLL format[0m
+[0;32mI (619364) GPS: GPS Data: $GPGSV,4,1,14,01,13,317,09,02,34,298,29,08,05,247,,10,50,074,36*75[0m
+[0;32mI (619374) GPS: Invalid GPGLL format[0m
+[0;32mI (619384) GPS_MAIN: Latitude: 9.332591, Longitude: 80.414123[0m
+[0;32mI (621874) FIREBASE: ✅ Updated GPS data in existing 'gps' object.[0m
+[0;32mI (631884) GPS: GPS Data: $GPGSV,4,2,14,16,15,189,21,18,00,151,,23,20,116,29,25,1420,18,00,151,,23,20,116,27,25,14,062,17*77[0m
+[0;32mI (631884) GPS: Invalid GPGLL format[0m
+[0;32mI (631884) GPS: GPS Data: $GPGSV,4,3,14,26,36,170,33,27,14,214,19,28,64,006,27,31,76,270,37*7A[0m
+[0;32mI (631894) GPS: Invalid GPGLL format[0m
+[0;32mI (631904) GPS: GPS Data: $GPGSV,4,4,14,32,28,021,27,42,22,095,30*78[0m
+[0;32mI (631904) GPS: Invalid GPGLL format[0m
+[0;32mI (631914) GPS: GPS Data: $GPGLL,0919.95538,N,08024.84673,E,175701.00,A,A*6F[0m
+[0;32mI (631914) GPS: Latitude: 9.332590 N[0m
+[0;32mI (631924) GPS: Longitude: 80.414112 E[0m
+[0;32mI (631924) GPS: GPS Data: $GPRMC,175702.00,A,0919.95545,N,08024.84668,E,0.114,,070425,,,A*75[0m
+[0;32mI (631934) GPS: Invalid GPGLL format[0m
+[0;32mI (631944) GPS: GPS Data: $GPVTG,,T,,M,0.114,N,0.211,K,A*25[0m
+[0;32mI (631944) GPS: Invalid GPGLL format[0m
+[0;32mI (631954) GPS: GPS Data: $GPGGA,175702.00,0919.95545,N,08024.84668,E,1,10,0.98,55.4,M,-95.1,M,,*4D[0m
+[0;32mI (631964) GPS: Invalid GPGLL format[0m
+[0;32mI (631964) GPS: GPS Data: $GPGSA,A,3,32,23,10,28,27,02,25,31,26,08,,,1.87,0.98,1.59*05[0m
+[0;32mI (631974) GPS: Invalid GPGLL format[0m
+[0;32mI (631974) GPS: GPS Data: $GPGSV,4,1,14,01,13,317,07,02,34,298,23,08,05,247,10,10,50,074,34*72[0m
+[0;32mI (631984) GPS: Invalid GPGLL format[0m
+[0;32mI (631994) GPS: GPS Data: $GPGSV,4,2,14,16,15,189,19,18,00,151,,23,20,116,26,25,14,062,14*7F[0m
+[0;32mI (632004) GPS: Invalid GPGLL format[0m
+[0;32mI (632004) GPS: GPS Data: $GPGSV,4,3,14,26,36,170,31,27,14,214,18,28,64,006,26,31,76,270,37*78[0m
+[0;32mI (632014) GPS: Invalid GPGLL format[0m
+[0;32mI (632014) GPS: GPS Data: $GPGSV,4,4,14,32,28,021,27,42,22,095,30*78[0m
+[0;32mI (632024) GPS: Invalid GPGLL format[0m
+[0;32mI (632034) GPS: GPS Data: $GPGLL,0919.95545,N,08024.84668,E,175702.00,A,A*6C[0m
+[0;32mI (632034) GPS: Latitude: 9.332591 N[0m
+[0;32mI (632044) GPS: Longitude: 80.414111 E[0m
+[0;32mI (632044) GPS: GPS Data: $GPRMC,175703.00,A,0919.95559,N,08024.84652,E,0.098,,070425,,,A*75[0m
+[0;32mI (632054) GPS: Invalid GPGLL format[0m
+[0;32mI (632054) GPS: GPS Data: $GPVTG,,T,,M,0.098,N,0.182,K,A*29[0m
+[0;32mI (632064) GPS: Invalid GPGLL format[0m
+[0;32mI (632074) GPS: GPS Data: $GPGGA,175703.00,0919.95559,N,08024.84652,E,1,10,0.98,54.7,M,-95.1,M,,*4A[0m
+[0;32mI (632084) GPS: Invalid GPGLL format[0m
+[0;32mI (632084) GPS: GPS Data: $GPGSA,A,3,32,23,10,28,27,02,25,31,26,08,,,1.87,0.98,1.59*05[0m
+[0;32mI (632094) GPS: Invalid GPGLL format[0m
+[0;32mI (632094) GPS_MAIN: Latitude: 9.332591, Longitude: 80.414111[0m
+[0;32mI (634574) FIREBASE: ✅ Updated GPS data in existing 'gps' object.[0m
+[0;32mI (644584) GPS: GPS Data: $GPGSV,4,1,14,01,13,317,07,02,34,298,28,08,05,247,10,10,50,074,35*78[0m
+[0;32mI (644584) GPS: Invalid GPGLL format[0m
+[0;32mI (644584) GPS: GPS Data: $GPGSV,4,2,14,16,15,189,20,18,00,151,,23,20,116,2624.84673,E,175713.00,A,A*66[0m
+[0;32mI (644594) GPS: Invalid GPGLL format[0m
+[0;32mI (644594) GPS: GPS Data: $GPRMC,175714.00,A,0919.95635,N,08024.84680,E,0.027,,070425,,,A*71[0m
+[0;32mI (644604) GPS: Invalid GPGLL format[0m
+[0;32mI (644614) GPS: GPS Data: $GPVTG,,T,,M,0.027,N,0.051,K,A*22[0m
+[0;32mI (644614) GPS: Invalid GPGLL format[0m
+[0;32mI (644624) GPS: GPS Data: $GPGGA,175714.00,0919.95635,N,08024.84680,E,1,09,1.15,52.9,M,-95.1,M,,*4E[0m
+[0;32mI (644634) GPS: Invalid GPGLL format[0m
+[0;32mI (644634) GPS: GPS Data: $GPGSA,A,3,32,23,10,28,27,02,25,31,26,,,,2.22,1.15,1.90*00[0m
+[0;32mI (644644) GPS: Invalid GPGLL format[0m
+[0;32mI (644644) GPS: GPS Data: $GPGSV,4,1,14,01,13,317,11,02,34,298,27,08,05,247,,10,50,074,34*70[0m
+[0;32mI (644654) GPS: Invalid GPGLL format[0m
+[0;32mI (644664) GPS: GPS Data: $GPGSV,4,2,14,16,15,189,19,18,00,151,,23,20,116,17,25,14,062,22*78[0m
+[0;32mI (644674) GPS: Invalid GPGLL format[0m
+[0;32mI (644674) GPS: GPS Data: $GPGSV,4,3,14,26,36,170,31,27,14,214,19,28,64,006,29,31,76,270,38*79[0m
+[0;32mI (644684) GPS: Invalid GPGLL format[0m
+[0;32mI (644684) GPS: GPS Data: $GPGSV,4,4,14,32,28,021,24,42,22,095,30*7B[0m
+[0;32mI (644694) GPS: Invalid GPGLL format[0m
+[0;32mI (644704) GPS: GPS Data: $GPGLL,0919.95635,N,08024.84680,E,175714.00,A,A*69[0m
+[0;32mI (644704) GPS: Latitude: 9.332606 N[0m
+[0;32mI (644714) GPS: Longitude: 80.414113 E[0m
+[0;32mI (644714) GPS: GPS Data: $GPRMC,175715.00,A,0919.95633,N,08024.84700,E,0.089,,070425,,,A*7B[0m
+[0;32mI (644724) GPS: Invalid GPGLL format[0m
+[0;32mI (644734) GPS: GPS Data: $GPVTG,,T,,M,0.089,N,0.164,K,A*21[0m
+[0;32mI (644734) GPS: Invalid GPGLL format[0m
+[0;32mI (644744) GPS: GPS Data: $GPGGA,175715.00,0919.95633,N,08024.84700,E,1,08,1.15,53.0,M,-95.1,M,,*49[0m
+[0;32mI (644754) GPS: Invalid GPGLL format[0m
+[0;32mI (644754) GPS: GPS Data: $GPGSA,A,3,32,23,10,28,02,25,31,26,,,,,2.22,1.15,1.90*05[0m
+[0;32mI (644764) GPS: Invalid GPGLL format[0m
+[0;32mI (644764) GPS: GPS Data: $GPGSV,4,1,14,01,13,317,11,02,34,298,28,08,05,247,,10,50,074,36*7D[0m
+[0;32mI (644774) GPS: Invalid GPGLL format[0m
+[0;32mI (644784) GPS_MAIN: Latitude: 9.332606, Longitude: 80.414113[0m
+[0;32mI (646864) FIREBASE: ✅ Updated GPS data in existing 'gps' object.[0m
+[0;32mI (656864) GPS: GPS Data: $GPGSV,4,2,14,16,15,189,18,18,00,151,,23,20,116,15,25,14[0m
+[0;32mI (656864) GPS: Invalid GPGLL format[0m
+[0;32mI (656864) GPS: GPS Data: $GPGLL,0919.95571,N,08024.84790,E,175726.00,A,A*6B[0m
+[0;32mI (656874) GPS: Latitude: 9.332595 N[0m
+[0;32mI (656874) GPS: Longitude: 80.414132 E[0m
+[0;32mI (656874) GPS: GPS Data: $GPRMC,175727.00,A,0919.95569,N,08024.84792,E,0.044,,070425,,,A*7C[0m
+[0;32mI (656884) GPS: Invalid GPGLL format[0m
+[0;32mI (656894) GPS: GPS Data: $GPVTG,,T,,M,0.044,N,0.081,K,A*2A[0m
+[0;32mI (656894) GPS: Invalid GPGLL format[0m
+[0;32mI (656904) GPS: GPS Data: $GPGGA,175727.00,0919.95569,N,08024.84792,E,1,09,1.15,54.9,M,-95.1,M,,*40[0m
+[0;32mI (656914) GPS: Invalid GPGLL format[0m
+[0;32mI (656914) GPS: GPS Data: $GPGSA,A,3,32,23,10,28,27,02,25,31,26,,,,2.22,1.15,1.90*00[0m
+[0;32mI (656924) GPS: Invalid GPGLL format[0m
+[0;32mI (656924) GPS: GPS Data: $GPGSV,4,1,14,01,13,317,22,02,34,298,32,08,05,247,,10,50,074,33*73[0m
+[0;32mI (656934) GPS: Invalid GPGLL format[0m
+[0;32mI (656944) GPS: GPS Data: $GPGSV,4,2,14,16,15,189,20,18,00,151,,23,20,116,20,25,14,062,18*7F[0m
+[0;32mI (656954) GPS: Invalid GPGLL format[0m
+[0;32mI (656954) GPS: GPS Data: $GPGSV,4,3,14,26,36,170,29,27,14,214,16,28,64,006,28,31,76,270,36*70[0m
+[0;32mI (656964) GPS: Invalid GPGLL format[0m
+[0;32mI (656964) GPS: GPS Data: $GPGSV,4,4,14,32,28,021,28,42,22,095,30*77[0m
+[0;32mI (656974) GPS: Invalid GPGLL format[0m
+[0;32mI (656984) GPS: GPS Data: $GPGLL,0919.95569,N,08024.84792,E,175727.00,A,A*61[0m
+[0;32mI (656984) GPS: Latitude: 9.332595 N[0m
+[0;32mI (656994) GPS: Longitude: 80.414132 E[0m
+[0;32mI (656994) GPS: GPS Data: $GPRMC,175728.00,A,0919.95571,N,08024.84788,E,0.046,,070425,,,A*73[0m
+[0;32mI (657004) GPS: Invalid GPGLL format[0m
+[0;32mI (657014) GPS: GPS Data: $GPVTG,,T,,M,0.046,N,0.086,K,A*2F[0m
+[0;32mI (657014) GPS: Invalid GPGLL format[0m
+[0;32mI (657024) GPS: GPS Data: $GPGGA,175728.00,0919.95571,N,08024.84788,E,1,08,1.15,54.8,M,-95.1,M,,*4D[0m
+[0;32mI (657034) GPS: Invalid GPGLL format[0m
+[0;32mI (657034) GPS: GPS Data: $GPGSA,A,3,32,23,10,28,02,25,31,26,,,,,2.22,1.15,1.90*05[0m
+[0;32mI (657044) GPS: Invalid GPGLL format[0m
+[0;32mI (657044) GPS: GPS Data: $GPGSV,4,1,14,01,13,317,23,02,34,298,33,08,05,247,,10,50,074,34*74[0m
+[0;32mI (657054) GPS: Invalid GPGLL format[0m
+[0;32mI (657064) GPS: GPS Data: $GPGSV,4,2,14,16,15,189,19,18,00,151,,23,20,116,21,25,14,062,16*7A[0m
+[0;32mI (657074) GPS: Invalid GPGLL format[0m
+[0;32mI (657074) GPS_MAIN: Latitude: 9.332595, Longitude: 80.414132[0m
+[0;32mI (659354) FIREBASE: ✅ Updated GPS data in existing 'gps' object.[0m
+[0;32mI (669354) GPS: GPS Data: $GPGSV,4,3,14,26,36,170,29,27,14,214,16,28,64,006,28,31,76,270,36*70[0m
+[0;32mI (669354) GPS: Invalid GPGLL format[0m
+[0;32mI (669354) GPS: GPS Data: $GPGSV,4,4,14,32,28,021,28,42,22,095,3[0m
+[0;32mI (669364) GPS: Invalid GPGLL format[0m
+[0;32mI (669364) GPS: GPS Data: $GPGLL,0919.95584,N,08024.84773,E,175738.00,A,A*63[0m
+[0;32mI (669374) GPS: Latitude: 9.332597 N[0m
+[0;32mI (669374) GPS: Longitude: 80.414129 E[0m
+[0;32mI (669384) GPS: GPS Data: $GPRMC,175739.00,A,0919.95583,N,08024.84771,E,0.056,,070425,,,A*79[0m
+[0;32mI (669394) GPS: Invalid GPGLL format[0m
+[0;32mI (669394) GPS: GPS Data: $GPVTG,,T,,M,0.056,N,0.103,K,A*22[0m
+[0;32mI (669404) GPS: Invalid GPGLL format[0m
+[0;32mI (669404) GPS: GPS Data: $GPGGA,175739.00,0919.95583,N,08024.84771,E,1,10,1.15,55.8,M,-95.1,M,,*4E[0m
+[0;32mI (669414) GPS: Invalid GPGLL format[0m
+[0;32mI (669414) GPS: GPS Data: $GPGSA,A,3,32,23,10,28,27,02,25,31,26,08,,,2.22,1.15,1.90*08[0m
+[0;32mI (669424) GPS: Invalid GPGLL format[0m
+[0;32mI (669434) GPS: GPS Data: $GPGSV,4,1,14,01,13,317,21,02,34,298,29,08,05,246,07,10,50,074,32*7D[0m
+[0;32mI (669444) GPS: Invalid GPGLL format[0m
+[0;32mI (669444) GPS: GPS Data: $GPGSV,4,2,14,16,15,189,19,18,00,151,,23,20,116,19,25,14,062,20*74[0m
+[0;32mI (669454) GPS: Invalid GPGLL format[0m
+[0;32mI (669454) GPS: GPS Data: $GPGSV,4,3,14,26,36,170,27,27,14,214,16,28,64,006,26,31,76,270,34*72[0m
+[0;32mI (669464) GPS: Invalid GPGLL format[0m
+[0;32mI (669474) GPS: GPS Data: $GPGSV,4,4,14,32,28,021,25,42,22,095,30*7A[0m
+[0;32mI (669474) GPS: Invalid GPGLL format[0m
+[0;32mI (669484) GPS: GPS Data: $GPGLL,0919.95583,N,08024.84771,E,175739.00,A,A*67[0m
+[0;32mI (669494) GPS: Latitude: 9.332597 N[0m
+[0;32mI (669494) GPS: Longitude: 80.414129 E[0m
+[0;32mI (669504) GPS: GPS Data: $GPRMC,175740.00,A,0919.95584,N,08024.84769,E,0.109,,070425,,,A*72[0m
+[0;32mI (669504) GPS: Invalid GPGLL format[0m
+[0;32mI (669514) GPS: GPS Data: $GPVTG,,T,,M,0.109,N,0.203,K,A*2A[0m
+[0;32mI (669514) GPS: Invalid GPGLL format[0m
+[0;32mI (669524) GPS: GPS Data: $GPGGA,175740.00,0919.95584,N,08024.84769,E,1,10,1.15,55.7,M,-95.1,M,,*41[0m
+[0;32mI (669534) GPS: Invalid GPGLL format[0m
+[0;32mI (669534) GPS: GPS Data: $GPGSA,A,3,32,23,10,28,27,02,25,31,26,08,,,2.22,1.15,1.90*08[0m
+[0;32mI (669544) GPS: Invalid GPGLL format[0m
+[0;32mI (669554) GPS: GPS Data: $GPGSV,4,1,14,01,13,317,20,02,34,298,29,08,05,246,08,10,50,075,32*72[0m
+[0;32mI (669554) GPS: Invalid GPGLL format[0m
+[0;32mI (669564) GPS_MAIN: Latitude: 9.332597, Longitude: 80.414129[0m
+[0;32mI (671444) FIREBASE: ✅ Updated GPS data in existing 'gps' object.[0m
+[0;32mI (681444) GPS: GPS Data: $GPGSV,4,2,14,16,15,189,19,18,00,151,,23,20,116,20,25,14,062,20*7E[0m
+[0;32mI (681444) GPS: Invalid GPGLL format[0m
+[0;32mI (681444) GPS: GPS Data: $GPGSV,4,3,14,26,36,170,26,27,14,214,16,28,64,006,26,31,76,270,31*76[0m
+[0;32mI (681454) GPS: Invalid GPGLL format[0m
+[0;32mI (681454) GPS: GPS Data: $GPGSV,4,4,14,32,28,021,24,42,22SV,4,4,14,32,28,021,22,42,22,095,29*75[0m
+[0;32mI (681464) GPS: Invalid GPGLL format[0m
+[0;32mI (681474) GPS: GPS Data: $GPGLL,0919.95612,N,08024.84770,E,175751.00,A,A*63[0m
+[0;32mI (681474) GPS: Latitude: 9.332602 N[0m
+[0;32mI (681484) GPS: Longitude: 80.414128 E[0m
+[0;32mI (681484) GPS: GPS Data: $GPRMC,175752.00,A,0919.95624,N,08024.84766,E,0.604,,070425,,,A*7D[0m
+[0;32mI (681494) GPS: Invalid GPGLL format[0m
+[0;32mI (681504) GPS: GPS Data: $GPVTG,,T,,M,0.604,N,1.119,K,A*29[0m
+[0;32mI (681504) GPS: Invalid GPGLL format[0m
+[0;32mI (681514) GPS: GPS Data: $GPGGA,175752.00,0919.95624,N,08024.84766,E,1,10,1.15,58.5,M,-95.1,M,,*4B[0m
+[0;32mI (681524) GPS: Invalid GPGLL format[0m
+[0;32mI (681524) GPS: GPS Data: $GPGSA,A,3,32,23,10,28,27,02,25,31,26,08,,,2.09,1.15,1.75*0A[0m
+[0;32mI (681534) GPS: Invalid GPGLL format[0m
+[0;32mI (681534) GPS: GPS Data: $GPGSV,4,1,14,01,13,317,,02,34,298,26,08,05,246,10,10,50,075,35*71[0m
+[0;32mI (681544) GPS: Invalid GPGLL format[0m
+[0;32mI (681554) GPS: GPS Data: $GPGSV,4,2,14,16,15,189,13,18,00,151,,23,20,116,15,25,14,062,11*70[0m
+[0;32mI (681564) GPS: Invalid GPGLL format[0m
+[0;32mI (681564) GPS: GPS Data: $GPGSV,4,3,14,26,36,170,26,27,14,214,16,28,64,006,26,31,76,270,31*76[0m
+[0;32mI (681574) GPS: Invalid GPGLL format[0m
+[0;32mI (681574) GPS: GPS Data: $GPGSV,4,4,14,32,28,021,22,42,22,095,28*74[0m
+[0;32mI (681584) GPS: Invalid GPGLL format[0m
+[0;32mI (681584) GPS: GPS Data: $GPGLL,0919.95624,N,08024.84766,E,175752.00,A,A*62[0m
+[0;32mI (681594) GPS: Latitude: 9.332604 N[0m
+[0;32mI (681604) GPS: Longitude: 80.414128 E[0m
+[0;32mI (681604) GPS: GPS Data: $GPRMC,175753.00,A,0919.95616,N,08024.84753,E,0.186,,070425,,,A*76[0m
+[0;32mI (681614) GPS: Invalid GPGLL format[0m
+[0;32mI (681614) GPS: GPS Data: $GPVTG,,T,,M,0.186,N,0.345,K,A*2E[0m
+[0;32mI (681624) GPS: Invalid GPGLL format[0m
+[0;32mI (681624) GPS: GPS Data: $GPGGA,175753.00,0919.95616,N,08024.84753,E,1,10,0.98,57.8,M,-95.1,M,,*4B[0m
+[0;32mI (681634) GPS: Invalid GPGLL format[0m
+[0;32mI (681644) GPS: GPS Data: $GPGSA,A,3,32,23,10,28,27,02,25,31,26,08,,,1.87,0.98,1.59*05[0m
+[0;32mI (681654) GPS: Invalid GPGLL format[0m
+[0;32mI (681654) GPS_MAIN: Latitude: 9.332604, Longitude: 80.414128[0m
+[0;32mI (683934) FIREBASE: ✅ Updated GPS data in existing 'gps' object.[0m
+[0;32mI (693934) GPS: GPS Data: $GPGSV,4,1,14,01,13,317,,02,34,298,26,08,05,246,10,10,50,075,37*73[0m
+[0;32mI (693934) GPS: Invalid GPGLL format[0m
+[0;32mI (693934) GPS: GPS Data: $GPGSV,4,2,14,16,15,189,12,18,00,151,,23,20,116,15,200,A,A*6D[0m
+[0;32mI (693944) GPS: Invalid GPGLL format[0m
+[0;32mI (693944) GPS: GPS Data: $GPRMC,175804.00,A,0919.95480,N,08024.84584,E,0.240,,070425,,,A*77[0m
+[0;32mI (693954) GPS: Invalid GPGLL format[0m
+[0;32mI (693954) GPS: GPS Data: $GPVTG,,T,,M,0.240,N,0.444,K,A*21[0m
+[0;32mI (693964) GPS: Invalid GPGLL format[0m
+[0;32mI (693974) GPS: GPS Data: $GPGGA,175804.00,0919.95480,N,08024.84584,E,1,10,0.91,60.6,M,-95.1,M,,*40[0m
+[0;32mI (693984) GPS: Invalid GPGLL format[0m
+[0;32mI (693984) GPS: GPS Data: $GPGSA,A,3,32,23,10,28,27,02,25,31,26,08,,,1.66,0.91,1.39*05[0m
+[0;32mI (693994) GPS: Invalid GPGLL format[0m
+[0;32mI (693994) GPS: GPS Data: $GPGSV,4,1,14,01,13,317,,02,34,298,20,08,05,246,12,10,50,075,37*77[0m
+[0;32mI (694004) GPS: Invalid GPGLL format[0m
+[0;32mI (694014) GPS: GPS Data: $GPGSV,4,2,14,16,15,189,,18,00,151,,23,20,116,21,25,14,062,21*76[0m
+[0;32mI (694014) GPS: Invalid GPGLL format[0m
+[0;32mI (694024) GPS: GPS Data: $GPGSV,4,3,14,26,36,170,27,27,13,213,17,28,63,007,29,31,76,273,32*7F[0m
+[0;32mI (694034) GPS: Invalid GPGLL format[0m
+[0;32mI (694034) GPS: GPS Data: $GPGSV,4,4,14,32,28,021,27,42,22,095,30*78[0m
+[0;32mI (694044) GPS: Invalid GPGLL format[0m
+[0;32mI (694044) GPS: GPS Data: $GPGLL,0919.95480,N,08024.84584,E,175804.00,A,A*6C[0m
+[0;32mI (694054) GPS: Latitude: 9.332580 N[0m
+[0;32mI (694064) GPS: Longitude: 80.414097 E[0m
+[0;32mI (694064) GPS: GPS Data: $GPRMC,175805.00,A,0919.95464,N,08024.84571,E,0.123,,070425,,,A*70[0m
+[0;32mI (694074) GPS: Invalid GPGLL format[0m
+[0;32mI (694074) GPS: GPS Data: $GPVTG,,T,,M,0.123,N,0.229,K,A*2A[0m
+[0;32mI (694084) GPS: Invalid GPGLL format[0m
+[0;32mI (694084) GPS: GPS Data: $GPGGA,175805.00,0919.95464,N,08024.84571,E,1,10,0.91,61.4,M,-95.1,M,,*42[0m
+[0;32mI (694094) GPS: Invalid GPGLL format[0m
+[0;32mI (694104) GPS: GPS Data: $GPGSA,A,3,32,23,10,28,27,02,25,31,26,08,,,1.66,0.91,1.39*05[0m
+[0;32mI (694114) GPS: Invalid GPGLL format[0m
+[0;32mI (694114) GPS: GPS Data: $GPGSV,4,1,14,01,13,317,,02,34,298,18,08,05,246,11,10,50,075,39*71[0m
+[0;32mI (694124) GPS: Invalid GPGLL format[0m
+[0;32mI (694124) GPS: GPS Data: $GPGSV,4,2,14,16,15,189,,18,00,151,,23,20,116,21,25,14,062,22*75[0m
+[0;32mI (694134) GPS: Invalid GPGLL format[0m
+[0;32mI (694144) GPS_MAIN: Latitude: 9.332580, Longitude: 80.414097[0m
+[0;32mI (696424) FIREBASE: ✅ Updated GPS data in existing 'gps' object.[0m
+[0;32mI (706434) GPS: GPS Data: $GPGSV,4,3,14,26,36,170,28,27,13,213,19,28,63,007,30,31,76,273,33*77[0m
+[0;32mI (706434) GPS: Invalid GPGLL format[0m
+[0;32mI (706434) GPS: GPS Data: $GPGSV,4,4,14,32,28,021,28,42,22,0950.197,N,0.364,K,A*2D[0m
+[0;32mI (706444) GPS: Invalid GPGLL format[0m
+[0;32mI (706444) GPS: GPS Data: $GPGGA,175816.00,0919.95268,N,08024.84582,E,1,10,1.14,67.9,M,-95.1,M,,*41[0m
+[0;32mI (706454) GPS: Invalid GPGLL format[0m
+[0;32mI (706464) GPS: GPS Data: $GPGSA,A,3,32,23,10,28,27,02,25,31,26,08,,,1.85,1.14,1.46*0C[0m
+[0;32mI (706464) GPS: Invalid GPGLL format[0m
+[0;32mI (706474) GPS: GPS Data: $GPGSV,4,1,14,01,13,317,,02,34,298,14,08,05,246,13,10,50,075,36*70[0m
+[0;32mI (706484) GPS: Invalid GPGLL format[0m
+[0;32mI (706484) GPS: GPS Data: $GPGSV,4,2,14,16,15,189,,18,00,151,,23,20,116,24,25,14,062,14*75[0m
+[0;32mI (706494) GPS: Invalid GPGLL format[0m
+[0;32mI (706494) GPS: GPS Data: $GPGSV,4,3,14,26,36,170,26,27,13,213,19,28,63,007,32,31,76,273,33*7B[0m
+[0;32mI (706504) GPS: Invalid GPGLL format[0m
+[0;32mI (706514) GPS: GPS Data: $GPGSV,4,4,14,32,28,021,32,42,22,095,31*7D[0m
+[0;32mI (706524) GPS: Invalid GPGLL format[0m
+[0;32mI (706524) GPS: GPS Data: $GPGLL,0919.95268,N,08024.84582,E,175816.00,A,A*69[0m
+[0;32mI (706534) GPS: Latitude: 9.332545 N[0m
+[0;32mI (706534) GPS: Longitude: 80.414097 E[0m
+[0;32mI (706544) GPS: GPS Data: $GPRMC,175817.00,A,0919.95247,N,08024.84591,E,0.126,,070425,,,A*7F[0m
+[0;32mI (706554) GPS: Invalid GPGLL format[0m
+[0;32mI (706554) GPS: GPS Data: $GPVTG,,T,,M,0.126,N,0.233,K,A*24[0m
+[0;32mI (706564) GPS: Invalid GPGLL format[0m
+[0;32mI (706564) GPS: GPS Data: $GPGGA,175817.00,0919.95247,N,08024.84591,E,1,10,1.14,68.6,M,-95.1,M,,*4F[0m
+[0;32mI (706574) GPS: Invalid GPGLL format[0m
+[0;32mI (706574) GPS: GPS Data: $GPGSA,A,3,32,23,10,28,27,02,25,31,26,08,,,1.85,1.14,1.46*0C[0m
+[0;32mI (706584) GPS: Invalid GPGLL format[0m
+[0;32mI (706594) GPS: GPS Data: $GPGSV,4,1,14,01,13,317,,02,34,298,12,08,05,246,13,10,50,075,36*76[0m
+[0;32mI (706604) GPS: Invalid GPGLL format[0m
+[0;32mI (706604) GPS: GPS Data: $GPGSV,4,2,14,16,15,189,,18,00,151,,23,20,116,24,25,14,062,16*77[0m
+[0;32mI (706614) GPS: Invalid GPGLL format[0m
+[0;32mI (706614) GPS: GPS Data: $GPGSV,4,3,14,26,36,170,27,27,13,213,20,28,63,007,32,31,76,273,33*70[0m
+[0;32mI (706624) GPS: Invalid GPGLL format[0m
+[0;32mI (706634) GPS_MAIN: Latitude: 9.332545, Longitude: 80.414097[0m
+[0;32mI (708914) FIREBASE: ✅ Updated GPS data in existing 'gps' object.[0m
+[0;32mI (718924) GPS: GPS Data: $GPGSV,4,4,14,32,28,021,32,42,22,095,31*7D[0m
+[0;32mI (718924) GPS: Invalid GPGLL format[0m
+[0;32mI (718924) GPS: GPS Data: $GPGLL,0919.95247,N,08024.84591,E,175817.00,A,A*67[0m
+[0;32mI (718924) GPS: Latitude: 9.332541 N[0m
+[0;32mI (718934) GPS: Longitude: 80.414098 E[0m
+[0;32mI (718934) GPS: GPS Data: 95141,N,08024.84595,E,175828.00,A,A*6A[0m
+[0;32mI (718944) GPS: Invalid GPGLL format[0m
+[0;32mI (718944) GPS: GPS Data: $GPRMC,175829.00,A,0919.95130,N,08024.84596,E,0.384,,070425,,,A*7C[0m
+[0;32mI (718954) GPS: Invalid GPGLL format[0m
+[0;32mI (718964) GPS: GPS Data: $GPVTG,,T,,M,0.384,N,0.711,K,A*2B[0m
+[0;32mI (718964) GPS: Invalid GPGLL format[0m
+[0;32mI (718974) GPS: GPS Data: $GPGGA,175829.00,0919.95130,N,08024.84596,E,1,10,0.98,69.4,M,-95.1,M,,*40[0m
+[0;32mI (718984) GPS: Invalid GPGLL format[0m
+[0;32mI (718984) GPS: GPS Data: $GPGSA,A,3,32,23,10,28,27,02,25,31,26,08,,,1.87,0.98,1.59*05[0m
+[0;32mI (718994) GPS: Invalid GPGLL format[0m
+[0;32mI (718994) GPS: GPS Data: $GPGSV,4,1,14,01,13,317,25,02,34,298,12,08,05,246,13,10,50,075,35*72[0m
+[0;32mI (719004) GPS: Invalid GPGLL format[0m
+[0;32mI (719014) GPS: GPS Data: $GPGSV,4,2,14,16,15,189,,18,00,151,,23,20,116,22,25,14,062,13*74[0m
+[0;32mI (719024) GPS: Invalid GPGLL format[0m
+[0;32mI (719024) GPS: GPS Data: $GPGSV,4,3,14,26,36,170,26,27,13,213,18,28,63,007,30,31,76,273,31*7A[0m
+[0;32mI (719034) GPS: Invalid GPGLL format[0m
+[0;32mI (719034) GPS: GPS Data: $GPGSV,4,4,14,32,28,021,30,42,22,095,29*76[0m
+[0;32mI (719044) GPS: Invalid GPGLL format[0m
+[0;32mI (719054) GPS: GPS Data: $GPGLL,0919.95130,N,08024.84596,E,175829.00,A,A*6E[0m
+[0;32mI (719054) GPS: Latitude: 9.332522 N[0m
+[0;32mI (719064) GPS: Longitude: 80.414099 E[0m
+[0;32mI (719064) GPS: GPS Data: $GPRMC,175830.00,A,0919.95125,N,08024.84592,E,0.088,,070425,,,A*7B[0m
+[0;32mI (719074) GPS: Invalid GPGLL format[0m
+[0;32mI (719084) GPS: GPS Data: $GPVTG,,T,,M,0.088,N,0.164,K,A*20[0m
+[0;32mI (719084) GPS: Invalid GPGLL format[0m
+[0;32mI (719094) GPS: GPS Data: $GPGGA,175830.00,0919.95125,N,08024.84592,E,1,10,0.98,69.4,M,-95.1,M,,*48[0m
+[0;32mI (719104) GPS: Invalid GPGLL format[0m
+[0;32mI (719104) GPS: GPS Data: $GPGSA,A,3,32,23,10,28,27,02,25,31,26,08,,,1.87,0.98,1.59*05[0m
+[0;32mI (719114) GPS: Invalid GPGLL format[0m
+[0;32mI (719114) GPS: GPS Data: $GPGSV,4,1,14,01,13,317,26,02,34,298,12,08,05,246,13,10,50,075,37*73[0m
+[0;32mI (719124) GPS: Invalid GPGLL format[0m
+[0;32mI (719134) GPS: GPS Data: $GPGSV,4,2,14,16,15,189,,18,00,151,,23,20,116,21,25,14,062,14*70[0m
+[0;32mI (719144) GPS: Invalid GPGLL format[0m
+[0;32mI (719144) GPS_MAIN: Latitude: 9.332522, Longitude: 80.414099[0m
+ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7176
+load:0x40078000,len:15564
+ho 0 tail 12 room 4
+load:0x40080400,len:4
+load:0x40080404,len:3904
+entry 0x40080640
+[0;32mI (31) boot: ESP-IDF v5.3.1-dirty 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time Apr  7 2025 22:46:43[0m
+[0;32mI (31) boot: Multicore bootloader[0m
+[0;32mI (36) boot: chip revision: v3.1[0m
+[0;32mI (40) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (44) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (49) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (53) boot: Enabling RNG early entropy source...[0m
+[0;32mI (59) boot: Partition Table:[0m
+[0;32mI (62) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (70) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (77) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (85) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (92) boot: End of partition table[0m
+[0;32mI (96) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=26b4ch (158540) map[0m
+[0;32mI (159) esp_image: segment 1: paddr=00036b74 vaddr=3ffb0000 size=03f38h ( 16184) load[0m
+[0;32mI (165) esp_image: segment 2: paddr=0003aab4 vaddr=40080000 size=05564h ( 21860) load[0m
+[0;32mI (174) esp_image: segment 3: paddr=00040020 vaddr=400d0020 size=a4e40h (675392) map[0m
+[0;32mI (406) esp_image: segment 4: paddr=000e4e68 vaddr=40085564 size=12d20h ( 77088) load[0m
+[0;32mI (448) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (448) boot: Disabling RNG early entropy source...[0m
+[0;32mI (460) cpu_start: Multicore app[0m
+[0;32mI (469) cpu_start: Pro cpu start user code[0m
+[0;32mI (469) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (469) app_init: Application information:[0m
+[0;32mI (472) app_init: Project name:     i2c-simple[0m
+[0;32mI (477) app_init: App version:      1[0m
+[0;32mI (481) app_init: Compile time:     Apr  7 2025 22:45:41[0m
+[0;32mI (487) app_init: ELF file SHA256:  fadda2093...[0m
+[0;32mI (493) app_init: ESP-IDF:          v5.3.1-dirty[0m
+[0;32mI (498) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (503) efuse_init: Max chip rev:     v3.99 [0m
+[0;32mI (508) efuse_init: Chip rev:         v3.1[0m
+[0;32mI (513) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (520) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (526) heap_init: At 3FFB8B58 len 000274A8 (157 KiB): DRAM[0m
+[0;32mI (532) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (538) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (545) heap_init: At 40098284 len 00007D7C (31 KiB): IRAM[0m
+[0;32mI (553) spi_flash: detected chip: generic[0m
+[0;32mI (556) spi_flash: flash io: dio[0m
+[0;33mW (559) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (574) main_task: Started on CPU0[0m
+[0;32mI (584) main_task: Calling app_main()[0m
+[0;32mI (584) FIREBASE: Firebase initialization completed.[0m
+[0;32mI (584) GPS_MAIN: Starting Wi-Fi task...[0m
+[0;32mI (614) GPS_MAIN: Starting GPS + Firebase task...[0m
+[0;32mI (614) main_task: Returned from app_main()[0m
+[0;32mI (624) wifi:wifi driver task: 3ffc2b18, prio:23, stack:6656, core=0[0m
+[0;33mW (634) GPS_MAIN: Invalid GPS fix, waiting...[0m
+[0;32mI (634) wifi:wifi firmware version: ccaebfa[0m
+[0;32mI (634) wifi:wifi certification version: v7.0[0m
+[0;32mI (634) wifi:config NVS flash: enabled[0m
+[0;32mI (634) wifi:config nano formating: disabled[0m
+[0;32mI (644) wifi:Init data frame dynamic rx buffer num: 32[0m
+[0;32mI (644) wifi:Init static rx mgmt buffer num: 5[0m
+[0;32mI (654) wifi:Init management short buffer num: 32[0m
+[0;32mI (654) wifi:Init dynamic tx buffer num: 32[0m
+[0;32mI (654) wifi:Init static rx buffer size: 1600[0m
+[0;32mI (664) wifi:Init static rx buffer num: 10[0m
+[0;32mI (664) wifi:Init dynamic rx buffer num: 32[0m
+[0;32mI (674) wifi_init: rx ba win: 6[0m
+[0;32mI (674) wifi_init: accept mbox: 6[0m
+[0;32mI (674) wifi_init: tcpip mbox: 32[0m
+[0;32mI (684) wifi_init: udp mbox: 6[0m
+[0;32mI (684) wifi_init: tcp mbox: 6[0m
+[0;32mI (684) wifi_init: tcp tx win: 5760[0m
+[0;32mI (694) wifi_init: tcp rx win: 5760[0m
+[0;32mI (694) wifi_init: tcp mss: 1440[0m
+[0;32mI (704) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (704) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;33mW (714) wifi:Password length matches WPA2 standards, authmode threshold changes from OPEN to WPA2[0m
+[0;32mI (724) phy_init: phy_version 4830,54550f7,Jun 20 2024,14:22:08[0m
+[0;33mW (804) phy_init: saving new calibration data because of checksum failure, mode(0)[0m
+[0;32mI (834) wifi:mode : sta (78:42:1c:6c:95:a0)[0m
+[0;32mI (834) wifi:enable tsf[0m
+[0;32mI (854) wifi:new:<1,0>, old:<1,0>, ap:<255,255>, sta:<1,0>, prof:1, snd_ch_cfg:0x0[0m
+[0;32mI (854) wifi:state: init -> auth (0xb0)[0m
+[0;32mI (854) wifi:state: auth -> assoc (0x0)[0m
+[0;32mI (864) wifi:state: assoc -> run (0x10)[0m
+[0;32mI (884) wifi:connected with Galaxy A51 C187, aid = 1, channel 1, BW20, bssid = 42:05:fb:1b:45:2b[0m
+[0;32mI (884) wifi:security: WPA2-PSK, phy: bgn, rssi: -51[0m
+[0;32mI (884) wifi:pm start, type: 1[0m
+
+[0;32mI (884) wifi:dp: 1, bi: 102400, li: 3, scale listen interval from 307200 us to 307200 us[0m
+[0;32mI (894) wifi:<ba-add>idx:0 (ifx:0, 42:05:fb:1b:45:2b), tid:0, ssn:0, winSize:64[0m
+[0;32mI (934) wifi:dp: 2, bi: 102400, li: 4, scale listen interval from 307200 us to 409600 us[0m
+[0;32mI (934) wifi:AP's beacon interval = 102400 us, DTIM period = 2[0m
+[0;32mI (1904) esp_netif_handlers: sta ip: 192.168.99.119, mask: 255.255.255.0, gw: 192.168.99.13[0m
+[0;32mI (1904) GPS_MAIN: Wi-Fi connected, IP acquired[0m
+[0;32mI (10634) GPS: GPS Data: ������bbb[0m
+[0;32mI (10634) GPS: Invalid GPGLL format[0m
+[0;32mI (10634) GPS: GPS Data: �7E[0m
+[0;32mI (10634) GPS: Invalid GPGLL format[0m
+[0;32mI (10634) GPS: GPS Data: $GPVTG,,T,,M,0.049,N,0.090,K,A*27[0m
+[0;32mI (10644) GPS: Invalid GPGLL format[0m
+[0;32mI (10644) GPS: GPS Data: $GPGGA,175844.00,0919.95134,N,08024.84432,E,1,09,1.18,66.3,M,-95.1,M,,*49[0m
+[0;32mI (10654) GPS: Invalid GPGLL format[0m
+[0;32mI (10664) GPS: GPS Data: $GPGSA,A,3,32,23,10,28,02,25,31,26,08,,,,2.16,1.18,1.81*07[0m
+[0;32mI (10664) GPS: Invalid GPGLL format[0m
+[0;32mI (10674) GPS: GPS Data: $GPGSV,4,1,14,01,13,317,23,02,34,297,27,08,05,246,12,10,50,075,28*70[0m
+[0;32mI (10684) GPS: Invalid GPGLL format[0m
+[0;32mI (10684) GPS: GPS Data: $GPGSV,4,2,14,16,15,189,,18,00,151,,23,20,116,15,25,14,062,14*77[0m
+[0;32mI (10694) GPS: Invalid GPGLL format[0m
+[0;32mI (10694) GPS: GPS Data: $GPGSV,4,3,14,26,36,170,27,27,13,213,,28,63,007,29,31,76,273,28*72[0m
+[0;32mI (10704) GPS: Invalid GPGLL format[0m
+[0;32mI (10714) GPS: GPS Data: $GPGSV,4,4,14,32,28,021,24,42,22,095,29*73[0m
+[0;32mI (10714) GPS: Invalid GPGLL format[0m
+[0;32mI (10724) GPS: GPS Data: $GPGLL,0919.95134,N,08024.84432,E,175844.00,A,A*6E[0m
+[0;32mI (10734) GPS: Latitude: 9.332522 N[0m
+[0;32mI (10734) GPS: Longitude: 80.414072 E[0m
+[0;32mI (10734) GPS: GPS Data: $GPRMC,175845.00,A,0919.95141,N,08024.84415,E,0.211,,070425,,,A*77[0m
+[0;32mI (10744) GPS: Invalid GPGLL format[0m
+[0;32mI (10754) GPS: GPS Data: $GPVTG,,T,,M,0.211,N,0.391,K,A*2A[0m
+[0;32mI (10754) GPS: Invalid GPGLL format[0m
+[0;32mI (10764) GPS: GPS Data: $GPGGA,175845.00,0919.95141,N,08024.84415,E,1,09,1.09,65.8,M,-95.1,M,,*47[0m
+[0;32mI (10774) GPS: Invalid GPGLL format[0m
+[0;32mI (10774) GPS: GPS Data: $GPGSA,A,3,32,23,10,28,02,25,31,26,08,,,,2.04,1.09,1.72*08[0m
+[0;32mI (10784) GPS: Invalid GPGLL format[0m
+[0;32mI (10784) GPS: GPS Data: $GPGSV,4,1,14,01,13,317,24,02,34,297,26,08,05,246,13,10,50,075,34*7A[0m
+[0;32mI (10794) GPS: Invalid GPGLL format[0m
+[0;32mI (10804) GPS: GPS Data: $GPGSV,4,2,14,16,15,189,,18,00,151,,23,20,116,16,25,14,062,16*76[0m
+[0;32mI (10814) GPS: Invalid GPGLL format[0m
+[0;32mI (10814) GPS: GPS Data: $GPGSV,4,3,14,26,36,170,26,27,13,213,,28,63,007,28,31,76,273,29*73[0m
+[0;32mI (10824) GPS: Invalid GPGLL format[0m
+[0;32mI (10824) GPS: GPS Data: $GPGSV,4,4,14,32,28,021,23,42,22,095,31*7D[0m
+[0;32mI (10834) GPS: Invalid GPGLL format[0m
+[0;32mI (10844) GPS: GPS Data: $GPGLL,0919.95141,N,08024.84415,E,175845.00,A,A*68[0m
+[0;32mI (10844) GPS: Latitude: 9.332524 N[0m
+[0;32mI (10854) GPS: Longitude: 80.414069 E[0m
+[0;32mI (10854) GPS_MAIN: Latitude: 9.332524, Longitude: 80.414069[0m
+[0;32mI (13024) FIREBASE: ✅ Updated GPS data in existing 'gps' object.[0m
+[0;32mI (23034) GPS: GPS Data: $GPRMC,175846.00,A,0919.95146,N,08024.84407,E,0.217,,070425,,,A*76[0m
+[0;32mI (23034) GPS: Invalid GPGLL format[0m
+[0;32mI (23034) GPS: GPS Data: $GPVTG,,T,,M,0.217,N,0.401,K,A*22[0m
+[0;32mI (23034) GPS: Invalid GPGLL format[0m
+[0;32mI (23044) GPS: GPS Data: $GPGGA,175846.00,,,,A*7B[0m
+[0;32mI (23044) GPS: Invalid GPGLL format[0m
+[0;32mI (23054) GPS: GPS Data: $GPVTG,,T,,M,0.652,N,1.207,K,A*26[0m
+[0;32mI (23054) GPS: Invalid GPGLL format[0m
+[0;32mI (23064) GPS: GPS Data: $GPGGA,175854.00,0919.95184,N,08024.84336,E,1,09,0.91,65.3,M,-95.1,M,,*43[0m
+[0;32mI (23074) GPS: Invalid GPGLL format[0m
+[0;32mI (23074) GPS: GPS Data: $GPGSA,A,3,32,23,10,28,27,02,25,31,26,,,,1.66,0.91,1.39*0D[0m
+[0;32mI (23084) GPS: Invalid GPGLL format[0m
+[0;32mI (23094) GPS: GPS Data: $GPGSV,4,1,14,01,13,317,27,02,34,297,20,08,04,246,,10,50,076,35*7E[0m
+[0;32mI (23094) GPS: Invalid GPGLL format[0m
+[0;32mI (23104) GPS: GPS Data: $GPGSV,4,2,14,16,15,189,,18,00,151,08,23,20,116,15,25,14,062,10*7B[0m
+[0;32mI (23114) GPS: Invalid GPGLL format[0m
+[0;32mI (23114) GPS: GPS Data: $GPGSV,4,3,14,26,36,170,25,27,13,213,17,28,63,007,22,31,76,273,31*75[0m
+[0;32mI (23124) GPS: Invalid GPGLL format[0m
+[0;32mI (23124) GPS: GPS Data: $GPGSV,4,4,14,32,28,021,13,42,22,095,32*7D[0m
+[0;32mI (23134) GPS: Invalid GPGLL format[0m
+[0;32mI (23144) GPS: GPS Data: $GPGLL,0919.95184,N,08024.84336,E,175854.00,A,A*67[0m
+[0;32mI (23144) GPS: Latitude: 9.332531 N[0m
+[0;32mI (23154) GPS: Longitude: 80.414056 E[0m
+[0;32mI (23154) GPS: GPS Data: $GPRMC,175855.00,A,0919.95192,N,08024.84323,E,0.673,,070425,,,A*7A[0m
+[0;32mI (23164) GPS: Invalid GPGLL format[0m
+[0;32mI (23174) GPS: GPS Data: $GPVTG,,T,,M,0.673,N,1.247,K,A*21[0m
+[0;32mI (23174) GPS: Invalid GPGLL format[0m
+[0;32mI (23184) GPS: GPS Data: $GPGGA,175855.00,0919.95192,N,08024.84323,E,1,08,1.01,64.6,M,-95.1,M,,*4C[0m
+[0;32mI (23194) GPS: Invalid GPGLL format[0m
+[0;32mI (23194) GPS: GPS Data: $GPGSA,A,3,23,10,28,27,02,25,31,26,,,,,1.77,1.01,1.46*0C[0m
+[0;32mI (23204) GPS: Invalid GPGLL format[0m
+[0;32mI (23204) GPS: GPS Data: $GPGSV,4,1,14,01,13,317,26,02,34,297,19,08,04,246,,10,50,076,35*75[0m
+[0;32mI (23214) GPS: Invalid GPGLL format[0m
+[0;32mI (23214) GPS: GPS Data: $GPGSV,4,2,14,16,15,189,,18,00,151,,23,20,116,15,25,14,062,10*73[0m
+[0;32mI (23224) GPS: Invalid GPGLL format[0m
+[0;32mI (23234) GPS_MAIN: Latitude: 9.332531, Longitude: 80.414056[0m
+[0;32mI (25724) FIREBASE: ✅ Updated GPS data in existing 'gps' object.[0m
+[0;32mI (35734) GPS: GPS Data: $GPGSV,4,3,14,26,36,170,24,27,13,213,17,28,63,007,20,31,76,273,30*77[0m
+[0;32mI (35734) GPS: Invalid GPGLL format[0m
+[0;32mI (35734) GPS: GPS Data: $GPGSV,4,4,14,32,28,021,,42,22,095,32*7F75[0m
+[0;32mI (35744) GPS: Invalid GPGLL format[0m
+[0;32mI (35744) GPS: GPS Data: $GPGSV,4,4,13,42,22,095,33*41[0m
+[0;32mI (35754) GPS: Invalid GPGLL format[0m
+[0;32mI (35754) GPS: GPS Data: $GPGLL,0919.95640,N,08024.84190,E,175906.00,A,A*60[0m
+[0;32mI (35764) GPS: Latitude: 9.332607 N[0m
+[0;32mI (35764) GPS: Longitude: 80.414032 E[0m
+[0;32mI (35774) GPS: GPS Data: $GPRMC,175907.00,A,0919.95625,N,08024.84202,E,0.703,,070425,,,A*73[0m
+[0;32mI (35774) GPS: Invalid GPGLL format[0m
+[0;32mI (35784) GPS: GPS Data: $GPVTG,,T,,M,0.703,N,1.302,K,A*27[0m
+[0;32mI (35794) GPS: Invalid GPGLL format[0m
+[0;32mI (35794) GPS: GPS Data: $GPGGA,175907.00,0919.95625,N,08024.84202,E,1,09,1.14,53.9,M,-95.1,M,,*4D[0m
+[0;32mI (35804) GPS: Invalid GPGLL format[0m
+[0;32mI (35804) GPS: GPS Data: $GPGSA,A,3,32,23,10,28,27,02,25,31,26,,,,1.85,1.14,1.45*07[0m
+[0;32mI (35814) GPS: Invalid GPGLL format[0m
+[0;32mI (35824) GPS: GPS Data: $GPGSV,4,1,13,01,13,317,25,02,34,297,14,08,04,246,,10,50,076,35*7C[0m
+[0;32mI (35824) GPS: Invalid GPGLL format[0m
+[0;32mI (35834) GPS: GPS Data: $GPGSV,4,2,13,16,16,189,18,23,20,117,26,25,14,061,13,26,37,170,25*72[0m
+[0;32mI (35844) GPS: Invalid GPGLL format[0m
+[0;32mI (35844) GPS: GPS Data: $GPGSV,4,3,13,27,13,213,20,28,63,007,25,31,76,273,33,32,28,021,18*72[0m
+[0;32mI (35854) GPS: Invalid GPGLL format[0m
+[0;32mI (35864) GPS: GPS Data: $GPGSV,4,4,13,42,22,095,33*41[0m
+[0;32mI (35864) GPS: Invalid GPGLL format[0m
+[0;32mI (35874) GPS: GPS Data: $GPGLL,0919.95625,N,08024.84202,E,175907.00,A,A*6A[0m
+[0;32mI (35874) GPS: Latitude: 9.332604 N[0m
+[0;32mI (35884) GPS: Longitude: 80.414034 E[0m
+[0;32mI (35884) GPS: GPS Data: $GPRMC,175908.00,A,0919.95624,N,08024.84212,E,0.860,,070425,,,A*76[0m
+[0;32mI (35894) GPS: Invalid GPGLL format[0m
+[0;32mI (35894) GPS: GPS Data: $GPVTG,,T,,M,0.860,N,1.593,K,A*23[0m
+[0;32mI (35904) GPS: Invalid GPGLL format[0m
+[0;32mI (35914) GPS: GPS Data: $GPGGA,175908.00,0919.95624,N,08024.84212,E,1,09,1.14,53.5,M,-95.1,M,,*4E[0m
+[0;32mI (35914) GPS: Invalid GPGLL format[0m
+[0;32mI (35924) GPS: GPS Data: $GPGSA,A,3,32,23,10,28,27,02,25,31,26,,,,1.85,1.14,1.45*07[0m
+[0;32mI (35934) GPS: Invalid GPGLL format[0m
+[0;32mI (35934) GPS: GPS Data: $GPGSV,4,1,13,01,13,317,25,02,34,297,12,08,04,246,,10,50,076,36*79[0m
+[0;32mI (35944) GPS: Invalid GPGLL format[0m
+[0;32mI (35944) GPS_MAIN: Latitude: 9.332604, Longitude: 80.414034[0m
+[0;32mI (38624) FIREBASE: ✅ Updated GPS data in existing 'gps' object.[0m
+[0;32mI (48634) GPS: GPS Data: $GPGSV,4,2,13,16,16,189,19,23,20,117,26,25,14,061,16,2,M,0.646,N,1.196,K,A*28[0m
+[0;32mI (48634) GPS: Invalid GPGLL format[0m
+[0;32mI (48634) GPS: GPS Data: $GPGGA,175919.00,0919.95229,N,08024.84350,E,1,09,0.91,54.6,M,-95.1,M,,*48[0m
+[0;32mI (48644) GPS: Invalid GPGLL format[0m
+[0;32mI (48644) GPS: GPS Data: $GPGSA,A,3,32,23,10,28,27,02,25,31,26,,,,1.66,0.91,1.39*0D[0m
+[0;32mI (48654) GPS: Invalid GPGLL format[0m
+[0;32mI (48664) GPS: GPS Data: $GPGSV,4,1,13,01,13,317,23,02,34,297,19,08,04,246,15,10,50,076,33*75[0m
+[0;32mI (48664) GPS: Invalid GPGLL format[0m
+[0;32mI (48674) GPS: GPS Data: $GPGSV,4,2,13,16,16,189,16,23,20,117,29,25,14,061,24,26,37,170,22*70[0m
+[0;32mI (48684) GPS: Invalid GPGLL format[0m
+[0;32mI (48684) GPS: GPS Data: $GPGSV,4,3,13,27,13,213,19,28,63,007,25,31,76,275,32,32,28,022,27*70[0m
+[0;32mI (48694) GPS: Invalid GPGLL format[0m
+[0;32mI (48704) GPS: GPS Data: $GPGSV,4,4,13,42,22,095,31*43[0m
+[0;32mI (48704) GPS: Invalid GPGLL format[0m
+[0;32mI (48714) GPS: GPS Data: $GPGLL,0919.95229,N,08024.84350,E,175919.00,A,A*6B[0m
+[0;32mI (48714) GPS: Latitude: 9.332538 N[0m
+[0;32mI (48724) GPS: Longitude: 80.414058 E[0m
+[0;32mI (48724) GPS: GPS Data: $GPRMC,175920.00,A,0919.95179,N,08024.84356,E,0.596,,070425,,,A*76[0m
+[0;32mI (48734) GPS: Invalid GPGLL format[0m
+[0;32mI (48744) GPS: GPS Data: $GPVTG,,T,,M,0.596,N,1.104,K,A*2D[0m
+[0;32mI (48744) GPS: Invalid GPGLL format[0m
+[0;32mI (48754) GPS: GPS Data: $GPGGA,175920.00,0919.95179,N,08024.84356,E,1,09,0.91,55.1,M,-95.1,M,,*44[0m
+[0;32mI (48764) GPS: Invalid GPGLL format[0m
+[0;32mI (48764) GPS: GPS Data: $GPGSA,A,3,32,23,10,28,27,02,25,31,26,,,,1.66,0.91,1.39*0D[0m
+[0;32mI (48774) GPS: Invalid GPGLL format[0m
+[0;32mI (48774) GPS: GPS Data: $GPGSV,4,1,13,01,13,317,23,02,34,297,19,08,04,246,11,10,50,076,33*71[0m
+[0;32mI (48784) GPS: Invalid GPGLL format[0m
+[0;32mI (48794) GPS: GPS Data: $GPGSV,4,2,13,16,16,189,16,23,20,117,29,25,14,061,24,26,37,170,21*73[0m
+[0;32mI (48794) GPS: Invalid GPGLL format[0m
+[0;32mI (48804) GPS: GPS Data: $GPGSV,4,3,13,27,13,213,18,28,63,007,25,31,76,275,33,32,28,022,27*70[0m
+[0;32mI (48814) GPS: Invalid GPGLL format[0m
+[0;32mI (48814) GPS: GPS Data: $GPGSV,4,4,13,42,22,095,31*43[0m
+[0;32mI (48824) GPS: Invalid GPGLL format[0m
+[0;32mI (48824) GPS: GPS Data: $GPGLL,0919.95179,N,08024.84356,E,175920.00,A,A*61[0m
+[0;32mI (48834) GPS: Latitude: 9.332530 N[0m
+[0;32mI (48834) GPS: Longitude: 80.414059 E[0m
+[0;32mI (48844) GPS_MAIN: Latitude: 9.332530, Longitude: 80.414059[0m
+[0;32mI (50914) FIREBASE: ✅ Updated GPS data in existing 'gps' object.[0m
+�ets Jul 29 2019 12:21:46
+
+rst:0x3 (SW_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7176
+load:0x40078000,len:15564
+ho 0 tail 12 room 4
+load:0x40080400,len:4
+load:0x40080404,len:3904
+entry 0x40080640
+[0;32mI (60) boot: ESP-IDF v5.3.1-dirty 2nd stage bootloader[0m
+[0;32mI (60) boot: compile time Apr  7 2025 22:46:43[0m
+[0;32mI (60) boot: Multicore bootloader[0m
+[0;32mI (66) boot: chip revision: v3.1[0m
+[0;32mI (70) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (74) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (79) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (83) boot: Enabling RNG early entropy source...[0m
+[0;32mI (89) boot: Partition Table:[0m
+[0;32mI (92) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (100) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (107) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (115) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (122) boot: End of partition table[0m
+[0;32mI (126) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=26b4ch (158540) map[0m
+[0;32mI (189) esp_image: segment 1: paddr=00036b74 vaddr=3ffb0000 size=03f38h ( 16184) load[0m
+[0;32mI (196) esp_image: segment 2: paddr=0003aab4 vaddr=40080000 size=05564h ( 21860) load[0m
+[0;32mI (204) esp_image: segment 3: paddr=00040020 vaddr=400d0020 size=a4e40h (675392) map[0m
+[0;32mI (436) esp_image: segment 4: paddr=000e4e68 vaddr=40085564 size=12d20h ( 77088) load[0m
+[0;32mI (479) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (479) boot: Disabling RNG early entropy source...[0m
+[0;32mI (491) cpu_start: Multicore app[0m
+[0;32mI (499) cpu_start: Pro cpu start user code[0m
+[0;32mI (499) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (499) app_init: Application information:[0m
+[0;32mI (502) app_init: Project name:     i2c-simple[0m
+[0;32mI (507) app_init: App version:      1[0m
+[0;32mI (512) app_init: Compile time:     Apr  7 2025 22:45:41[0m
+[0;32mI (518) app_init: ELF file SHA256:  fadda2093...[0m
+[0;32mI (523) app_init: ESP-IDF:          v5.3.1-dirty[0m
+[0;32mI (528) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (533) efuse_init: Max chip rev:     v3.99 [0m
+[0;32mI (538) efuse_init: Chip rev:         v3.1[0m
+[0;32mI (543) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (550) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (556) heap_init: At 3FFB8B58 len 000274A8 (157 KiB): DRAM[0m
+[0;32mI (562) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (568) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (575) heap_init: At 40098284 len 00007D7C (31 KiB): IRAM[0m
+[0;32mI (583) spi_flash: detected chip: generic[0m
+[0;32mI (586) spi_flash: flash io: dio[0m
+[0;33mW (590) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (604) main_task: Started on CPU0[0m
+[0;32mI (614) main_task: Calling app_main()[0m
+[0;32mI (614) FIREBASE: Firebase initialization completed.[0m
+[0;32mI (614) GPS_MAIN: Starting Wi-Fi task...[0m
+[0;32mI (644) GPS_MAIN: Starting GPS + Firebase task...[0m
+[0;32mI (644) main_task: Returned from app_main()[0m
+[0;32mI (654) wifi:wifi driver task: 3ffc2a94, prio:23, stack:6656, core=0[0m
+[0;33mW (664) GPS_MAIN: Invalid GPS fix, waiting...[0m
+[0;32mI (664) wifi:wifi firmware version: ccaebfa[0m
+[0;32mI (664) wifi:wifi certification version: v7.0[0m
+[0;32mI (664) wifi:config NVS flash: enabled[0m
+[0;32mI (664) wifi:config nano formating: disabled[0m
+[0;32mI (674) wifi:Init data frame dynamic rx buffer num: 32[0m
+[0;32mI (674) wifi:Init static rx mgmt buffer num: 5[0m
+[0;32mI (674) wifi:Init management short buffer num: 32[0m
+[0;32mI (684) wifi:Init dynamic tx buffer num: 32[0m
+[0;32mI (684) wifi:Init static rx buffer size: 1600[0m
+[0;32mI (694) wifi:Init static rx buffer num: 10[0m
+[0;32mI (694) wifi:Init dynamic rx buffer num: 32[0m
+[0;32mI (704) wifi_init: rx ba win: 6[0m
+[0;32mI (704) wifi_init: accept mbox: 6[0m
+[0;32mI (704) wifi_init: tcpip mbox: 32[0m
+[0;32mI (714) wifi_init: udp mbox: 6[0m
+[0;32mI (714) wifi_init: tcp mbox: 6[0m
+[0;32mI (714) wifi_init: tcp tx win: 5760[0m
+[0;32mI (724) wifi_init: tcp rx win: 5760[0m
+[0;32mI (724) wifi_init: tcp mss: 1440[0m
+[0;32mI (734) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (734) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;33mW (744) wifi:Password length matches WPA2 standards, authmode threshold changes from OPEN to WPA2[0m
+[0;32mI (754) phy_init: phy_version 4830,54550f7,Jun 20 2024,14:22:08[0m

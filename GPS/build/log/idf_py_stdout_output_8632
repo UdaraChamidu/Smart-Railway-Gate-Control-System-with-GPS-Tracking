@@ -1,0 +1,5 @@
+[1/4] cmd.exe /C "cd /D C:\smart\build\esp-idf\esptool_py && C:\Espressif\python_env\idf5.3_py3.10_env\Scripts\python.exe C:/Espressif/frameworks/esp-idf-v5.3.1/components/partition_table/check_sizes.py --offset 0x8000 partition --type app C:/smart/build/partition_table/partition-table.bin C:/smart/build/i2c-simple.bin"
+i2c-simple.bin binary size 0xe7bc0 bytes. Smallest app partition is 0x100000 bytes. 0x18440 bytes (9%) free.
+[2/4] Performing build step for 'bootloader'
+[1/1] cmd.exe /C "cd /D C:\smart\build\bootloader\esp-idf\esptool_py && C:\Espressif\python_env\idf5.3_py3.10_env\Scripts\python.exe C:/Espressif/frameworks/esp-idf-v5.3.1/components/partition_table/check_sizes.py --offset 0x8000 bootloader 0x1000 C:/smart/build/bootloader/bootloader.bin"
+Bootloader binary size 0x6880 bytes. 0x780 bytes (7%) free.
