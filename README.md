@@ -1,5 +1,5 @@
 
-# 🚦 GPS-Based Railway Gate Control System with Real-Time GPS Tracking
+# 🚦 GPS Based Railway Gate Control System with Real Time GPS Tracking
 
 ## 📌 Overview  
 The **Smart Railway Gate Control System** is a safety-focused embedded solution that automates railway gate operations using **GPS tracking** and **real-time mobile alerts**. Designed for scalability and cost-efficiency, this system enhances safety at railway crossings for both urban and rural environments.
