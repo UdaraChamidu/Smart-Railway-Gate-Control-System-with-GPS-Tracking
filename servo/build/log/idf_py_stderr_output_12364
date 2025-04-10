@@ -1,0 +1,11 @@
+CMake Error at C:/Espressif/frameworks/esp-idf-v5.3.1/tools/cmake/build.cmake:552 (message):
+  WARNING: Component "espressif/cjson" not found
+
+  ERROR: Because project depends on espressif/cjson (>=1.7.15) which doesn't
+  match any versions, version solving failed.
+
+Call Stack (most recent call first):
+  C:/Espressif/frameworks/esp-idf-v5.3.1/tools/cmake/project.cmake:710 (idf_build_process)
+  CMakeLists.txt:6 (project)
+
+
