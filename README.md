@@ -130,7 +130,3 @@ git clone https://github.com/UdaraChamidu/Smart-Railway-Gate-Control-System-with
 3. Run the app on an emulator or Android device.
 
 ---
-
-## 📩 License
-
-This project is developed for academic and research purposes. Feel free to reuse or extend it with proper credits to the authors.
