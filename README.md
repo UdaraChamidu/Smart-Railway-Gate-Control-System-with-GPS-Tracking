@@ -95,7 +95,7 @@ The **Smart Railway Gate Control System** is a safety-focused embedded solution 
 | Name                   | Registration Number |
 |------------------------|---------------------|
 | G.A.S. De Silva        | 2021/E/037          |
-| H.M.U. Cherath         | 2021/E/049          |
+| H.M.U.C. Herath         | 2021/E/049          |
 | H.K.H.T.K. Hemal       | 2021/E/065          |
 | P.G.I.D. Madhushani    | 2021/E/107          |
 
